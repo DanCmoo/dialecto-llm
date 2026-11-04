@@ -1,0 +1,138 @@
+\documentclass[conference]{IEEEtran}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{hyperref}
+\title{Cierre de Decisiones y Banco Pareado de Consultas\\Proyecto DIALECTO-LLM -- Semana 2}
+\author{\IEEEauthorblockN{Grupo 3}\IEEEauthorblockA{Documento de trabajo\\Noviembre de 2026}}
+\begin{document}
+\maketitle
+\begin{abstract}
+Este documento registra la resolución operativa de decisiones de la semana 1 y el banco de consultas v2 de la semana 2. Se fijan endpoints, parámetros, presupuesto, unidad estadística y anclajes geográficos. La versión 2 reescribe las 60 consultas en cuatro estilos contrastantes (240 textos), elimina el prefacio repetido y conserva los criterios y metadatos de cada ítem. Una auditoría automática confirmó cuatro cadenas distintas por ítem y metadatos idénticos a la línea base v1. La naturalidad y equivalencia semántica siguen pendientes de revisión humana antes del piloto.
+\end{abstract}
+\begin{IEEEkeywords}
+variación dialectal, español, modelos de lenguaje, banco pareado, evaluación
+\end{IEEEkeywords}
+
+\section{Alcance y separación de decisiones}
+La metodología de origen fija 60 ítems, cuatro variedades, dos modelos, tres repeticiones y 1.440 respuestas principales; exige equivalencia semántica, evaluación ordinal y comparaciones pareadas [1]. Este documento concreta semana 2 sin alterar esos parámetros. Las elecciones de esta sección son recomendaciones operativas hechas a partir de documentación oficial y estudios publicados; el estado de aceptación académica queda registrado por separado de la validez mecánica del banco.
+
+Un antecedente de evaluación de variedades del español construyó un banco dialectal con revisión por expertos en lingüística, revisión por pares y formulaciones comunes entre variedades [2]. Se adopta ese principio de revisión independiente, pero el presente banco mide la calidad de respuestas a consultas cotidianas, no la identificación de dialectos que mide dicho antecedente.
+
+\section{Decisiones cerradas para la versión de trabajo}
+\subsection{Selección de modelos y generación}
+Se proponen GPT-5.4 Mini, snapshot \texttt{gpt-5.4-mini-2026-03-17}, y Gemini 3.8 Flash, endpoint estable \texttt{gemini-3.8-flash}. Son modelos de distintos proveedores y sus identificadores y tarifas estaban publicados el 3 de noviembre de 2026 [4]. La elección facilita contrastar servicios generales de costo moderado; no postula paridad de capacidad ni convierte ``proveedor'' en un factor experimental separado.
+
+Cada llamada será independiente, de un solo turno, sin herramientas ni búsqueda. A ambas se enviará la misma instrucción de sistema: responder en español de forma concisa, respetar restricciones y explicitar supuestos ante una pregunta sin respuesta única. Se fija máximo de 1024 tokens de salida. Se omiten temperatura y \texttt{top\_p}: Google recomienda los valores por defecto de Gemini 3.8 y su guía de migración indica retirar estos parámetros; GPT-5.4 Mini admite su uso solo con esfuerzo de razonamiento \texttt{none} [4]. Se usan los mínimos nativos de razonamiento (GPT: \texttt{none}; Gemini: \texttt{low}), anotando la diferencia como límite de comparabilidad. No se enviarán valores de semilla si el proveedor no los admite. Se guardarán snapshot/modelVersion, parámetros efectivos, consumo de tokens, fecha UTC, latencia y errores.
+
+\subsection{Presupuesto reproducible}
+Las tarifas publicadas son USD 0,75/M tokens de entrada y 4,50/M de salida para GPT-5.4 Mini. Para Gemini 3.8 Flash, la tarifa introductoria publicada es USD 0,75/M de entrada y 3,75/M de salida hasta el 31 de diciembre de 2026; la tarifa estándar prevista desde el 1 de enero de 2027 es USD 1,50/M y 7,50/M, respectivamente [4]. Se usará el nivel pagado de las APIs.
+
+El cálculo de planificación contempla 792 llamadas por modelo: 720 principales (60 ítems × 4 variedades × 3 repeticiones) y 72 del piloto (6 × 4 × 3). Con 250 tokens de entrada y 180 tokens generados promedio por llamada, ambos modelos suman aproximadamente USD 2,01 a la tarifa estándar de Google. Con 20\% de contingencia, el costo calculado es USD 2,41; se reserva \textbf{USD 2,60} como tope de planificación. Con la tarifa introductoria de Google, el costo calculado es USD 1,47 antes de contingencia y USD 1,77 después. Son supuestos, no una cotización: el piloto sustituirá los promedios de tokens y el precio se volverá a comprobar antes de la recolección. No se usa el nivel gratuito de Google para proteger la privacidad de datos experimentales; la página oficial identifica un tratamiento de datos distinto para el nivel gratuito [4].
+
+\begin{table}[!t]
+\caption{Resumen de configuraciones para la recolección}
+\centering
+\scriptsize
+\begin{tabularx}{\columnwidth}{p{0.25\columnwidth}X}
+\toprule
+Elemento & Selección de trabajo \\
+\midrule
+OpenAI & \texttt{gpt-5.4-mini-2026-03-17}; razonamiento \texttt{none}; USD 0,75/M entrada y 4,50/M salida \\
+Google & \texttt{gemini-3.8-flash} estable; razonamiento \texttt{low}; precio promocional hasta dic. 2026 y estándar desde ene. 2027 \\
+Generación & Una instrucción de sistema común; solicitudes independientes; sin herramientas; máximo 1024 tokens \\
+Parámetros & Sin temperatura/top-p explícitos; registrar versión y parámetros efectivos por respuesta \\
+Estimación & USD 2,60 a precio estándar, incluidos piloto y 20\% de contingencia \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Definición operacional y análisis}
+Las etiquetas de variedad se restringen a tres anclajes urbanos conversacionales: Bogotá, Ciudad de México y Buenos Aires. No se interpretarán como representación completa de Colombia, México ni de todos los países rioplatenses. El control es español escrito panhispánico neutral; no se sostiene que exista una modalidad sin dialecto. La restricción geográfica evita presentar una muestra de tres ciudades como norma nacional.
+
+El resultado analítico se agrega primero por ítem: promedio entre evaluadores en cada salida y promedio de las tres repeticiones. Se compara cada variedad con el control dentro del mismo ítem, modelo y dimensión. Para las escalas de 1 a 5 se fija Wilcoxon bilateral pareado, diferencia mediana y correlación biserial por rangos. Se estima el IC del 95\% mediante bootstrap pareado por ítem (10.000 remuestras; semilla 20261103). Se aplica Holm--Bonferroni a los tres contrastes dialectales de cada familia modelo--dimensión, con $\alpha=0{,}05$, consistente con la metodología [1]. El plan estadístico queda listo para revisión académica; no es evidencia de aprobación del supervisor.
+
+La consistencia entre tres repeticiones se resume, por ítem/modelo/variedad/dimensión, con el rango máximo menos mínimo y el indicador de puntuación idéntica en las tres salidas. Se reportan media, mediana y distribución; son medidas de estabilidad de las calificaciones, no de similitud textual. Se conserva el mínimo de kappa ponderado 0,60 y la meta 0,70 indicados por [1]. Para varias personas evaluadoras, se usarán kappas de Cohen ponderados cuadráticamente en pares de evaluadores con observaciones comunes; se informarán sus valores y su dispersión. Cada respuesta recibirá dos calificaciones independientes por dimensión.
+
+\section{Construcción del banco}
+El banco se reparte en seis estratos con diez ítems cada uno: cálculo/comprensión factual estable, procedimientos, explicaciones, recomendaciones bajo restricciones, resumen de textos originales y razonamiento. Esta distribución cubre exactitud, seguimiento de instrucciones, síntesis y tareas con más de una solución aceptable. Se evitan dependencias de precios, noticias, legislación local y geografía cambiante. Cada registro incluye ID, categoría, intención/tarea, cuatro versiones, clave o criterios esperados, rasgo de adaptación, anclajes geográficos y estado de revisión.
+
+\begin{table}[!ht]
+\caption{Estratos del banco v2}
+\centering
+\begin{tabular}{lr}
+\toprule
+Categoría & Ítems \\
+\midrule
+Cálculo y comprensión factual estable & 10 \\
+Procedimientos con restricciones explícitas & 10 \\
+Explicación de hechos o conceptos & 10 \\
+Recomendación según condiciones dadas & 10 \\
+Resumen de textos originales breves & 10 \\
+Razonamiento y resolución de problemas & 10 \\
+\midrule
+Total & 60 (240 versiones) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+La v2 reemplaza la estrategia de sustitución aislada por una reescritura de cada consulta en los cuatro estilos definidos en \texttt{REFACTOR.md}: español colombiano con mayor formalidad, tratamiento de \textit{usted} o construcciones impersonales, y \textit{computador} cuando se menciona el equipo; español mexicano conversacional, con formas como \textit{compu}, \textit{respaldar} y \textit{checar}; español rioplatense con voseo cuando corresponde y voces como \textit{pendrive}; y control estándar formal, técnico y sin regionalismos. Se modifican estructura sintáctica, elección léxica y encuadre pragmático, no solo una palabra. Se conserva la intención, los datos numéricos, restricciones y respuesta esperada de cada tarea, y se retira la fórmula idéntica que antecedía a todos los ítems.
+
+Las formas léxicas se contrastaron con el \emph{Diccionario de americanismos}. Este registra \textit{camión} con el sentido de autobús para México y \textit{colectivo} como autobús en Argentina; también advierte que \textit{colectivo} tiene otro sentido en México. Registra \textit{poroto} como frijol en variedades que incluyen Argentina y Uruguay, además de las formas \textit{frijol}, \textit{computador}, \textit{computadora} y \textit{carro} en diferentes zonas americanas [3]. La RAE/ASALE documenta las formas de presente e imperativo del voseo rioplatense [6]. Estos repertorios acreditan usos, no una correspondencia exclusiva entre una palabra y una ciudad; los marcadores se tratan como indicios para revisión, no como etiquetas diagnósticas.
+
+Para el estilo de consulta se tomó como referencia el formato de preguntas formuladas por hablantes nativos en SQAC y de preguntas en lenguaje natural que expresan necesidades de información en PRES [7], [8]. El banco no copia enunciados de esos conjuntos: las cuatro versiones son reescrituras propias, con encuadres directos, contextuales, coloquiales o técnicos según el anclaje. En cada ítem se comprobó que las cuatro cadenas de entrada fueran diferentes. La unicidad textual es una condición mecánica, no prueba de autenticidad dialectal ni de equivalencia pragmática.
+
+La Tabla III ilustra el mismo objetivo de backup y verificación en cuatro formulaciones de I011. Las versiones conservan la cantidad de documentos, el medio de almacenamiento y la comprobación, aunque redistribuyen la información y emplean recursos lingüísticos distintos.
+
+\begin{table}[!ht]
+\caption{Muestra de reescritura de I011 en la v2}
+\centering
+\scriptsize
+\begin{tabularx}{\columnwidth}{p{0.16\columnwidth}X}
+\toprule
+Variedad & Fragmento de consulta \\
+\midrule
+Colombiana & ``Necesito hacer un backup de tres documentos del computador... ¿Qué pasos recomienda y cómo puedo mirar si quedaron bien copiados?'' \\
+Mexicana & ``Quiero respaldar tres documentos de la compu... ¿Cómo le hago y qué puedo checar para asegurarme de que sí se copiaron?'' \\
+Rioplatense & ``Tengo tres documentos en la compu... ¿Cómo armás la copia y qué conviene abrir para fijarme si quedó bien?'' \\
+Estándar & ``Describa un procedimiento para copiar tres documentos del equipo... y verificar la integridad de la copia...'' \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+La versión de trabajo para lectura automatizada es \texttt{src/data/item\_bank\_v2.json}; \texttt{src/data/item\_bank\_v1.json} y \texttt{src/data/item\_bank\_v1.csv} se conservan como línea base. La plantilla \texttt{src/data/validacion\_hablantes\_template.csv} reserva dos evaluadores independientes para cada ID-variedad (480 espacios); para leer el estímulo correspondiente, el revisor debe consultar el ID en el JSON v2. Se califican naturalidad y equivalencia de significado de 1 a 5, con comentarios, etiquetas de problemas, propuesta de corrección y aprobación para piloto. El criterio propuesto es puntuar al menos 4 en ambas escalas por cada evaluador; si hay desacuerdo o una puntuación menor, se corrige y vuelve a revisar el ítem. El banco conserva estado de borrador.
+
+\section{Flujo de calidad y criterio de H2}
+\begin{enumerate}[leftmargin=*]
+\item Revisar cada variante por separado respecto de naturalidad para el anclaje definido.
+\item Comparar en pares las cuatro formulaciones de cada ID: misma intención, entidades, cantidades, restricciones y formato de salida.
+\item Resolver comentarios discrepantes sin borrar las evaluaciones originales; guardar una versión nueva y justificar cada cambio.
+\item Aprobar la variante solo cuando dos evaluadores distintos asignen al menos 4/5 a naturalidad y equivalencia semántica.
+\item Seleccionar el piloto balanceado de seis IDs (I001, I011, I021, I031, I041 e I051), ya preseleccionados para cubrir las seis categorías. Las 144 respuestas piloto no cuentan dentro de las 1.440 principales.
+\end{enumerate}
+
+La auditoría de v2 confirmó 60 registros, 240 consultas no vacías, cuatro textos distintos para cada ID, orden e identificadores conservados, y metadatos sin cambios frente a v1. La plantilla aún ofrece 480 espacios de revisión, dos por combinación ítem-variedad. Los metadatos heredados de v1 (incluidos \texttt{lexical\_feature} y \texttt{review\_note}) no fueron recalculados durante esta reescritura; deben leerse como anotaciones de la línea base, no como inventario completo de los recursos del texto v2. La auditoría mecánica no juzga naturalidad ni equivalencia. H2 se considera listo cuando las 240 variantes estén aceptadas por dos revisores y los cambios estén versionados.
+
+\section{Limitaciones y bloqueos de recolección}
+La reescritura estructural amplía la variación de los estímulos, pero también introduce posibles diferencias de registro, cortesía y longitud que podrían afectar las respuestas aparte de la variedad pretendida. Los estilos propuestos no son muestras representativas de todos los hablantes de las ciudades ancla. Las cuatro cadenas únicas por ítem reducen duplicados accidentales, pero no demuestran que cada formulación sea una realización auténtica ni perfectamente equivalente. Los modelos pertenecen a proveedores distintos y sus escalas nativas de razonamiento no son equivalentes; el costo depende de tokenización, longitud real y tarifas vigentes. La doble revisión humana y el piloto son necesarios para estimar estas limitaciones antes de la recolección principal.
+
+Por estos motivos, el archivo de configuración conserva \texttt{collection\_ready=false}. No se ejecutarán llamadas principales hasta: completar la doble revisión de lenguaje; registrar la aprobación académica del plan estadístico y de la rúbrica; comprobar acceso, límites y consumo real en el piloto; y volver a consultar snapshots y tarifas en la fecha de ejecución. Esta condición distingue las instrucciones de la metodología original [1] de las decisiones propuestas en esta versión.
+
+\section{Conclusión}
+La semana 2 deja el banco v2 en 60 IDs y 240 consultas reescritas, con cuatro cadenas distintas por ítem, más los criterios y el flujo de revisión. La línea base v1 se conserva y los metadatos se mantienen sin modificaciones, con la salvedad de que sus notas de adaptación describen la versión anterior. Antes del piloto, dos revisores deben puntuar las 240 formulaciones y aprobar su naturalidad y equivalencia; una validación automática no sustituye ese juicio.
+
+\begin{thebibliography}{8}
+\bibitem{method} Grupo 3, \emph{Metodología general del proyecto DIALECTO-LLM: Evaluación pareada del desempeño de modelos de lenguaje frente a la variación dialectal del español}, documento de trabajo, 2026.
+\bibitem{martinez} G. Martínez Ruiz, M. Mayor Rocher, C. Pozo Huertas, M. I. Melero Carrasco, M. Grandury González, and P. Reviriego Vasallo, ``Spanish is not just one: A dataset of Spanish dialect recognition for LLMs,'' \emph{Data in Brief}, vol. 63, Art. no. 112088, 2025, doi: 10.1016/j.dib.2025.112088.
+\bibitem{asale} Asociación de Academias de la Lengua Española, \emph{Diccionario de americanismos}, voces ``camión,'' ``colectivo,'' ``frijol,'' ``poroto,'' ``computador,'' ``computadora'' y ``carro,'' consulta: 3 nov. 2026. [En línea]. Disponibles: \url{https://www.asale.org/damer/cami%C3%B3n}, \url{https://www.asale.org/damer/colectivo}, \url{https://www.asale.org/damer/frijol}, \url{https://www.asale.org/damer/poroto}, \url{https://www.asale.org/damer/computador}, \url{https://www.asale.org/damer/computadora} y \url{https://www.asale.org/damer/carro}.
+\bibitem{openai} OpenAI, ``GPT-5.4 Mini Model,'' OpenAI API documentation, consulted Nov. 3, 2026. [Online]. Available: \url{https://developers.openai.com/api/docs/models/gpt-5.4-mini}
+\bibitem{google} Google, ``Gemini 3.8 Flash,'' ``What's new in Gemini 3.8 Flash,'' and ``Gemini Developer API pricing,'' Google AI for Developers, consulted Nov. 3, 2026. [Online]. Available: \url{https://ai.google.dev/gemini-api/docs/latest-model}
+\bibitem{rae} Real Academia Española y Asociación de Academias de la Lengua Española, ``Conjugaciones verbales: formas del voseo rioplatense,'' \emph{Diccionario del estudiante}. [En línea]. Disponible: \url{https://www.rae.es/diccionario-estudiante/docs/conjugaciones-verbales.pdf}
+\bibitem{sqac} A. Gutiérrez-Fandiño et al., ``The Spanish Question Answering Corpus,'' \emph{Procesamiento del Lenguaje Natural}, no. 68, pp. 39--60, Mar. 2022. [En línea]. Disponible: \url{https://journal.sepln.org/sepln/ojs/ojs/index.php/pln/article/view/6405}
+\bibitem{pres} E. Kamateri, T. Tsikrika, S. Symeonidis, S. Vrochidis, W. Minker, and I. Kompatsiaris, ``A Test Collection for Passage Retrieval Evaluation of Spanish Health-Related Resources,'' in \emph{Proc. ECIR}, 2019, pp. 148--154, doi: 10.1007/978-3-030-15719-7\_19. [En línea]. Disponible: \url{https://mklab.iti.gr/results/spanish-passage-retrieval-dataset/}
+\end{thebibliography}
+\end{document}

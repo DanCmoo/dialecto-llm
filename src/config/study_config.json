@@ -1,0 +1,102 @@
+{
+  "study_id": "DIALECTO-LLM",
+  "protocol_version": "0.1.0",
+  "status": "bank_ready_for_linguistic_review",
+  "collection_ready": false,
+  "approval_gates": [
+    "two independent native/expert reviews for every dialect formulation",
+    "academic approval of rubric and analysis plan",
+    "six-item pilot and API budget check"
+  ],
+  "items": 60,
+  "dialects": ["co", "mx", "rio", "std"],
+  "control_dialect": "std",
+  "models": [
+    {
+      "alias": "gpt54_mini",
+      "provider": "OpenAI API",
+      "model_id": "gpt-5.4-mini-2026-03-17",
+      "snapshot": "gpt-5.4-mini-2026-03-17",
+      "input_usd_per_million": 0.75,
+      "output_usd_per_million": 4.5,
+      "price_checked": "2026-11-03"
+    },
+    {
+      "alias": "gemini38_flash",
+      "provider": "Google Gemini Developer API",
+      "model_id": "gemini-3.8-flash",
+      "snapshot": "stable-GA; record provider modelVersion for every response",
+      "input_usd_per_million": 0.75,
+      "output_usd_per_million": 3.75,
+      "price_checked": "2026-11-03",
+      "price_valid_through": "2026-12-31",
+      "input_usd_per_million_after_2026": 1.5,
+      "output_usd_per_million_after_2026": 7.5
+    }
+  ],
+  "model_selection_rationale": "Two distinct providers, stable/GA endpoints, text-capable general models, low published token rates; not a claim of equal model capability.",
+  "generation": {
+    "system_instruction": "Responde en español con precisión y de forma concisa. Respeta el formato y las restricciones explícitas. Si la consulta no determina una respuesta única, indica los supuestos. No añadas datos locales que no se soliciten.",
+    "max_output_tokens": 1024,
+    "tools_enabled": false,
+    "conversation_state": "independent_single_turn",
+    "temperature": "provider_default_omitted",
+    "top_p": "provider_default_omitted",
+    "native_effort": {"gpt54_mini": "none", "gemini38_flash": "low"}
+  },
+  "repetitions": 3,
+  "dimensions": ["precision", "comprehension", "relevance"],
+  "score_min": 1,
+  "score_max": 5,
+  "minimum_weighted_kappa": 0.60,
+  "target_weighted_kappa": 0.70,
+  "alpha": 0.05,
+  "multiple_testing": "holm_bonferroni",
+  "primary_test": "wilcoxon_signed_rank_paired",
+  "consistency_metrics": ["three_run_score_range", "three_run_exact_agreement"],
+  "pilot_items": ["I001", "I011", "I021", "I031", "I041", "I051"],
+  "pilot_responses_excluded_from_main_1440": 144,
+  "expected_main_responses": 1440,
+  "dialect_anchors": {
+    "co": "urban conversational Bogotá; not representative of all Colombia",
+    "mx": "urban conversational Mexico City; not representative of all Mexico",
+    "rio": "urban conversational Buenos Aires; not representative of all Rioplatense areas",
+    "std": "pan-Hispanic neutral written Spanish, not a claim that a dialect-free variety exists"
+  },
+  "item_categories": {
+    "calculo": 10,
+    "procedimiento": 10,
+    "explicacion": 10,
+    "recomendacion": 10,
+    "resumen": 10,
+    "razonamiento": 10
+  },
+  "consistency_metric": {
+    "per_cell_range": "max-min of three response ratings after averaging raters",
+    "exact_agreement": "share of item-model-dialect-dimension cells with identical ratings on all three repeats"
+  },
+  "statistical_plan": {
+    "analysis_unit": "item; aggregate raters then three repeats before dialect-control paired contrast",
+    "primary_test": "two-sided Wilcoxon signed-rank on paired item differences",
+    "effect_size": "paired rank-biserial correlation",
+    "confidence_interval": "95% item-cluster paired bootstrap, 10000 resamples, seed 20261103",
+    "holm_family": "three dialect-control contrasts within each model-by-dimension family",
+    "alpha": 0.05
+  },
+  "budget_assumptions": {
+    "estimated_prompt_tokens_per_response": 250,
+    "estimated_generated_tokens_per_response": 180,
+    "calls_per_model_including_pilot": 792,
+    "total_calls_both_models_including_pilot": 1584,
+    "contingency_fraction": 0.20,
+    "budget_usd_round_up": 2.6,
+    "estimate_scope": "paid standard API rates at post-2026 introductory Google price; actual usage/prices must be checked at execution"
+  },
+  "randomization_seed": 20261103,
+  "notes": [
+    "Model identifiers selected from current official documentation on 2026-11-03; recheck endpoint and rates immediately before running.",
+    "Dialect versions require two independent native/expert reviews before the six-item pilot.",
+    "Statistical plan is an operational recommendation; document supervisor approval before primary collection.",
+    "Paid API tier only; the model cost estimate is token-assumption based and excludes free-tier data policies."
+  ]
+}

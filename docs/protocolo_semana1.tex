@@ -1,0 +1,170 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{hyperref}
+\title{Protocolo de Fundamentos y Especificación Inicial\\Proyecto DIALECTO-LLM}
+\author{\IEEEauthorblockN{Grupo 3}\IEEEauthorblockA{Documento de trabajo\\Noviembre de 2026}}
+\begin{document}
+\maketitle
+\begin{abstract}
+Este documento concreta la fase de fundamentos (semana 1) del proyecto DIALECTO-LLM, que estudiará si el desempeño de dos modelos de lenguaje cambia cuando una consulta semánticamente equivalente se formula en español colombiano, mexicano, rioplatense o estandarizado. Consolida las restricciones ya fijadas por la metodología del proyecto y propone decisiones operativas para el protocolo de datos, evaluación, estadística y software. Las decisiones que requieren confirmación académica se identifican como propuestas; no se presenta como ejecutada la recolección ni como elegidos modelos o proveedores que todavía no están especificados.
+\end{abstract}
+\begin{IEEEkeywords}
+modelos de lenguaje, variación dialectal, español, evaluación pareada, reproducibilidad
+\end{IEEEkeywords}
+
+\section{Propósito y límites}
+La pregunta de investigación es si el desempeño de modelos de lenguaje de gran escala cambia de forma significativa cuando la misma consulta se formula en español colombiano, mexicano o rioplatense, frente a español estandarizado. El diseño, las variedades, el número de ítems, las repeticiones, las dimensiones, la duración, los hitos y los roles consignados aquí provienen de la metodología entregada por el equipo [1]. Este documento desarrolla el trabajo de semana 1; no modifica esos requisitos.
+
+El alcance experimental queda limitado a las tres variedades seleccionadas, la condición de control y los dos modelos que se acuerden. Los resultados no se extrapolarán automáticamente a otros modelos, dialectos o tareas. El software será un framework reproducible de scripts y módulos Python, no una aplicación con interfaz.
+
+\subsection{Distinción entre instrucciones y propuestas}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Fijado por [1]:} 60 ítems; cuatro formulaciones semánticamente equivalentes; dos modelos consultados por API; tres repeticiones por combinación; 1.440 respuestas principales; precisión, comprensión, relevancia y consistencia; calificación ordinal de 1 a 5 para las tres primeras; evaluación ciega cuando sea posible; mínimo de kappa ponderado 0,60 y meta 0,70; pruebas pareadas, intervalos de confianza, tamaños del efecto y ajuste Holm--Bonferroni con $\alpha=0{,}05$; seis semanas y tres sprints.
+\item \textbf{Propuesto aquí:} reglas de muestreo, contenido de la rúbrica, operacionalización de consistencia, prueba primaria, unidad de análisis, reglas de exclusión, esquema de registros y arquitectura mínima del código. Las propuestas son decisiones de trabajo para revisar con la supervisión académica antes de comenzar la recolección principal.
+\end{itemize}
+
+\section{Diseño y unidades de análisis}
+\subsection{Diseño factorial pareado}
+Cada ítem tendrá cuatro versiones: colombiano (\texttt{co}), mexicano (\texttt{mx}), rioplatense (\texttt{rio}) y español estandarizado de control (\texttt{std}). Se conservarán intención comunicativa, contenido proposicional, nivel de detalle y formato de salida solicitado; las diferencias se limitarán a rasgos léxicos y morfosintácticos validados. Se cruzarán las versiones con dos modelos y tres ejecuciones independientes.
+
+\begin{table}[ht]
+\caption{Volumen previsto de la recolección principal}
+\label{tab:volume}
+\centering
+\begin{tabular}{lr}
+\toprule
+Factor & Cantidad \\
+\midrule
+Ítems & 60 \\
+Versiones por ítem & 4 \\
+Modelos & 2 \\
+Repeticiones por combinación & 3 \\
+Respuestas previstas & $60\times4\times2\times3=1.440$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+La unidad de aleatorización será la llamada individual. El resultado primario se analizará por ítem: para cada ítem, modelo, variedad y dimensión se agregará primero la puntuación de evaluadores y después las tres repeticiones. La comparación será pareada por identificador de ítem entre cada variedad y el control. Las repeticiones no se tratarán como 180 ítems independientes.
+
+\subsection{Composición del banco}
+\textbf{Propuesta pendiente de aprobación:} 60 ítems repartidos en seis tipos de intención comunicativa (10 por tipo), por ejemplo: consulta factual, explicación, instrucción, recomendación, resumen/reformulación y resolución de problema cotidiano. Los tipos deben ser aplicables a las cuatro variantes sin requerir conocimiento local especializado. Se descartarán ítems cuya respuesta correcta dependa de una ley, precio, noticia o dato geográfico local, salvo que ese conocimiento sea precisamente el objeto explícito y equivalente de la consulta.
+
+Cada registro maestro tendrá \texttt{item\_id}, categoría, intención, texto de referencia, versiones por variedad, respuesta esperada o criterios de aceptación, fuente de cualquier afirmación verificable, notas de adaptación y estado de revisión. Los ítems no se aprobarán por mera traducción literal: un lingüista revisor confirmará equivalencia semántica y hablantes nativos revisarán naturalidad, con cambios versionados y justificación.
+
+\section{Condiciones experimentales y trazabilidad}
+Se seleccionan dos modelos de proveedores distintos en endpoints estables: OpenAI GPT-5.4 Mini, snapshot \texttt{gpt-5.4-mini-2026-03-17}, y Google Gemini 3.8 Flash, identificador estable \texttt{gemini-3.8-flash}. La selección permite comparar dos servicios generales con tarifas publicadas bajas; no implica equivalencia de capacidad. La documentación oficial especifica snapshots, parámetros de razonamiento y tarifas [2], [3]. Se guardará el campo \texttt{modelVersion} devuelto por Google en cada respuesta, pues su identificador estable no contiene una fecha de snapshot.
+
+Todas las consultas serán de un solo turno, sin herramientas, búsqueda ni memoria. Se enviará la misma instrucción de sistema y un máximo de 1024 tokens de salida. Se omitirán temperatura y \texttt{top\_p}; se usarán los mínimos nativos de razonamiento disponibles (OpenAI: \texttt{none}; Gemini: \texttt{low}) y se registrarán por separado. La configuración reduce diferencias inducidas por razonamiento extendido, aunque las APIs no quedan idénticas [2], [3]. La recolección usará el nivel pagado de ambas APIs.
+
+Estimación inicial del costo: 792 llamadas por modelo (720 principales más 72 de piloto), con supuestos de 250 tokens de entrada y 180 de salida por llamada, más 20\% de contingencia. A precios estándar posteriores al descuento introductorio de Gemini, el presupuesto redondeado es USD 2,60; con la tarifa introductoria publicada hasta el 31 de diciembre de 2026, la estimación es USD 1,77. Se recalculará el costo con los tokens reales del piloto [2], [3].
+
+El orden de las condiciones se aleatorizará y se registrará la semilla. Se enviará el mismo conjunto de parámetros aplicables a cada modelo y se guardará la configuración efectiva por llamada; una diferencia inevitable entre APIs se documentará, no se ocultará. Se recomienda fijar una ventana corta de recolección y no cambiar snapshots a mitad de una corrida. Si el proveedor fuerza un cambio, se detendrá el lote y se decidirá si se reinicia bajo una versión homogénea.
+
+Para cada llamada se conservarán identificador de corrida, ítem y versión, modelo/snapshot, número de repetición, proveedor, parámetros solicitados y efectivos, semilla si existe, hora UTC, latencia, estado, texto bruto de salida y detalle técnico de fallo/reintento. Los fallos se registrarán como tales; no se borrarán ni se sustituirán silenciosamente. Las respuestas principales se distinguirán de las de piloto. No se incluirá información personal o sensible en las consultas.
+
+\section{Evaluación de respuestas}
+Cada respuesta se calificará a ciegas respecto de la variedad cuando sea factible. La propuesta es presentar respuestas con códigos aleatorios y mezclar condiciones, manteniendo la clave de variedad separada de los evaluadores hasta cerrar las calificaciones. El equipo completo participará en evaluación; cada respuesta recibirá al menos dos calificaciones independientes para estimar acuerdo, sujeto a disponibilidad.
+
+\subsection{Rúbrica ordinal propuesta}
+Se usará una escala de 1 (deficiente) a 5 (excelente), con anclajes específicos para reducir interpretaciones distintas:
+\begin{itemize}[leftmargin=*]
+\item \textbf{Precisión:} 1 contiene errores centrales; 3 es mayoritariamente correcto con una omisión o error menor; 5 es correcto, completo para la solicitud y sin afirmaciones no sustentadas relevantes.
+\item \textbf{Comprensión:} 1 interpreta mal la intención; 3 atiende el propósito general pero omite una restricción; 5 responde a la intención y respeta las restricciones explícitas.
+\item \textbf{Relevancia:} 1 es ajeno o evasivo; 3 es parcialmente pertinente o incluye desvíos; 5 aborda directamente lo solicitado sin contenido irrelevante sustancial.
+\end{itemize}
+La hoja de calificación incluirá además justificación breve y etiqueta de respuesta no evaluable (por ejemplo, error de servicio o salida vacía), que no se confundirá con puntuación 1. Se hará una sesión de calibración con respuestas de práctica excluidas de análisis y un manual de ejemplos para cada anclaje. Desacuerdos no se resolverán alterando calificaciones originales: se conservarán ambas y, si se requiere adjudicación, se registrará en campo separado.
+
+\subsection{Acuerdo entre evaluadores}
+Se calculará kappa ponderado con pesos cuadráticos para las puntuaciones ordinales en el subconjunto de respuestas calificadas por los mismos evaluadores. Se reportará el valor y, si el tamaño lo permite, un intervalo de confianza. El umbral 0,60 y la meta 0,70 o superior son los fijados por [1]. Si el acuerdo queda por debajo de 0,60, se revisarán los anclajes, se recalibrará y se volverán a calificar las respuestas afectadas antes de cerrar la matriz. Se conservarán tanto las calificaciones iniciales como las revisadas.
+
+\section{Consistencia y plan estadístico}
+\subsection{Operacionalización propuesta de consistencia}
+Para cada combinación ítem--modelo--variedad--dimensión, después de promediar los evaluadores de cada respuesta, se calcularán (i) el rango de las tres puntuaciones, máximo menos mínimo, y (ii) el indicador de acuerdo exacto, igual a 1 cuando las tres puntuaciones coinciden y 0 en caso contrario. Se resumirán sobre ítems con media, mediana y distribución. Menor rango y mayor proporción de acuerdo exacto indican mayor estabilidad de puntuación. No mide toda la variabilidad semántica de las respuestas y deberá reportarse como estabilidad de calificación, no como equivalencia textual.
+
+\subsection{Comparaciones propuestas}
+Para precisión, comprensión y relevancia, el resultado por ítem será la media de las puntuaciones de evaluadores y repeticiones. Se estimará la diferencia variedad menos control por cada modelo y dimensión. Se fija como análisis primario Wilcoxon de rangos con signo bilateral; se informarán mediana de diferencias y correlación biserial por rangos como tamaño del efecto. Se reportará también diferencia media pareada con intervalo de confianza del 95\% por bootstrap de ítems (10.000 remuestras, semilla 20261103), preservando el pareamiento.
+
+Para consistencia, se compararán por ítem el rango de variación y el acuerdo exacto de cada variedad frente al control, con pruebas pareadas compatibles con la escala. Se reportarán intervalos de confianza del 95\% y tamaños del efecto. Para cada combinación modelo--dimensión se ajustarán conjuntamente los tres valores p de las comparaciones dialecto--control con Holm--Bonferroni, $\alpha=0{,}05$, tal como indica [1]. Se presentarán resultados ajustados y sin ajustar. El plan deberá quedar aprobado por supervisión académica antes de la recolección principal.
+
+El plan queda congelado antes de la recolección principal. Se conservarán el código, semilla, dependencias, datos de análisis y versiones de documentos. Los análisis exploratorios posteriores se identificarán como tales. La propuesta de prueba e intervalos debe revisarse con la persona responsable de análisis estadístico y la supervisión académica, en particular por la escala ordinal y el número de comparaciones.
+
+\section{Estimación de recursos y decisiones pendientes}
+No se fija un costo monetario sin proveedor, modelo, tarifas vigentes y límites elegidos. Se estimará en semana 1 tras seleccionarlos y se actualizará con el piloto. La fórmula será:
+\begin{equation}
+C_{\mathrm{total}}=N_{\mathrm{in}}P_{\mathrm{in}}+N_{\mathrm{out}}P_{\mathrm{out}}+C_{\mathrm{reintentos}},
+\end{equation}
+donde $N_{\mathrm{in}}$ y $N_{\mathrm{out}}$ son tokens facturables agregados y $P$ las tarifas por unidad correspondientes al modelo y fecha de ejecución. El presupuesto incluirá llamadas piloto y margen operativo, separado del volumen analítico de 1.440 respuestas.
+
+\begin{table}[!t]
+\caption{Registro de decisiones de semana 1}
+\label{tab:decisions}
+\centering
+\scriptsize\setlength{\tabcolsep}{2.5pt}\begin{tabularx}{\columnwidth}{p{0.23\columnwidth}X p{0.21\columnwidth}}
+\toprule
+Decisión & Valor de trabajo & Estado \\
+\midrule
+Volumen y condiciones & 60 ítems, 4 variedades, 2 modelos, 3 repeticiones & Fijado por [1] \\
+Categorías del banco & Seis categorías balanceadas, diez ítems cada una & Selección de trabajo \\
+Anclajes & Bogotá, Ciudad de México, Buenos Aires y control panhispánico neutro & Alcance delimitado \\
+Piloto & I001, I011, I021, I031, I041, I051; excluir del análisis principal & Selección de trabajo \\
+Rúbrica & Anclajes 1--5 para precisión, comprensión y relevancia & Especificada; calibrar antes del piloto \\
+Consistencia & Rango entre tres puntuaciones y proporción de acuerdo exacto & Operacionalizada \\
+Prueba primaria & Wilcoxon pareado; efecto biserial; bootstrap 10.000 & Protocolo fijado; aprobación académica \\
+Corrección & Holm por modelo y dimensión sobre 3 contrastes & Fijado por [1] \\
+Modelos/proveedor & GPT-5.4 Mini snapshot y Gemini 3.8 Flash estable & Seleccionados; revalidar endpoint \\
+Parámetros/API & 1024 tokens; sin herramientas; esfuerzo mínimo nativo & Especificado \\
+Presupuesto & USD 2,60 estándar, con 20\% de contingencia & Reestimar en piloto \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Software y organización}
+El esqueleto Python en \texttt{src/} incluye configuración declarativa, validación de diseño y modelos, construcción y validación del banco pareado, y validación estructural de registros de calificación. Los clientes de proveedores permanecen desacoplados para preservar trazabilidad. El esquema canónico de puntuación incluye \texttt{response\_id}, \texttt{item\_id}, \texttt{dialect}, \texttt{model\_id}, \texttt{replicate}, \texttt{dimension}, \texttt{rater\_id} y \texttt{score}. Los modelos y parámetros de trabajo ya están registrados; la configuración bloquea recolección hasta cerrar las puertas de aprobación.
+
+El equipo usará GitHub y un tablero Kanban, con tres sprints de dos semanas, reunión de planeación al inicio, seguimiento semanal, revisión y retrospectiva al cierre. Se considerará hecho un entregable documentado, versionado y revisado por otro integrante [1].
+
+\begin{table}[ht]
+\caption{Responsabilidades iniciales por función}
+\centering
+\begin{tabularx}{\columnwidth}{p{0.31\columnwidth}X}
+\toprule
+Función & Responsabilidad \\
+\midrule
+Coordinación & Cronograma e integración \\
+Banco de consultas & Construcción y validación lingüística \\
+Framework & API, trazabilidad y repositorio \\
+Análisis & Protocolo estadístico y evaluación \\
+Supervisión & Validación académica \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Hitos de semana 1}
+La fase técnica de planificación deja versionados: (1) protocolo con decisiones estadísticas propuestas; (2) identificadores de modelos y proveedores; (3) presupuesto preliminar; (4) rúbrica y esquema de calificación; (5) configuración coherente y bloqueada contra ejecución incompleta; y (6) banco pareado y flujo de revisión preparados en semana 2. El visto bueno académico, la revisión lingüística por dos evaluadores y el piloto siguen siendo puertas explícitas y no se consideran aprobados por la existencia de los archivos.
+
+\section{Riesgos y controles}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Plazo de seis semanas:} mantener el framework estrecho y preparar en paralelo manual, calificación e informe.
+\item \textbf{Cambio de modelo:} fijar snapshot y ventana corta; detener y documentar cualquier cambio.
+\item \textbf{Adaptaciones poco naturales:} revisión cruzada y validación de hablantes nativos antes de aceptar ítems.
+\item \textbf{Bajo acuerdo:} ejemplos de calibración, doble calificación y revisión antes del cierre.
+\item \textbf{Límites o costos de API:} estimar en semana 1 y comprobar con el piloto; si no cabe, escalar la reducción de alcance para aprobación sin alterar silenciosamente el diseño.
+\item \textbf{Interpretación estadística:} aprobar por adelantado unidad, pruebas y familia de corrección; conservar protocolo y análisis versionados.
+\end{itemize}
+
+\clearpage
+\begin{thebibliography}{4}
+\bibitem{metodologia} Grupo 3, \emph{Metodología general del proyecto DIALECTO-LLM: Evaluación pareada del desempeño de modelos de lenguaje frente a la variación dialectal del español}, documento de trabajo, 2026.
+\bibitem{openai} OpenAI, ``GPT-5.4 Mini Model,'' OpenAI API documentation, consulted Nov. 3, 2026. [Online]. Available: \url{https://developers.openai.com/api/docs/models/gpt-5.4-mini}
+\bibitem{gemini} Google, ``Gemini 3.8 Flash'' and ``Gemini Developer API pricing,'' Google AI for Developers, consulted Nov. 3, 2026. [Online]. Available: \url{https://ai.google.dev/gemini-api/docs/latest-model}
+\bibitem{rae} Real Academia Española y Asociación de Academias de la Lengua Española, ``Conjugaciones verbales: formas del voseo rioplatense,'' \emph{Diccionario del estudiante}. [En línea]. Disponible: \url{https://www.rae.es/diccionario-estudiante/docs/conjugaciones-verbales.pdf}
+\end{thebibliography}
+\end{document}
