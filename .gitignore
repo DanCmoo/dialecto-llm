@@ -6,6 +6,10 @@ venv/
 *.egg-info/
 dist/
 build/
+.env
+.env.*
+!.env.example
+runs/
 
 # LaTeX build artifacts (keep the source .tex and deliverable .pdf)
 *.aux

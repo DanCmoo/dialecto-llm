@@ -15,12 +15,16 @@ Proyecto de evaluación pareada del desempeño de modelos de lenguaje ante varia
 
 ## Código
 
-`src/dialectollm/` contiene la configuración y validadores del estudio. El comando local se instala con:
+`src/dialectollm/` contiene la configuración, validadores y el planificador/ejecutor reanudable del estudio para OpenAI Responses API. El comando local se instala con:
 
 ```powershell
 python -m pip install -e .
 ```
 
-La recolección permanece bloqueada (`collection_ready=false`) hasta completar la revisión lingüística independiente, aprobar el protocolo académico y realizar el piloto de API y presupuesto. El código no hace llamadas a proveedores.
+El plan offline no consume API. Ejecutar el piloto sí realiza llamadas facturables y requiere `OPENAI_API_KEY` en el entorno o en un archivo `.env` local y la opción explícita `--execute`. Puedes copiar `.env.example` como `.env` en la raíz del proyecto y pegar allí tu clave. `.env` está excluido por `.gitignore`; el ejemplo no contiene secretos. Los límites visibles del proyecto son por minuto y tokens; el código mantiene una salvaguarda local separada de 100 intentos por modelo en 24 horas. El piloto registra resultados en `runs/`, carpeta excluida de Git. No subas la clave API ni los artefactos de respuesta al repositorio público.
+
+La configuración propone GPT-6 Luna y GPT-6.1 Terra con `medium`. El estudio completo son 1.440 respuestas en total e incluye los 144 resultados completados del piloto; quedan como máximo 1.296 llamadas nuevas. El calendario mantiene cada ítem completo y pareado: hasta cuatro ítems por lote (48 llamadas por modelo), con margen frente al RPD observado de 50. Consulta [src/README.md](src/README.md) para crear la corrida completa, integrar el piloto y reanudar cada lote.
+
+`collection_ready=false` se mantiene hasta registrar la revisión lingüística independiente y la aprobación académica de la rúbrica y del plan de análisis. La corrida conserva esta condición como aviso en el manifiesto; las respuestas no se habilitan para análisis hasta resolver esos hitos.
 
 Consulta [`src/README.md`](src/README.md) para los comandos y formatos de validación.

@@ -1,0 +1,73 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\title{Addendum de protocolo y bitácora de ejecución\\Experimento completo DIALECTO-LLM}
+\author{\IEEEauthorblockN{Grupo 3}\IEEEauthorblockA{Documento de trabajo\\12 de noviembre de 2026}}
+\begin{document}
+\maketitle
+\begin{abstract}
+Este addendum resuelve el conteo de llamadas del estudio y registra el inicio reproducible de la recolección completa. Las 144 respuestas exitosas del piloto se integran en el total de 1.440 respuestas previstas, siempre que coincidan la clave de llamada, el hash del prompt, el identificador de modelo y los parámetros de generación. El plan de 60 ítems contiene 15 lotes de hasta cuatro ítems pareados. La ejecución se pausó ante un límite RPD informado por la API; las respuestas exitosas están persistidas y pueden reanudarse sin repetirlas. El conjunto permanece marcado como no habilitado para análisis hasta cerrar las aprobaciones metodológicas pendientes.
+\end{abstract}
+
+\section{Alcance y conteo reconciliado}
+El diseño completo contiene 60 ítems, cuatro formulaciones dialectales, tres repeticiones y dos modelos. Por tanto, el total es $60\times4\times3\times2=1.440$ respuestas. Los seis ítems piloto (I001, I011, I021, I031, I041 e I051) están dentro de esos 60 ítems; no se agregan al total ni se vuelven a consultar. Se reutilizaron 144 respuestas completadas del piloto y quedan como máximo 1.296 respuestas nuevas. Los cuatro intentos fallidos del piloto no se importaron como respuestas, pero permanecen en los artefactos originales para trazabilidad.
+
+La importación comprobó que cada respuesta reutilizada tuviera una clave presente en ambos calendarios, hash de prompt coincidente, modelo solicitado idéntico y mismos parámetros de generación. En el JSONL de la corrida completa se conserva el ID de respuesta original y se añaden los campos de procedencia \texttt{source\_run\_id}, \texttt{source\_batch} y \texttt{reused\_from\_pilot}. El manifiesto registra hashes de los artefactos del piloto.
+
+\section{Calendario y control de consumo}
+El calendario fue generado con semilla 20261103 y conserva el orden pareado. Cada lote contiene cuatro ítems, equivalentes a 48 solicitudes por modelo; 60 ítems producen 15 lotes. El tamaño del lote (48) se separa de la salvaguarda local de ventana móvil (100 intentos por modelo/24 h). La ejecución puede restringirse por invocación con \texttt{--max-new-requests-per-model}. El pacing configurado es 10 RPM para Luna y 3 RPM para Terra.
+
+El 12 de noviembre de 2026 a las 10:39:56 UTC (05:39:56 COT), Terra respondió HTTP 429: RPD límite 50, uso 50, solicitud adicional 1, con espera indicada de 28 min 48 s. El programa registró el fallo y se detuvo sin reintento automático. Según la guía de OpenAI, un 429 requiere identificar el límite concreto y seguir la espera indicada; los intentos fallidos también pueden contribuir a los límites de corto plazo \cite{openai429}. No se asume que el cupo se haya restablecido: se debe comprobar al reanudar.
+
+\section{Estado de la corrida}
+A las 10:40 UTC, el comando de estado mostró 174 de 1.440 claves únicas completadas, incluyendo 144 respuestas reutilizadas y 30 nuevas respuestas exitosas. Quedaron 1.266 claves pendientes y un intento 429 sin resolver; los éxitos no se repiten. La corrida tiene 87 respuestas completadas por modelo, 87 condiciones pareadas y siete ítems completos. El costo estimado acumulado a partir del uso devuelto por la API es USD 0,0456034; excluye el rechazo 429 sin respuesta de uso.
+
+\begin{table}[ht]
+\caption{Estado reproducible al pausar}
+\centering
+\begin{tabularx}{\columnwidth}{Xr}
+\toprule
+Indicador & Estado \\
+\midrule
+Respuestas previstas & 1.440 \\
+Respuestas exitosas & 174 (12,08\%) \\
+Reutilizadas del piloto & 144 \\
+Nuevas exitosas & 30 \\
+Pendientes & 1.266 \\
+Intentos fallidos sin resolver & 1 \\
+Condiciones pareadas completadas & 87/720 \\
+Ítems completos & 7/60 \\
+Costo estimado acumulado & USD 0,0456034 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Reanudación y reproducibilidad}
+La corrida está guardada localmente en \path{runs/experimento-completo-2026-11-12}. Estado sin textos de respuesta:
+\begin{verbatim}
+$RUN = '..\runs\experimento-completo-' +
+       '2026-11-12'
+python -m dialectollm run-status $RUN
+\end{verbatim}
+Tras la espera comunicada por la API y una nueva comprobación del límite, reanudar el lote conservando sus éxitos:
+\begin{verbatim}
+python -m dialectollm run-pilot $RUN `
+  --batch day1 --retry-failed `
+  --max-new-requests-per-model
+  12 --execute
+\end{verbatim}
+El tope 12 por modelo deja margen respecto de la salvaguarda local restante al momento de la pausa; si el límite de la API persiste, el ejecutor registrará el rechazo y se detendrá otra vez. Los demás lotes se ejecutan secuencialmente cuando haya cuota. El registro completo está en \texttt{responses.jsonl}; el plan, manifiesto y entradas congeladas están en la misma carpeta. No incluir esos artefactos ni \texttt{.env} en Git.
+
+\section{Puerta de análisis}
+El manifiesto conserva \texttt{analysis\_eligible=false}. La recolección y preservación técnica de datos no equivalen a declarar aprobado el estudio: la revisión lingüística doble y la aprobación académica de rúbrica y plan estadístico continúan pendientes en \texttt{src/config/study\_config.json}. Una vez registradas, el conjunto podrá someterse a la validación de calificaciones y al análisis previamente especificado.
+
+\begin{thebibliography}{1}
+\bibitem{openai429} OpenAI, ``Troubleshooting API rate limits and 429 errors,'' OpenAI Help Center, actualizado 2026. [En línea]. Disponible: \url{https://help.openai.com/en/articles/5955604-troubleshooting-api-rate-limits-and-429-errors}. Consultado: 12 nov. 2026.
+\end{thebibliography}
+\end{document}

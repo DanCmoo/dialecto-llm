@@ -13,36 +13,44 @@
   "control_dialect": "std",
   "models": [
     {
-      "alias": "gpt54_mini",
+      "alias": "gpt6_luna",
       "provider": "OpenAI API",
-      "model_id": "gpt-5.4-mini-2026-03-17",
-      "snapshot": "gpt-5.4-mini-2026-03-17",
-      "input_usd_per_million": 0.75,
-      "output_usd_per_million": 4.5,
-      "price_checked": "2026-11-03"
+      "model_id": "gpt-6-luna",
+      "snapshot": "rolling model alias; persist response.model for every call",
+      "input_usd_per_million": 0.1,
+      "output_usd_per_million": 0.5,
+      "price_checked": "2026-11-11"
     },
     {
-      "alias": "gemini38_flash",
-      "provider": "Google Gemini Developer API",
-      "model_id": "gemini-3.8-flash",
-      "snapshot": "stable-GA; record provider modelVersion for every response",
-      "input_usd_per_million": 0.75,
-      "output_usd_per_million": 3.75,
-      "price_checked": "2026-11-03",
-      "price_valid_through": "2026-12-31",
-      "input_usd_per_million_after_2026": 1.5,
-      "output_usd_per_million_after_2026": 7.5
+      "alias": "gpt61_terra",
+      "provider": "OpenAI API",
+      "model_id": "gpt-6.1-terra",
+      "snapshot": "rolling model alias; persist response.model for every call",
+      "input_usd_per_million": 1.0,
+      "output_usd_per_million": 5.0,
+      "price_checked": "2026-11-11"
     }
   ],
-  "model_selection_rationale": "Two distinct providers, stable/GA endpoints, text-capable general models, low published token rates; not a claim of equal model capability.",
+  "model_selection_rationale": "Two low-cost OpenAI model IDs are selected for an initial within-provider comparison. This does not compare providers or claim equal model capability. Record the returned model ID because these are rolling aliases.",
   "generation": {
     "system_instruction": "Responde en español con precisión y de forma concisa. Respeta el formato y las restricciones explícitas. Si la consulta no determina una respuesta única, indica los supuestos. No añadas datos locales que no se soliciten.",
     "max_output_tokens": 1024,
     "tools_enabled": false,
     "conversation_state": "independent_single_turn",
-    "temperature": "provider_default_omitted",
-    "top_p": "provider_default_omitted",
-    "native_effort": {"gpt54_mini": "none", "gemini38_flash": "low"}
+    "temperature": "omitted",
+    "top_p": "omitted",
+    "store": false,
+    "native_effort": {"gpt6_luna": "medium", "gpt61_terra": "medium"}
+  },
+  "execution": {
+    "api": "OpenAI Responses API",
+    "requests_per_minute": {"gpt6_luna": 10, "gpt61_terra": 3},
+    "local_requests_per_rolling_24h_per_model": 100,
+    "quota_observed": "2026-11-11; re-check OpenAI API Platform Limits before each batch",
+    "pairing_unit": "one item with all four dialects and three replicates per model",
+    "calls_per_item_per_model": 12,
+    "max_complete_items_per_batch": 4,
+    "daily_schedule_note": "At 50 requests/day/model, schedule four complete items (48 calls/model), leaving two calls of buffer. Execute the next batch only after the quota resets."
   },
   "repetitions": 3,
   "dimensions": ["precision", "comprehension", "relevance"],
@@ -55,7 +63,7 @@
   "primary_test": "wilcoxon_signed_rank_paired",
   "consistency_metrics": ["three_run_score_range", "three_run_exact_agreement"],
   "pilot_items": ["I001", "I011", "I021", "I031", "I041", "I051"],
-  "pilot_responses_excluded_from_main_1440": 144,
+  "pilot_responses_reused_in_full_study": 144,
   "expected_main_responses": 1440,
   "dialect_anchors": {
     "co": "urban conversational Bogotá; not representative of all Colombia",
@@ -86,17 +94,19 @@
   "budget_assumptions": {
     "estimated_prompt_tokens_per_response": 250,
     "estimated_generated_tokens_per_response": 180,
-    "calls_per_model_including_pilot": 792,
-    "total_calls_both_models_including_pilot": 1584,
+    "calls_per_model_including_pilot": 720,
+    "total_calls_both_models_including_pilot": 1440,
     "contingency_fraction": 0.20,
-    "budget_usd_round_up": 2.6,
-    "estimate_scope": "paid standard API rates at post-2026 introductory Google price; actual usage/prices must be checked at execution"
+    "budget_usd_round_up": 1.21,
+    "estimate_scope": "standard API rates checked 2026-11-11; assumes billed output tokens average 180 per response, includes 20% contingency, and is replaced with actual pilot usage. Pilot calls are reused in the 1,440-call total. Reasoning tokens are billed as output tokens."
   },
   "randomization_seed": 20261103,
   "notes": [
-    "Model identifiers selected from current official documentation on 2026-11-03; recheck endpoint and rates immediately before running.",
+    "Model IDs and standard token rates checked in official OpenAI documentation on 2026-11-11; aliases are rolling, so record the returned model ID and recheck immediately before running.",
     "Dialect versions require two independent native/expert reviews before the six-item pilot.",
     "Statistical plan is an operational recommendation; document supervisor approval before primary collection.",
-    "Paid API tier only; the model cost estimate is token-assumption based and excludes free-tier data policies."
+    "The current API account limits are a dated operational snapshot, not a study invariant; re-check them before every run batch.",
+    "The six pilot items belong to the 60-item study. Reuse completed pilot calls only when call key, prompt hash, model, and generation settings match; do not send those calls twice.",
+    "API outputs are stored locally in ignored run directories; never commit API keys or response artifacts."
   ]
 }

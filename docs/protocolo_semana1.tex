@@ -8,13 +8,13 @@
 \usepackage{array}
 \usepackage{enumitem}
 \usepackage{url}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \title{Protocolo de Fundamentos y Especificación Inicial\\Proyecto DIALECTO-LLM}
 \author{\IEEEauthorblockN{Grupo 3}\IEEEauthorblockA{Documento de trabajo\\Noviembre de 2026}}
 \begin{document}
 \maketitle
 \begin{abstract}
-Este documento concreta la fase de fundamentos (semana 1) del proyecto DIALECTO-LLM, que estudiará si el desempeño de dos modelos de lenguaje cambia cuando una consulta semánticamente equivalente se formula en español colombiano, mexicano, rioplatense o estandarizado. Consolida las restricciones ya fijadas por la metodología del proyecto y propone decisiones operativas para el protocolo de datos, evaluación, estadística y software. Las decisiones que requieren confirmación académica se identifican como propuestas; no se presenta como ejecutada la recolección ni como elegidos modelos o proveedores que todavía no están especificados.
+Este documento concreta la fase de fundamentos (semana 1) del proyecto DIALECTO-LLM, que estudiará si el desempeño de dos modelos de lenguaje cambia cuando una consulta semánticamente equivalente se formula en español colombiano, mexicano, rioplatense o estandarizado. Consolida las restricciones ya fijadas por la metodología y registra decisiones operativas para datos, evaluación, estadística y software. La selección de modelos se actualizó el 11 de noviembre de 2026 a GPT-6 Luna y GPT-6.1 Terra; el visto bueno académico y las revisiones lingüísticas se mantienen pendientes. No se presenta como ejecutada la recolección principal.
 \end{abstract}
 \begin{IEEEkeywords}
 modelos de lenguaje, variación dialectal, español, evaluación pareada, reproducibilidad
@@ -60,15 +60,15 @@ La unidad de aleatorización será la llamada individual. El resultado primario 
 Cada registro maestro tendrá \texttt{item\_id}, categoría, intención, texto de referencia, versiones por variedad, respuesta esperada o criterios de aceptación, fuente de cualquier afirmación verificable, notas de adaptación y estado de revisión. Los ítems no se aprobarán por mera traducción literal: un lingüista revisor confirmará equivalencia semántica y hablantes nativos revisarán naturalidad, con cambios versionados y justificación.
 
 \section{Condiciones experimentales y trazabilidad}
-Se seleccionan dos modelos de proveedores distintos en endpoints estables: OpenAI GPT-5.4 Mini, snapshot \texttt{gpt-5.4-mini-2026-03-17}, y Google Gemini 3.8 Flash, identificador estable \texttt{gemini-3.8-flash}. La selección permite comparar dos servicios generales con tarifas publicadas bajas; no implica equivalencia de capacidad. La documentación oficial especifica snapshots, parámetros de razonamiento y tarifas [2], [3]. Se guardará el campo \texttt{modelVersion} devuelto por Google en cada respuesta, pues su identificador estable no contiene una fecha de snapshot.
+La pareja de trabajo se actualizó a OpenAI GPT-6 Luna (\texttt{gpt-6-luna}) y GPT-6.1 Terra (\texttt{gpt-6.1-terra}). Ambos se consultarán por la API de Responses con esfuerzo de razonamiento \texttt{medium}. La comparación será entre dos modelos de un mismo proveedor; no permitirá atribuir diferencias a proveedores distintos ni implica paridad de capacidad. Los identificadores son alias móviles, por lo que se archivará el campo \texttt{model} devuelto en cada respuesta, junto con fecha UTC, parámetros efectivos y uso. Los precios estándar consultados el 11 de noviembre de 2026 son USD 0,10/M tokens de entrada y 0,50/M de salida para Luna, y USD 1/M de entrada y 5/M de salida para Terra [2], [3].
 
-Todas las consultas serán de un solo turno, sin herramientas, búsqueda ni memoria. Se enviará la misma instrucción de sistema y un máximo de 1024 tokens de salida. Se omitirán temperatura y \texttt{top\_p}; se usarán los mínimos nativos de razonamiento disponibles (OpenAI: \texttt{none}; Gemini: \texttt{low}) y se registrarán por separado. La configuración reduce diferencias inducidas por razonamiento extendido, aunque las APIs no quedan idénticas [2], [3]. La recolección usará el nivel pagado de ambas APIs.
+Todas las consultas serán de un solo turno, sin herramientas ni búsqueda. Se enviará la misma instrucción de sistema y un máximo de 1024 tokens de salida. Se omitirán temperatura y \texttt{top\_p}; ambos modelos usarán \texttt{medium}. Las solicitudes se enviarán con \texttt{store=false}; las respuestas se conservarán localmente en artefactos excluidos de Git [4]. Se registrarán los tokens facturados de entrada y salida; el conteo de salida incluye tokens de razonamiento [2], [3].
 
-Estimación inicial del costo: 792 llamadas por modelo (720 principales más 72 de piloto), con supuestos de 250 tokens de entrada y 180 de salida por llamada, más 20\% de contingencia. A precios estándar posteriores al descuento introductorio de Gemini, el presupuesto redondeado es USD 2,60; con la tarifa introductoria publicada hasta el 31 de diciembre de 2026, la estimación es USD 1,77. Se recalculará el costo con los tokens reales del piloto [2], [3].
+Estimación de referencia: 792 llamadas por modelo (720 principales más 72 de piloto), con supuestos de 250 tokens de entrada y 180 tokens facturables de salida por llamada. El costo modelado suma USD 1,01; con 20\% de contingencia se redondea a USD 1,21. Es una aproximación, no un tope: el esfuerzo \texttt{medium} puede elevar los tokens facturados de salida. El piloto sustituirá estos supuestos por consumo real y se volverán a verificar las tarifas antes de la recolección principal [2], [3].
 
-El orden de las condiciones se aleatorizará y se registrará la semilla. Se enviará el mismo conjunto de parámetros aplicables a cada modelo y se guardará la configuración efectiva por llamada; una diferencia inevitable entre APIs se documentará, no se ocultará. Se recomienda fijar una ventana corta de recolección y no cambiar snapshots a mitad de una corrida. Si el proveedor fuerza un cambio, se detendrá el lote y se decidirá si se reinicia bajo una versión homogénea.
+El planificador asignará una semilla, aleatorizará dialecto y repetición dentro de cada ítem y contrabalanceará el orden de los modelos dentro de cada condición pareada. Un ítem solo se considera completo cuando existen las cuatro versiones, las tres repeticiones y ambos modelos. Se archivarán el manifiesto, hashes de la configuración y el banco, calendario de llamadas y parámetros efectivos. Los alias móviles requieren registrar el ID de modelo devuelto; si cambia durante una corrida, se detendrá el lote y se decidirá si se reinicia homogéneamente.
 
-Para cada llamada se conservarán identificador de corrida, ítem y versión, modelo/snapshot, número de repetición, proveedor, parámetros solicitados y efectivos, semilla si existe, hora UTC, latencia, estado, texto bruto de salida y detalle técnico de fallo/reintento. Los fallos se registrarán como tales; no se borrarán ni se sustituirán silenciosamente. Las respuestas principales se distinguirán de las de piloto. No se incluirá información personal o sensible en las consultas.
+Para cada llamada se conservarán identificador de corrida, ítem y versión, modelo solicitado y devuelto, número de repetición, semilla, hora UTC, latencia, ID de respuesta, estado, uso facturado, costo estimado y texto bruto de salida. Los fallos se registrarán sin reintento automático; el ejecutor se detendrá y permitirá reanudar solo las llamadas pendientes. Las respuestas piloto se distinguirán de las principales y se excluirán del análisis de 1.440 respuestas. No se incluirá información personal o sensible en las consultas.
 
 \section{Evaluación de respuestas}
 Cada respuesta se calificará a ciegas respecto de la variedad cuando sea factible. La propuesta es presentar respuestas con códigos aleatorios y mezclar condiciones, manteniendo la clave de variedad separada de los evaluadores hasta cerrar las calificaciones. El equipo completo participará en evaluación; cada respuesta recibirá al menos dos calificaciones independientes para estimar acuerdo, sujeto a disponibilidad.
@@ -97,7 +97,7 @@ Para consistencia, se compararán por ítem el rango de variación y el acuerdo 
 El plan queda congelado antes de la recolección principal. Se conservarán el código, semilla, dependencias, datos de análisis y versiones de documentos. Los análisis exploratorios posteriores se identificarán como tales. La propuesta de prueba e intervalos debe revisarse con la persona responsable de análisis estadístico y la supervisión académica, en particular por la escala ordinal y el número de comparaciones.
 
 \section{Estimación de recursos y decisiones pendientes}
-No se fija un costo monetario sin proveedor, modelo, tarifas vigentes y límites elegidos. Se estimará en semana 1 tras seleccionarlos y se actualizará con el piloto. La fórmula será:
+La estimación de trabajo es USD 1,21 para los dos modelos y las 1.584 llamadas principales y piloto, con los supuestos de tokens declarados y 20\% de contingencia. El consumo real se actualizará con la respuesta de uso de cada llamada. La fórmula es:
 \begin{equation}
 C_{\mathrm{total}}=N_{\mathrm{in}}P_{\mathrm{in}}+N_{\mathrm{out}}P_{\mathrm{out}}+C_{\mathrm{reintentos}},
 \end{equation}
@@ -119,15 +119,15 @@ Rúbrica & Anclajes 1--5 para precisión, comprensión y relevancia & Especifica
 Consistencia & Rango entre tres puntuaciones y proporción de acuerdo exacto & Operacionalizada \\
 Prueba primaria & Wilcoxon pareado; efecto biserial; bootstrap 10.000 & Protocolo fijado; aprobación académica \\
 Corrección & Holm por modelo y dimensión sobre 3 contrastes & Fijado por [1] \\
-Modelos/proveedor & GPT-5.4 Mini snapshot y Gemini 3.8 Flash estable & Seleccionados; revalidar endpoint \\
-Parámetros/API & 1024 tokens; sin herramientas; esfuerzo mínimo nativo & Especificado \\
-Presupuesto & USD 2,60 estándar, con 20\% de contingencia & Reestimar en piloto \\
+Modelos/proveedor & GPT-6 Luna y GPT-6.1 Terra, OpenAI & Selección de trabajo; mismo proveedor \\
+Parámetros/API & Responses; 1024 tokens; sin herramientas; esfuerzo medium; store=false & Especificado \\
+Presupuesto & USD 1,21 estimado con supuestos y 20\% de contingencia & Reestimar con uso real \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
 \section{Software y organización}
-El esqueleto Python en \texttt{src/} incluye configuración declarativa, validación de diseño y modelos, construcción y validación del banco pareado, y validación estructural de registros de calificación. Los clientes de proveedores permanecen desacoplados para preservar trazabilidad. El esquema canónico de puntuación incluye \texttt{response\_id}, \texttt{item\_id}, \texttt{dialect}, \texttt{model\_id}, \texttt{replicate}, \texttt{dimension}, \texttt{rater\_id} y \texttt{score}. Los modelos y parámetros de trabajo ya están registrados; la configuración bloquea recolección hasta cerrar las puertas de aprobación.
+El paquete Python en \texttt{src/} incluye validadores y un planificador/ejecutor piloto de OpenAI Responses API. \texttt{plan-pilot} opera offline y genera manifiesto, hashes y calendario; \texttt{run-pilot} requiere \texttt{--execute}, lee la clave \texttt{OPENAI\_API\_KEY} del entorno local o de un archivo \texttt{.env} excluido de Git, registra las respuestas en JSONL local, limita solicitudes por modelo y reanuda sin duplicar llamadas exitosas. El archivo versionado \texttt{.env.example} contiene únicamente un marcador vacío. Un ítem requiere 12 llamadas por modelo (24 en total). En API Platform, al 11 de noviembre de 2026, se observan para Luna 10 RPM y 60.000 TPM, y para Terra 3 RPM y 10.000 TPM; la tabla no muestra RPD. Durante el lote 2, la API devolvió HTTP 429 para ambos modelos con límite RPD 50, uso 50 y petición adicional 1, y recomendó esperar 28 min 48 s [6]. La salvaguarda local inicial de 50 intentos fue una suposición errónea, no el límite observado en la interfaz; se elevó a 100 para permitir que la API determine el tope efectivo, manteniendo el pacing RPM y sin reintentos automáticos. La ejecución se detuvo ante los rechazos. La plantilla de revisión lingüística permanece sin completar y \texttt{collection\_ready=false}; la ejecución piloto no desbloquea la recolección principal.
 
 El equipo usará GitHub y un tablero Kanban, con tres sprints de dos semanas, reunión de planeación al inicio, seguimiento semanal, revisión y retrospectiva al cierre. Se considerará hecho un entregable documentado, versionado y revisado por otro integrante [1].
 
@@ -160,11 +160,12 @@ La fase técnica de planificación deja versionados: (1) protocolo con decisione
 \item \textbf{Interpretación estadística:} aprobar por adelantado unidad, pruebas y familia de corrección; conservar protocolo y análisis versionados.
 \end{itemize}
 
-\clearpage
-\begin{thebibliography}{4}
+\begin{thebibliography}{6}
 \bibitem{metodologia} Grupo 3, \emph{Metodología general del proyecto DIALECTO-LLM: Evaluación pareada del desempeño de modelos de lenguaje frente a la variación dialectal del español}, documento de trabajo, 2026.
-\bibitem{openai} OpenAI, ``GPT-5.4 Mini Model,'' OpenAI API documentation, consulted Nov. 3, 2026. [Online]. Available: \url{https://developers.openai.com/api/docs/models/gpt-5.4-mini}
-\bibitem{gemini} Google, ``Gemini 3.8 Flash'' and ``Gemini Developer API pricing,'' Google AI for Developers, consulted Nov. 3, 2026. [Online]. Available: \url{https://ai.google.dev/gemini-api/docs/latest-model}
+\bibitem{luna} OpenAI, ``GPT-6 Luna Model,'' OpenAI API documentation, consulted Nov. 11, 2026. [Online]. Available: \url{https://developers.openai.com/api/docs/models/gpt-6-luna}
+\bibitem{terra} OpenAI, ``GPT-6.1 Terra Model,'' OpenAI API documentation, consulted Nov. 11, 2026. [Online]. Available: \url{https://developers.openai.com/api/docs/models/gpt-6.1-terra}
+\bibitem{responses} OpenAI, ``Responses API reference,'' OpenAI API documentation, consulted Nov. 11, 2026. [Online]. Available: \url{https://developers.openai.com/api/docs/api-reference/responses}
 \bibitem{rae} Real Academia Española y Asociación de Academias de la Lengua Española, ``Conjugaciones verbales: formas del voseo rioplatense,'' \emph{Diccionario del estudiante}. [En línea]. Disponible: \url{https://www.rae.es/diccionario-estudiante/docs/conjugaciones-verbales.pdf}
+\bibitem{ratelimits} OpenAI, ``Troubleshooting API rate limits and 429 errors,'' OpenAI Help Center, consulted Nov. 11, 2026. [Online]. Available: \url{https://help.openai.com/en/articles/5955604-troubleshooting-api-rate-limits-and-429-errors}
 \end{thebibliography}
 \end{document}

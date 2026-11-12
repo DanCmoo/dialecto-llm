@@ -1,0 +1,29 @@
+\documentclass[conference]{IEEEtran}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\title{DIALECTO-LLM: auditoría y comparación exploratoria incremental}
+\author{Informe de avance del estudio}
+\begin{document}\maketitle
+\begin{abstract}
+Se auditan 288 de 1.440 respuestas previstas y se prepara una evaluación humana ciega con seguimiento incremental. Los resultados son descriptivos y no son conclusiones confirmatorias sobre calidad o efectos dialectales.
+\end{abstract}
+\section{Alcance y decisiones}
+El protocolo establece 60 ítems, cuatro variedades, dos modelos, tres repeticiones, calificación ordinal de precisión, comprensión y relevancia por dos personas, y pruebas pareadas con corrección por multiplicidad [1], [2]. La rúbrica operativa y el análisis propuestos siguen pendientes de aprobación académica. El protocolo inicial excluía el piloto; el addendum y la decisión de esta tarea incorporan sus 144 respuestas al total de 1.440 [3]. La recolección realizada con las puertas aún abiertas no constituye aprobación retroactiva. Se prohibieron nuevas llamadas API en esta tarea.
+\section{Auditoría de la corrida}
+La instantánea del 12 de noviembre de 2026 contiene 289 registros de intento: 288 respuestas completas únicas, 144 por modelo, incluidas las 144 importadas del piloto; quedan 1.152 llamadas. Hay 12 ítems completos, 144 pares ítem--variedad--repetición completos, ningún par con una sola respuesta y 576 pares sin respuestas. No se detectaron incidencias en claves, IDs, salidas, estados, hashes, calendario, modelo solicitado, repeticiones, uso ni costo. Los modelos devueltos coinciden con los solicitados; son alias móviles. Un error histórico 429 tiene respuesta posterior completa para la misma clave; no hay fallos pendientes. El costo del intento fallido no es observable.
+
+Luna registra 12.396 tokens de entrada, 11.765 de salida (6.702 de razonamiento) y USD 0,0071221; Terra, 12.396 de entrada, 8.777 de salida (3.981 de razonamiento) y USD 0,056281. El total estimado es USD 0,0634031, a tarifas congeladas; no es una factura y excluye cargos desconocidos por el fallo. El razonamiento ya está incluido en salida.
+\section{Comparación y limitaciones}
+En los 144 pares completos, Terra menos Luna promedia $-20{,}75$ tokens de salida (mediana $-19$) y $-4{,}08$ caracteres. Las unidades son respuestas pareadas, no ítems independientes; estos indicadores no miden calidad y los tokens de salida incluyen razonamiento. No se atribuye causalidad. Los 12 ítems disponibles no representan los 60 por selección aleatoria garantizada y aún no se dispone de puntuaciones humanas; no existe comparación de precisión, comprensión o relevancia. Los pares pendientes se conservan en tabla separada.
+\section{Calificación y actualización}
+Cada evaluador recibe códigos aleatorios persistentes, consulta, respuesta y criterios de referencia, sin identificadores de modelo. La clave queda separada en \texttt{runs/}, excluida de Git. El texto puede revelar la variedad, por lo que el cegamiento es parcial. La escala 1--5 y sus anclajes están en [1] y las instrucciones operativas en \texttt{src/ANALISIS.md}. Las hojas mantienen identidades seudónimas separadas y no contienen calificaciones inventadas. La validación parcial detecta errores y no evaluables; la independencia real y el acuerdo deben comprobarlos personas.
+
+Al incorporar respuestas, el script local regenera auditoría, cobertura y pares y añade filas sin sobrescribir calificaciones. Debe ejecutarse con la recolección pausada. La reproducibilidad requiere conservar la clave privada y los archivos de evaluadores. No se modifica el banco ni el manifiesto.
+\section{Puertas del análisis confirmatorio}
+Se necesitan revisión lingüística doble, calibración, acuerdo, calificaciones suficientes y aprobación académica registrada. El plan propuesto agrega evaluadores y después tres repeticiones por ítem; aplica Wilcoxon bilateral a diferencias dialecto--control, correlación biserial por rangos, bootstrap pareado por ítem (10.000 remuestras, semilla 20261103) y Holm para los tres contrastes de cada familia modelo--dimensión [1], [2]. No se ejecuta inferencia en este avance. La comparación entre modelos es exploratoria y no reemplaza los contrastes previstos.
+\begin{thebibliography}{3}
+\bibitem{p} DIALECTO-LLM, ``Protocolo semana 1,'' documentación del proyecto.
+\bibitem{d} DIALECTO-LLM, ``Diseño del banco semana 2,'' documentación del proyecto.
+\bibitem{a} DIALECTO-LLM, ``Addendum de ejecución del experimento,'' documentación del proyecto.
+\end{thebibliography}\end{document}
