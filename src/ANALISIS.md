@@ -21,3 +21,30 @@ Guarde los dos archivos recibidos en su ubicación original y vuelva a ejecutar 
 `pares_completos.csv` contiene diferencias de tokens de salida y caracteres, no calidad; A es Luna y B Terra. `pares_pendientes.csv` distingue pares con una respuesta de pares sin ninguna. `cobertura.csv`, `incidencias.csv`, `intentos_historicos.csv` y `resumen.json` permiten auditar la corrida. Los costos son estimaciones a las tarifas congeladas y excluyen posibles cobros de intentos fallidos; los tokens de razonamiento están incluidos en los tokens de salida.
 
 El análisis confirmatorio no se ejecuta aquí. Requiere registrar la revisión lingüística doble, aprobación académica de rúbrica y plan, calibración/acuerdo y calificaciones suficientes; definir tratamiento de no evaluables y verificar el estado de elegibilidad sin modificar retroactivamente el manifiesto. El plan pendiente especifica promedio entre evaluadores y luego tres repeticiones por ítem, contrastes de cada dialecto frente a estándar por modelo y dimensión, Wilcoxon bilateral pareado, correlación biserial por rangos, bootstrap pareado por ítem de 10.000 remuestras con semilla 20261103 y Holm por los tres contrastes de cada familia modelo-dimensión. La comparación entre modelos de este flujo es exploratoria, no sustituye ese plan.
+
+## Reproducir el informe del corte sin API
+
+Los dos programas validan los registros antes de exportar y comparten el bloqueo `analisis/.analisis.lock`. Si una ejecución termina abruptamente, compruebe que no queda un proceso activo antes de retirar ese bloqueo. Las escrituras son atómicas por archivo, no por conjunto: consulte el estado de validación del JSON y no use tablas antiguas después de un error. Se comprueba que las fuentes no cambien durante la lectura; mantenga pausada la recolección y la edición de calificaciones durante la actualización. Los errores de calificación conservan las hojas humanas, incluidas sus columnas adicionales, y suspenden la publicación de puntuaciones validadas.
+
+Pruebas locales con datos sintéticos, sin acceso a la API: desde `src/`, ejecute `python -m unittest discover -s tests -q`.
+
+Desde la raíz, con el piloto y la corrida principal originales en `runs/`:
+
+```powershell
+$run = 'runs/experimento-completo-2026-11-12'
+Push-Location src
+python -m dialectollm run-status "../$run"
+Pop-Location
+python src/dialectollm/analysis.py $run
+python src/dialectollm/indicadores_objetivos.py $run
+```
+
+El último comando genera `indicadores_objetivos.json`, `indicadores_pares.csv` y `marcadores_numericos.csv` en `analisis/`. Compara ítems completos y registra en el JSON los denominadores por contraste entre modelos y frente al control. Los CSV contienen las medidas por par y la detección de marcadores. Un 1 indica presencia textual y un 0 indica ausencia, no error. No incorpora esas etiquetas a la rúbrica humana. Compare las huellas SHA-256 de los dos resúmenes para confirmar que parten del mismo archivo de respuestas.
+
+El [informe](../docs/informe_proyecto.md) corresponde al corte del 12 de noviembre de 2026 y contiene cifras revisadas. Para regenerar su presentación (no recalcula las cifras), use Python con ReportLab:
+
+```powershell
+python src/render_informe.py docs/informe_proyecto.md
+```
+
+El comando escribe el PDF de lectura y la fuente LaTeX IEEEtran desde el mismo texto. El PDF se compone con ReportLab; si dispone de una distribución TeX y de IEEEtran, puede compilar también la fuente `.tex`.
