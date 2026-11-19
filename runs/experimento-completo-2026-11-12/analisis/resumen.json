@@ -1,0 +1,61 @@
+{
+  "estado_validacion": "valido",
+  "analisis_actualizado": true,
+  "registros": 481,
+  "programadas": 1440,
+  "completadas": 480,
+  "reutilizadas_piloto": 144,
+  "por_modelo": {
+    "gpt6_luna": 240,
+    "gpt61_terra": 240
+  },
+  "modelos_devueltos": [
+    {
+      "alias": "gpt61_terra",
+      "devuelto": "gpt-6.1-terra",
+      "n": 240
+    },
+    {
+      "alias": "gpt6_luna",
+      "devuelto": "gpt-6-luna",
+      "n": 240
+    }
+  ],
+  "items_completos": 20,
+  "pares_completos": 240,
+  "pares_incompletos": 0,
+  "pares_sin_respuestas": 480,
+  "fallos_historicos": 1,
+  "fallos_pendientes": 0,
+  "incidencias": 0,
+  "uso": {
+    "gpt6_luna": {
+      "respuestas": 240,
+      "input_tokens": 20433,
+      "output_tokens": 27917,
+      "reasoning_tokens": 13941,
+      "total_tokens": 48350,
+      "costo_usd": 0.016001799999999993
+    },
+    "gpt61_terra": {
+      "respuestas": 240,
+      "input_tokens": 20433,
+      "output_tokens": 24843,
+      "reasoning_tokens": 10869,
+      "total_tokens": 45276,
+      "costo_usd": 0.14464799999999997
+    }
+  },
+  "calificaciones_validas": 0,
+  "decisiones_no_evaluables": 0,
+  "errores_calificaciones": 0,
+  "modelos_orden_pares": [
+    "gpt6_luna",
+    "gpt61_terra"
+  ],
+  "media_diferencia_tokens_b_menos_a": -12.808333333333334,
+  "mediana_diferencia_tokens_b_menos_a": -13.5,
+  "media_diferencia_caracteres_b_menos_a": -0.125,
+  "analysis_eligible_manifiesto": false,
+  "sha256_respuestas_leidas": "7363e78e1c411ecd682e5d7cdd15660b4f38fc46b47d4fca488289fa624e3fd7"
+}

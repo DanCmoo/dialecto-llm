@@ -4,7 +4,7 @@ Proyecto de evaluación pareada del desempeño de modelos de lenguaje ante varia
 
 ## Documentación
 
-- [Informe del proyecto y resultados exploratorios](docs/informe_proyecto.pdf), con [fuente editable](docs/informe_proyecto.md) y [LaTeX IEEEtran](docs/informe_proyecto.tex). Documenta el corte de 288 respuestas, con la recolección detenida por RPD.
+- [Informe del proyecto y resultados exploratorios](docs/informe_proyecto.pdf), con [fuente editable](docs/informe_proyecto.md) y [LaTeX IEEEtran](docs/informe_proyecto.tex). Documenta el corte de 480 respuestas, con la recolección detenida por RPD.
 - [`docs/protocolo_semana1.pdf`](docs/protocolo_semana1.pdf) y su fuente [LaTeX](docs/protocolo_semana1.tex).
 - [`docs/diseno_banco_semana2.pdf`](docs/diseno_banco_semana2.pdf) y su fuente [LaTeX](docs/diseno_banco_semana2.tex).
 

@@ -41,7 +41,7 @@ python src/dialectollm/indicadores_objetivos.py $run
 
 El último comando genera `indicadores_objetivos.json`, `indicadores_pares.csv` y `marcadores_numericos.csv` en `analisis/`. Compara ítems completos y registra en el JSON los denominadores por contraste entre modelos y frente al control. Los CSV contienen las medidas por par y la detección de marcadores. Un 1 indica presencia textual y un 0 indica ausencia, no error. No incorpora esas etiquetas a la rúbrica humana. Compare las huellas SHA-256 de los dos resúmenes para confirmar que parten del mismo archivo de respuestas.
 
-El [informe](../docs/informe_proyecto.md) corresponde al corte del 12 de noviembre de 2026 y contiene cifras revisadas. Para regenerar su presentación (no recalcula las cifras), use Python con ReportLab:
+El [informe](../docs/informe_proyecto.md) corresponde al corte del 13 de noviembre de 2026 y contiene cifras revisadas. Para regenerar su presentación (no recalcula las cifras), use Python con ReportLab:
 
 ```powershell
 python src/render_informe.py docs/informe_proyecto.md
