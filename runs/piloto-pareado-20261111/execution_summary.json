@@ -1,0 +1,126 @@
+{
+  "run_id": "piloto-pareado-20261111",
+  "phase": "pilot",
+  "latest_attempt_at_utc": "2026-11-12T00:58:02+00:00",
+  "api_platform_visible_limits": {
+    "gpt6_luna": {
+      "rpm": 10,
+      "tpm": 60000
+    },
+    "gpt61_terra": {
+      "rpm": 3,
+      "tpm": 10000
+    },
+    "rpd_displayed": false
+  },
+  "server_rate_limit_events": [
+    {
+      "model": "gpt-6.1-terra",
+      "call_key": "I041:std:gpt61_terra:r1",
+      "http_status": 429,
+      "code": "rate_limit_exceeded",
+      "limit_type": "RPD",
+      "limit": 50,
+      "used": 50,
+      "requested": 1,
+      "retry_after_reported": "28m48s",
+      "resolved": true
+    },
+    {
+      "model": "gpt-6-luna",
+      "call_key": "I041:std:gpt6_luna:r1",
+      "http_status": 429,
+      "code": "rate_limit_exceeded",
+      "limit_type": "RPD",
+      "limit": 50,
+      "used": 50,
+      "requested": 1,
+      "retry_after_reported": "28m48s",
+      "resolved": true
+    },
+    {
+      "model": "gpt-6.1-terra",
+      "call_key": "I051:mx:gpt61_terra:r1",
+      "http_status": 429,
+      "code": "rate_limit_exceeded",
+      "limit_type": "RPD",
+      "limit": 50,
+      "used": 50,
+      "requested": 1,
+      "retry_after_reported": "28m48s",
+      "resolved": false
+    },
+    {
+      "model": "gpt-6-luna",
+      "call_key": "I051:mx:gpt6_luna:r1",
+      "http_status": 429,
+      "code": "rate_limit_exceeded",
+      "limit_type": "RPD",
+      "limit": 50,
+      "used": 50,
+      "requested": 1,
+      "retry_after_reported": "28m48s",
+      "resolved": false
+    }
+  ],
+  "client_safeguard_per_model_rolling_24h": 100,
+  "attempt_records": 138,
+  "successful_unique_calls": 134,
+  "pending_scheduled_call_keys": 10,
+  "failed_attempt_records": 4,
+  "completed_items": [
+    "I001",
+    "I011",
+    "I021",
+    "I031",
+    "I041"
+  ],
+  "completed_item_count": 5,
+  "item_progress": {
+    "I001": {
+      "completed_call_keys": 24
+    },
+    "I011": {
+      "completed_call_keys": 24
+    },
+    "I021": {
+      "completed_call_keys": 24
+    },
+    "I031": {
+      "completed_call_keys": 24
+    },
+    "I041": {
+      "completed_call_keys": 24
+    },
+    "I051": {
+      "completed_call_keys": 14,
+      "failed_unresolved_attempts": 2
+    }
+  },
+  "fully_paired_dialect_replicate_conditions": 67,
+  "models": {
+    "gpt61_terra": {
+      "successful_call_keys": 67,
+      "input_tokens": 5970,
+      "output_tokens": 6036,
+      "estimated_cost_usd": 0.03615,
+      "returned_model_ids": [
+        "gpt-6.1-terra"
+      ],
+      "failed_attempts": 2
+    },
+    "gpt6_luna": {
+      "successful_call_keys": 67,
+      "input_tokens": 5970,
+      "output_tokens": 7392,
+      "estimated_cost_usd": 0.004293,
+      "returned_model_ids": [
+        "gpt-6-luna"
+      ],
+      "failed_attempts": 2
+    }
+  },
+  "total_estimated_cost_usd": 0.040443,
+  "analysis_eligible": false,
+  "resume_guidance": "After the RPD retry window, resume day2 with --retry-failed --execute. Successful call keys will be skipped; keep both models selected for paired completion."
+}

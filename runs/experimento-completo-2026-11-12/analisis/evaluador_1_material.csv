@@ -1,0 +1,1443 @@
+﻿codigo,consulta,respuesta,criterios_referencia
+012cf7b286482f9b,"Tengo dos opciones de bus: la A tarda 20 minutos y cuesta 8; la B tarda 35 y cuesta 5. Si lo principal es llegar rápido y puedo pagar hasta 10, ¿cuál me conviene?","Te conviene la **opción A**: tarda 20 minutos, es más rápida y cuesta 8, dentro de tu presupuesto.",La A: cumple el tope de 10 y tarda menos.
+0132e10c7f79797c,Un coche rinde 6 litros por cada 100 km. ¿Cuánto combustible ocuparía para recorrer 250 km?,Necesitaría **15 litros** de combustible.,"15 litros; proporción directa: 6 x 2,5."
+0366fce7fe7eba1e,Calcule el total de cuadernos transportados por tres vehículos con ocho cuadernos cada uno.,3 × 8 = **24 cuadernos**.,24 cuadernos.
+038a898d5de9dd29,"¿Por qué el hielo flota en el agua? Explícamelo en dos o tres frases, sin complicarlo de más.","El hielo flota porque es menos denso que el agua líquida. Al congelarse, las moléculas de agua se ordenan dejando más espacio entre ellas, por lo que el hielo ocupa más volumen.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+03915206bf24f325,"Sintetice en una oración: el taller inicia a las 10:00, una ruta tarda 15 minutos y otra 25; se aconseja prever tiempo adicional.","El taller comienza a las 10:00; las rutas duran 15 y 25 minutos, así que conviene prever tiempo adicional.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+03ed48b44ab00e7b,"Para limpiar la pantalla del computador, ¿qué cuidados debe tener usted? El equipo está apagado y desconectado.","Use un paño de microfibra limpio y suave, apenas humedecido con agua o con un limpiador indicado para pantallas. No rocíe líquido directamente sobre la pantalla; aplique poca presión y no use papel, productos abrasivos, alcohol, amoníaco ni limpiavidrios. Déjela secar por completo antes de volver a conectar el equipo.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+03f52183c9a3381e,Tengo 12 archivos en la compu y quiero acomodarlos por año y tema. ¿Cómo los organizo en carpetas sin modificar nada?,"Puedes organizarlos **sin alterar los archivos originales** haciendo copias:
+
+1. Crea una carpeta principal, por ejemplo, `Archivos organizados`.
+2. Dentro, crea una carpeta por año y, dentro de cada año, una por tema.
+3. Copia cada archivo en la carpeta que corresponda, sin editarlo ni renombrarlo.
+
+```text
+Archivos organizados/
+├── Año/
+│   ├── Tema 1/
+│   └── Tema 2/
+└── Sin año/
+```
+
+Así, los originales permanecen donde están. Si prefieres no tener duplicados, puedes moverlos en vez de copiarlos: su contenido no cambiará, pero sí su ubicación.","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+04e3edd6bc99074a,"El bus sale cada 20 minutos desde las 8:00. Si llego a la parada a las 8:07 y se respeta el horario, ¿a qué hora pasa el siguiente?",A las 8:20.,A las 8:20; explicar que la salida de 8:00 ya pasó.
+05d7cde87012b8a1,¿Me puede indicar cinco pasos para precalentar el horno a 180 °C y hornear una preparación durante 20 minutos? Incluya una precaución de seguridad.,"1. Compruebe que el horno esté vacío y coloque la rejilla a la altura deseada.
+2. Encienda el horno y ajuste la temperatura a **180 °C**.
+3. Espere a que alcance la temperatura indicada.
+4. Introduzca la preparación y hornee durante **20 minutos**.
+5. Apague el horno y retire la preparación con guantes de cocina para evitar quemaduras.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+064f0c0b25e602c2,"El colectivo A tarda 20 minutos y sale 8; el B demora 35 y sale 5. Si querés llegar rápido y tenés hasta 10, ¿cuál te sirve?","Si 8 y 5 son los precios y 10 es tu presupuesto, te sirve el **colectivo A**: cuesta 8 y tarda 20 minutos.",La A: cumple el tope de 10 y tarda menos.
+06d54593bbbce153,"Convierta 2,5 litros a mililitros e informe el valor equivalente.","2,5 litros equivalen a **2.500 mililitros**.",2500 mililitros.
+07feb33b53108380,El hielo suele flotar en el agua. ¿Me explica en dos o tres frases cuál es la razón?,"Al congelarse, las moléculas de agua forman una estructura abierta que ocupa más volumen. Por eso, el hielo es menos denso que el agua líquida y flota.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+0865e5d3870ee4a8,"Si cada uno de tres buses lleva una caja con ocho cuadernos, ¿cuántos cuadernos se transportan en total?",Se transportan **24 cuadernos**.,24 cuadernos.
+088a3476ce79b0cf,"Proponga una estructura de carpetas para clasificar 12 archivos por año y tema, preservando su contenido.","Propongo organizar por **año y, dentro de cada año, por tema**:
+
+```text
+Archivos/
+├── [Año]/
+│   ├── [Tema 1]/
+│   │   └── [nombre original del archivo]
+│   └── [Tema 2]/
+│       └── [nombre original del archivo]
+└── [Otro año]/
+    └── [Tema]/
+        └── [nombre original del archivo]
+```
+
+Ubique cada uno de los 12 archivos en la carpeta correspondiente y conserve su nombre y contenido. Como no se indican los años ni los temas, los nombres entre corchetes son marcadores para reemplazar.","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+08a04e0579beda1f,"En tres días leí 18, 24 y 30 páginas. ¿Qué promedio te da a vos por día?",El promedio es **24 páginas por día**: (18 + 24 + 30) ÷ 3 = 24.,24 páginas por día.
+0c12536b8a0420e2,"Si el camión tarda 12 minutos por recorrido y hago tres, ¿cuánto tiempo de viaje junto en total?","En total, **36 minutos**.",36 minutos; multiplicar 12 por 3.
+0d4dc9649d74fed8,En la compu guardé seis archivos de 750 KB cada uno; ¿cuánto espacio ocupan en total?,"Ocupan **4.500 KB** en total, es decir, **4,5 MB** si 1 MB = 1.000 KB.",4500 KB; multiplicar 750 por 6.
+0e9d20ed1234f23c,Describa cómo transferir las fotografías del teléfono al equipo y validar la copia antes de eliminar los archivos originales.,"1. **Conecta el teléfono al equipo** con un cable USB y, si se solicita, elige **Transferencia de archivos/fotos**. También puedes usar una nube o una herramienta de transferencia.
+2. En el equipo, **copia** las fotos a una carpeta nueva; no uses «cortar» ni las borres del teléfono durante la transferencia.
+3. **Comprueba la copia**: compara el número de archivos, abre varias fotos —incluidas algunas antiguas y recientes— y verifica que se vean completas y con la calidad esperada. Si es importante, conserva además una segunda copia en otro dispositivo o almacenamiento.
+4. Solo cuando confirmes que la copia está completa y accesible, **elimina las fotos del teléfono**. Revisa también la papelera o la carpeta de elementos eliminados si necesitas liberar espacio.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+0f4c6c33299d27a7,"El camión A tarda 20 minutos y cuesta 8; el B tarda 35 y cuesta 5. Si mi tope son 10 y quiero llegar antes, ¿cuál elijo?","Elige el camión A: tarda 20 minutos y cuesta 8, dentro de tu tope de 10.",La A: cumple el tope de 10 y tarda menos.
+0f994f2b4f382820,Tengo que limpiar la pantalla de la compu; ya está apagada y desenchufada. ¿Qué tendría que hacer para no dañarla?,"1. Pasa un paño de microfibra limpio y seco, sin presionar, para retirar el polvo.
+2. Si quedan manchas, humedece apenas el paño con agua destilada y limpia suavemente. No rocíes líquido directamente sobre la pantalla.
+3. Evita que entre humedad por los bordes y deja que la pantalla se seque por completo antes de conectar la computadora.
+
+No uses papel, productos abrasivos, limpiavidrios, amoníaco ni alcohol: pueden dañar el recubrimiento. Si las manchas persisten, consulta las indicaciones del fabricante antes de usar un limpiador específico.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+0fa672a37bd2f594,"En una mezcla de 14 unidades con proporción 2:5, calcule la cantidad correspondiente al componente menor.",El componente menor corresponde a **4 unidades**: \(14 \times \frac{2}{2+5} = 4\).,4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+0fed0ee11cc1325a,Quiero pasar las fotos del celular a la compu y guardar otra copia en un pendrive. ¿Qué archivos abrís para fijarte que se hayan copiado bien antes de borrar los originales?,"Abrí **algunas fotos y videos al azar desde la compu y desde el pendrive**, no desde el celular. Elegí archivos de distintas fechas y formatos, e incluí alguno de los más grandes. Comprobá que se vean completos y que los videos se reproduzcan.
+
+Además, compará que haya la misma cantidad de archivos y que las carpetas tengan tamaños parecidos. **No borres los originales hasta verificar las dos copias**; si podés, desconectá y volvé a conectar el pendrive para comprobar que siguen accesibles.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+1076d59154af1940,Necesito hacer un backup de tres documentos del computador en una memoria externa. ¿Qué pasos recomienda y cómo puedo mirar si quedaron bien copiados?,"1. Conecte la memoria externa y compruebe que tiene espacio suficiente.
+2. En el explorador de archivos, localice los tres documentos, selecciónelos y elija **Copiar**.
+3. Abra la memoria externa, entre en la carpeta de destino y elija **Pegar**. Espere a que termine la copia.
+4. Compruebe que aparecen los tres archivos y que sus tamaños coinciden con los originales. Abra cada copia desde la memoria y revise su contenido.
+5. Para una comprobación más rigurosa, compare las **sumas de verificación** de cada original y su copia; deben coincidir.
+6. Expulse la memoria de forma segura antes de desconectarla.
+
+Conserve los documentos originales en el computador: copiar no los elimina.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+10ca269b8204ccfe,Voy a preparar una lista de compras para cinco comidas. ¿Me indica cómo reunir los ingredientes de las recetas y revisar que no se repitan productos?,"1. Reúne las cinco recetas y anota sus ingredientes y cantidades, ajustadas al número de comensales.
+2. Unifica los nombres y las unidades de los productos iguales. Por ejemplo, convierte ½ kg de tomate en 500 g.
+3. Agrupa los ingredientes repetidos y suma sus cantidades. Mantén separados los que necesites en presentaciones distintas.
+4. Revisa lo que ya tienes y resta esas cantidades.
+5. Ordena la lista final por categorías, como frutas y verduras, lácteos, carnes y despensa.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+10d241c669da9bbd,Calcule el total de cuadernos transportados por tres vehículos con ocho cuadernos cada uno.,En total transportaron 24 cuadernos.,24 cuadernos.
+1123dd2d04aadd59,Describa un procedimiento para copiar tres documentos del equipo a un dispositivo externo y verificar la integridad de la copia sin borrar los originales.,"1. Identifique los tres documentos y anote sus nombres y ubicación.
+2. Conecte el dispositivo externo y compruebe que tiene espacio suficiente.
+3. **Copie** los documentos al dispositivo; no use «Cortar» ni «Mover». Mantenga los originales en su ubicación.
+4. Verifique que los tres archivos aparecen en el dispositivo y que sus nombres y tamaños coinciden con los originales.
+5. Para una comprobación más fiable, compare el hash SHA-256 de cada original con el de su copia: deben coincidir.
+6. Expulse el dispositivo de forma segura y, si es posible, abra las copias para confirmar que se leen correctamente.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+113ab51f5c93a18d,Determine la hora de finalización de una reunión que inicia a las 9:20 y dura 45 minutos.,La reunión termina a las 10:05.,A las 10:05.
+11bad12fd5ecf65c,El colectivo hace 12 km a 30 km/h. ¿Cuánto tardás en cubrir ese trayecto?,Tardás **24 minutos**.,24 minutos; 12/30 de hora.
+121a61c6031b636b,Voy a respaldar en la compu las fotos de mi celular. ¿Cómo checo que sí se copiaron bien antes de borrar algo?,"1. **Copia, no muevas**, las fotos y espera a que termine la transferencia.
+2. Compara la cantidad de archivos y el tamaño total de las carpetas de origen y destino. Deben coincidir si se copiaron sin conversiones; aun así, esto no garantiza que cada archivo esté íntegro.
+3. Abre en la compu varias fotos y videos: algunos antiguos, otros recientes y algunos grandes. Comprueba que se vean completos y con la resolución esperada.
+4. Para una comprobación más rigurosa, usa una herramienta que compare las sumas de verificación, como **SHA-256**, de cada archivo original y su copia. Si hubo conversiones de formato, las sumas no coincidirán aunque la copia sea válida.
+5. Antes de borrar, guarda otra copia en un disco externo o en la nube. Revisa también si tu galería está sincronizada: borrar una foto del celular podría borrarla de la nube y de otros dispositivos.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+13d0d8aa01f03a93,Estoy armando las compras para cinco comidas. ¿Cómo junto lo de las recetas y checo que no anote dos veces lo mismo?,"1. Anota los ingredientes y cantidades de las cinco recetas.
+2. Agrupa los ingredientes iguales, aunque aparezcan con nombres distintos, como «jitomate» y «tomate».
+3. Unifica las unidades antes de sumar: por ejemplo, 200 g + 300 g = 500 g.
+4. Deja separadas las presentaciones que no sean intercambiables, como tomate fresco y tomate enlatado. Si no puedes convertir una cantidad con certeza, anótala aparte.
+5. Revisa lo que ya tienes y resta esa cantidad de la lista de compra.
+
+Si me compartes las cinco recetas, puedo juntarlas en una sola lista.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+13f1a78eb9aaf212,"Para estimar el combustible, ¿cuántos litros gastaría un carro en 250 km si consume 6 litros cada 100 km?",Gastaría **15 litros**.,"15 litros; proporción directa: 6 x 2,5."
+1460a76b463d44d8,Describa cómo transferir las fotografías del teléfono al equipo y validar la copia antes de eliminar los archivos originales.,"1. **Conecte el teléfono al equipo** con un cable USB y desbloquéelo. Seleccione **Transferencia de archivos/fotos** si se le solicita.
+2. **Copie** las fotos a una carpeta del equipo; no use «cortar» ni las elimine del teléfono durante la transferencia. También puede descargarlas desde un servicio en la nube, comprobando que se descarguen al equipo.
+3. **Valide la copia** antes de borrar nada:
+   - Compare la cantidad de fotos y vídeos con la del teléfono.
+   - Abra varias imágenes y vídeos, incluidos algunos recientes y antiguos.
+   - Compruebe que los archivos tengan un tamaño razonable y que no haya errores de copia.
+4. Si son importantes, haga además una **segunda copia** en otro disco o ubicación.
+5. Cuando confirme que la copia está completa y accesible, elimine los originales del teléfono. Si usó USB, expulse el dispositivo de forma segura antes de desconectarlo.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+147355b2c9f4a789,"Tengo dos opciones de bus: la A tarda 20 minutos y cuesta 8; la B tarda 35 y cuesta 5. Si lo principal es llegar rápido y puedo pagar hasta 10, ¿cuál me conviene?","La opción **A**: tarda 20 minutos y cuesta 8, dentro de tu presupuesto.",La A: cumple el tope de 10 y tarda menos.
+147642daf261c7d6,"Si cada uno de tres buses lleva una caja con ocho cuadernos, ¿cuántos cuadernos se transportan en total?",24 cuadernos.,24 cuadernos.
+14aff2a59698cde5,Tengo 12 archivos en la compu y quiero acomodarlos por año y tema. ¿Cómo los organizo en carpetas sin modificar nada?,"Puedes crear carpetas por año y, dentro de cada una, subcarpetas por tema:
+
+```text
+Archivos organizados/
+├── Año 1/
+│   ├── Tema A/
+│   └── Tema B/
+└── Año 2/
+    ├── Tema A/
+    └── Tema B/
+```
+
+1. Crea las carpetas con los años y temas que correspondan a tus archivos.
+2. **Copia y pega** cada archivo en su carpeta, sin cambiarle el nombre.
+3. Comprueba que las copias estén donde esperabas.
+
+Así, los archivos originales permanecen intactos en su ubicación actual.","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+1541991c96ab879e,"Resuma en una frase: el taller empieza a las 10:00; el bus A tarda 15 minutos y el B, 25. Para llegar antes, se recomienda salir con tiempo.","El taller empieza a las 10:00; los buses A y B tardan 15 y 25 minutos, respectivamente, por lo que se recomienda salir con tiempo.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+155062e9074ba352,"Si el camión avanza 12 km a una velocidad constante de 30 km/h, ¿cuánto tarda?",Tarda **24 minutos**.,24 minutos; 12/30 de hora.
+158bfdd38545fcbf,Describa un procedimiento para copiar tres documentos del equipo a un dispositivo externo y verificar la integridad de la copia sin borrar los originales.,"1. Conecte el dispositivo externo y abra su carpeta.
+2. Seleccione los tres documentos en el equipo y elija **Copiar**; después, elija **Pegar** en la carpeta del dispositivo externo.
+3. Compruebe que aparecen los tres archivos. Para verificar su integridad, calcule el hash SHA-256 de cada original y de su copia, y compare cada par: deben coincidir.
+4. Si algún hash no coincide, vuelva a copiar ese archivo y repita la comprobación.
+5. Expulse el dispositivo de forma segura antes de desconectarlo.
+
+No borre ni mueva los originales.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+15c267c87097d852,Arrancás una reunión a las 9:20 y calculás que dura tres cuartos de hora. ¿A qué hora quedás libre?,A las 10:05.,A las 10:05.
+1864a19b604791ad,Describa un procedimiento para copiar tres documentos del equipo a un dispositivo externo y verificar la integridad de la copia sin borrar los originales.,"1. Conecte el dispositivo externo y compruebe que tenga espacio suficiente.
+2. Seleccione los tres documentos en el equipo y use **Copiar**; no use «Cortar».
+3. Abra la carpeta de destino en el dispositivo externo y use **Pegar**. Espere a que termine la copia.
+4. Con una herramienta de sumas de comprobación, calcule el hash **SHA-256** de cada documento original y el de su copia. Verifique que los dos valores coincidan para cada uno de los tres documentos.
+5. Compruebe que los originales siguen en su ubicación y expulse el dispositivo de forma segura.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+18f9973cdf93d8b9,Quiero guardar en mi computador una copia de las fotos del celular. ¿Cómo verifico que los archivos se abran antes de borrar los originales?,"Antes de borrar las fotos del celular:
+
+1. **Copia** los archivos a una carpeta del computador y espera a que termine la transferencia.
+2. **Desconecta el celular** y abre las fotos desde esa carpeta del computador, no desde el teléfono. Revisa que se vean completas y con buena calidad.
+3. Comprueba que la carpeta tenga aproximadamente la misma cantidad de archivos y que el tamaño total sea razonable. Abre fotos de distintas fechas y, si hay videos, reproduce algunos.
+4. Si son muchas o muy importantes, conserva además una segunda copia —por ejemplo, en un disco externo— antes de borrar nada.
+
+No elimines los originales hasta confirmar que la copia está completa y se abre correctamente.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+1c85d8338c3aa02e,"Si una mezcla se prepara con ingredientes en proporción 2 a 5 y debe rendir 14 unidades, ¿cuántas corresponden a la parte menor?",La parte menor corresponde a **4 unidades**.,4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+1dae03308c67438d,"Si cada uno de tres buses lleva una caja con ocho cuadernos, ¿cuántos cuadernos se transportan en total?",24 cuadernos.,24 cuadernos.
+1ddcc8fb0151b2ba,"Tengo 12 archivos en el computador y quisiera ordenarlos por año y tema, sin cambiar su contenido. ¿Cómo podría organizarlos en carpetas?","Puedes crear una carpeta principal y organizarla primero por año y después por tema:
+
+```text
+Archivos/
+├── Año 1/
+│   ├── Tema A/
+│   └── Tema B/
+└── Año 2/
+    ├── Tema A/
+    └── Tema B/
+```
+
+Sustituye los nombres de ejemplo por los años y temas de tus archivos. Luego, mueve cada uno a la carpeta correspondiente: **moverlo no cambia su contenido**. Si no sabes dónde colocar alguno, puedes crear una carpeta llamada «Sin clasificar».","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+1e73f893db285209,"Si cada uno de tres buses lleva una caja con ocho cuadernos, ¿cuántos cuadernos se transportan en total?",Se transportan 24 cuadernos.,24 cuadernos.
+1eb8f2c9c157d4c1,"¿Por qué el hielo flota en el agua? Explícamelo en dos o tres frases, sin complicarlo de más.","El hielo flota porque es menos denso que el agua líquida. Al congelarse, sus moléculas forman una estructura más abierta que ocupa más espacio.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+1fdc554d39e50662,"Calcule el promedio diario de lectura a partir de los valores 18, 24 y 30 páginas.",El promedio diario es **24 páginas**: (18 + 24 + 30) / 3 = 24.,24 páginas por día.
+21a26ac8d6c656b1,Indique un procedimiento seguro para limpiar la pantalla de un equipo apagado y desconectado.,"1. Pase suavemente un paño de microfibra limpio y seco por la pantalla, sin presionar.
+2. Si quedan manchas, humedezca ligeramente el paño con agua, siempre que el fabricante lo permita. No rocíe líquido directamente sobre la pantalla.
+3. Evite productos abrasivos, papel y limpiadores no recomendados por el fabricante.
+4. Deje que la pantalla se seque por completo antes de conectar y encender el equipo.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+2298e27250a54b65,La junta va a durar 45 minutos y la puse a las 9:20. ¿A qué hora se acaba?,A las 10:05.,A las 10:05.
+24072efe8f4b3178,Voy a preparar una lista de compras para cinco comidas. ¿Me indica cómo reunir los ingredientes de las recetas y revisar que no se repitan productos?,"Sí. Para combinar las recetas de las cinco comidas:
+
+1. **Anote cada ingrediente y su cantidad** por receta.
+2. **Unifique los nombres**: por ejemplo, “cebolla blanca” y “cebolla” solo si son el mismo producto.
+3. **Sume las cantidades** de los productos repetidos, convirtiéndolas a una unidad común cuando sea posible.
+4. **Mantenga separados los productos distintos**: por ejemplo, tomate fresco y tomate en lata.
+5. **Agrupe la lista final por categorías** —verduras, lácteos, despensa, etc.— y revise si ya tiene algo en casa.
+
+Si me comparte las cinco recetas, puedo reunir los ingredientes y señalar los productos repetidos.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+2456584af521c132,"Si el auto consume 6 litros cada 100 km, ¿cuántos litros necesitás para hacer 250 km al mismo ritmo?",Necesitás **15 litros**.,"15 litros; proporción directa: 6 x 2,5."
+24c5a37a08d9e948,"Explique cómo consolidar los ingredientes de cinco recetas en una lista única, sumando cantidades cuando corresponda y eliminando duplicados.","1. Anota todos los ingredientes de las cinco recetas en una tabla.
+2. Unifica los nombres (por ejemplo, «azúcar blanca» y «azúcar» si son el mismo producto).
+3. Suma las cantidades de cada ingrediente, siempre que estén en unidades compatibles. Convierte las unidades cuando sea posible; si no, conserva las cantidades por separado.
+4. Elimina las filas repetidas y presenta cada ingrediente una sola vez con su cantidad total.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+256f7b40b4e32450,Calcule el tiempo total de tres trayectos de 12 minutos cada uno.,El tiempo total es **36 minutos**.,36 minutos; multiplicar 12 por 3.
+25b512b9dc48b000,Voy a respaldar en la compu las fotos de mi celular. ¿Cómo checo que sí se copiaron bien antes de borrar algo?,"Antes de borrar nada del celular:
+
+1. **Copia, no muevas** las fotos. Espera a que termine y confirma que no aparezcan errores.
+2. En la compu, abre varias fotos **de distintas fechas** y reproduce algunos videos, especialmente los más recientes y los más largos.
+3. Compara la **cantidad de archivos** y, si puedes, el tamaño total de las carpetas entre el celular y la copia. Ten en cuenta que algunas apps guardan fotos en varias carpetas.
+4. Desconecta el celular y vuelve a abrir algunos archivos desde la compu para comprobar que siguen accesibles.
+5. Si son importantes, haz una **segunda copia** en otro disco o servicio de respaldo.
+
+Borra del celular solo después de comprobar la copia; no te fíes únicamente de que aparezca una carpeta con fotos.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+25b5f830f32322d8,"Durante tres días leí 18, 24 y 30 páginas. ¿Cuántas páginas leí en promedio por día?",Leíste un promedio de **24 páginas por día**.,24 páginas por día.
+25d54c025f954407,"Sintetice en una oración: el taller inicia a las 10:00, una ruta tarda 15 minutos y otra 25; se aconseja prever tiempo adicional.","El taller comienza a las 10:00; las rutas duran 15 y 25 minutos, así que conviene prever tiempo adicional.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+28c84e12d6352fcd,Tengo 12 archivos en la compu y quiero acomodarlos por año y tema. ¿Cómo los organizo en carpetas sin modificar nada?,"Si por “sin modificar nada” quieres decir **sin cambiar el contenido ni el nombre**, crea carpetas y mueve cada archivo según su año y tema, por ejemplo:
+
+```text
+Archivos
+├── 2022
+│   ├── Trabajo
+│   └── Fotos
+└── 2023
+    ├── Trabajo
+    └── Fotos
+```
+
+Luego arrastra cada archivo a la carpeta correspondiente. **Moverlo cambia su ubicación, no su contenido.** Si tampoco quieres mover los originales, crea accesos directos o alias en esas carpetas.","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+28dbaa8f9ad3edb0,Quiero armar la lista para cinco comidas. ¿Cómo juntás los ingredientes de las recetas y te fijás que no se repitan?,"Pasame las cinco recetas con sus cantidades y para cuántas porciones son. Voy a:
+
+- Unificar ingredientes con nombres distintos pero equivalentes.
+- Sumar las cantidades repetidas, convirtiendo unidades cuando se pueda.
+- Mantener separados los ingredientes que no sean intercambiables (por ejemplo, cebolla blanca y morada).
+- Dejar aparte las cantidades que no se puedan sumar con precisión.
+
+Si querés, también ajusto todo a la cantidad de porciones que necesitás.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+290f12f0f765698f,"El colectivo pasa cada 20 minutos desde las 8:00; si llegás a la parada a las 8:07, ¿a qué hora viene el próximo?",A las 8:20.,A las 8:20; explicar que la salida de 8:00 ya pasó.
+2930aa332987fd6f,Describa un procedimiento para copiar tres documentos del equipo a un dispositivo externo y verificar la integridad de la copia sin borrar los originales.,"1. Conecte el dispositivo externo y compruebe que tiene espacio suficiente.
+2. Localice los tres documentos y ciérrelos para evitar cambios durante la copia.
+3. Selecciónelos y use **Copiar**; abra una carpeta del dispositivo externo y use **Pegar**. No utilice «Cortar».
+4. Calcule la huella **SHA-256** de cada documento original y de su copia mediante una herramienta de su sistema. Compare cada par: las huellas deben coincidir.
+5. Si alguna no coincide, repita la copia y la comprobación. Si las tres coinciden, expulse el dispositivo de forma segura.
+
+Los originales deben permanecer en su ubicación inicial.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+2a1c1a9e718e7a36,Tenés que repartir 14 unidades según una proporción de 2 a 5. ¿Cuántas van para la parte más chica?,A la parte más chica le corresponden **4 unidades**.,4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+2ac0be1484d7fc4f,"Cada colectivo lleva una caja con ocho cuadernos; si salen tres, ¿cuántos cuadernos transportás?","Si salen tres colectivos y cada uno lleva una caja, transportan **24 cuadernos**.",24 cuadernos.
+2be1dae54eef5a4d,Determine la hora de finalización de una reunión que inicia a las 9:20 y dura 45 minutos.,La reunión finaliza a las **10:05**.,A las 10:05.
+2c357fee007fbb3e,Tenés que repartir 14 unidades según una proporción de 2 a 5. ¿Cuántas van para la parte más chica?,La parte más chica recibe **4 unidades**.,4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+2c81f287ceccd4e0,"El camión sale cada 20 minutos a partir de las 8. Si llego a las 8:07, ¿cuál es la próxima salida?",La próxima salida es a las **8:20**.,A las 8:20; explicar que la salida de 8:00 ya pasó.
+2d2c561c590c0464,Indique un procedimiento seguro para limpiar la pantalla de un equipo apagado y desconectado.,"1. Apague el equipo, desenchúfelo y deje que la pantalla se enfríe.
+2. Quite el polvo con un paño limpio y suave de microfibra.
+3. Si quedan manchas, humedezca apenas el paño con agua —preferiblemente destilada— o con un producto autorizado por el fabricante. **No pulverice líquido directamente sobre la pantalla.**
+4. Limpie con suavidad, sin presionar, y seque con otra parte limpia del paño.
+
+Evite papel, productos abrasivos y disolventes como amoníaco o alcohol, salvo que el fabricante indique que son seguros. No deje que entre líquido por los bordes o las aberturas.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+2d5f0d0264fe56d1,Salen tres camiones con una caja de ocho cuadernos cada uno. ¿Cuántos cuadernos llevan entre todos?,Llevan **24 cuadernos** entre los tres.,24 cuadernos.
+2d6e88223c0f0aa9,Le programaron una reunión de 45 minutos que empieza a las 9:20. ¿A qué hora debe quedar libre usted?,A las 10:05.,A las 10:05.
+2d8536e392c0e864,En la compu guardé seis archivos de 750 KB cada uno; ¿cuánto espacio ocupan en total?,"En total ocupan **4.500 KB**, es decir, **4,5 MB** si 1 MB = 1.000 KB.",4500 KB; multiplicar 750 por 6.
+2eaaf401218670b4,"Si cada uno de tres buses lleva una caja con ocho cuadernos, ¿cuántos cuadernos se transportan en total?",Se transportan 24 cuadernos.,24 cuadernos.
+2eb3d7c073bf3ee1,Arrancás una reunión a las 9:20 y calculás que dura tres cuartos de hora. ¿A qué hora quedás libre?,A las 10:05.,A las 10:05.
+2f0fec90aa73b1c2,Guardé seis archivos de 750 KB en la compu. ¿Cuánto espacio ocupan entre todos?,"Ocupan **4.500 KB**, es decir, **4,5 MB** (si 1 MB = 1.000 KB).",4500 KB; multiplicar 750 por 6.
+2f67e64b0ae011ee,Calcule el tiempo total de tres trayectos de 12 minutos cada uno.,El tiempo total es **36 minutos**.,36 minutos; multiplicar 12 por 3.
+2fd9c1d74192b45c,"Calcule el promedio diario de lectura a partir de los valores 18, 24 y 30 páginas.",El promedio diario es **24 páginas**.,24 páginas por día.
+303fd2a38df17e7e,"¿Me convierte 2,5 litros a mililitros y me indica el resultado?","2,5 litros equivalen a **2.500 mililitros**.",2500 mililitros.
+313588d393301066,En la compu guardé seis archivos de 750 KB cada uno; ¿cuánto espacio ocupan en total?,Ocupan **4500 KB** en total.,4500 KB; multiplicar 750 por 6.
+31c262fd7fac1692,Tengo que precalentar el horno a 180 °C y dejar la preparación 20 minutos. ¿Me armás cinco pasos y una precaución para sacarla?,"1. Enciende el horno y ajusta la temperatura a 180 °C.
+2. Espera a que alcance esa temperatura.
+3. Introduce la preparación.
+4. Déjala hornear durante 20 minutos.
+5. Apaga el horno y retira la preparación.
+
+**Precaución:** usa guantes de horno para sacarla y evitar quemaduras.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+3208b9c8b7ce45ee,"Para cuatro personas, armás la receta con 75 g de porotos por cabeza. ¿Cuántos gramos precisás poner?",Necesitás **300 g de porotos**.,300 g; multiplicar 75 por 4.
+32281d7f44180acd,Determine el consumo correspondiente a 250 km con una tasa constante de 6 litros por cada 100 km.,El consumo es de **15 litros**.,"15 litros; proporción directa: 6 x 2,5."
+325f77fd9a56be7e,"Si el auto consume 6 litros cada 100 km, ¿cuántos litros necesitás para hacer 250 km al mismo ritmo?",Necesitás **15 litros**.,"15 litros; proporción directa: 6 x 2,5."
+328ed06221baeae0,"Para limpiar la pantalla del computador, ¿qué cuidados debe tener usted? El equipo está apagado y desconectado.","- Use un paño de microfibra suave y limpio, sin presionar la pantalla.
+- Si es necesario, humedezca ligeramente el paño con agua destilada o con un producto recomendado por el fabricante. No rocíe líquidos directamente sobre la pantalla.
+- Evite productos abrasivos, amoníaco y papel áspero.
+- Deje que la pantalla se seque por completo antes de conectar el equipo.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+32db6c26ab6fbd28,Necesito pasar 2.5 litros a mililitros. ¿Cuánto es?,2.5 litros son **2500 mililitros**.,2500 mililitros.
+32e0efa40f6ff43d,"Para estimar el combustible, ¿cuántos litros gastaría un carro en 250 km si consume 6 litros cada 100 km?",Gastaría **15 litros**.,"15 litros; proporción directa: 6 x 2,5."
+336027b74bf8a615,Quiero armar la lista para cinco comidas. ¿Cómo juntás los ingredientes de las recetas y te fijás que no se repitan?,"Para las cinco comidas:
+
+1. Extraigo los ingredientes y las cantidades de cada receta.
+2. Unifico nombres y unidades compatibles, por ejemplo, «tomate» y «tomates», o gramos y kilogramos.
+3. Agrupo los ingredientes iguales y sumo sus cantidades. Mantengo separados los que no sean equivalentes, como tomate fresco y tomate en conserva.
+4. Reviso la lista para que cada ingrediente aparezca una sola vez, con la cantidad total necesaria.
+
+Si me pasás las cinco recetas, puedo armarte la lista.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+33b74e9350b8af07,El hielo suele flotar en el agua. ¿Me explica en dos o tres frases cuál es la razón?,"Al congelarse, las moléculas de agua forman una estructura más abierta que ocupa más volumen. Por eso, el hielo es menos denso que el agua líquida y flota.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+33be761b3232d3fe,Quiero armar la lista para cinco comidas. ¿Cómo juntás los ingredientes de las recetas y te fijás que no se repitan?,"1. Anotá los ingredientes y cantidades de cada receta, ajustados al número de porciones.
+2. Unificá nombres y unidades equivalentes, por ejemplo, «tomate» y «tomates» o gramos y kilos.
+3. Agrupá los ingredientes repetidos y sumá sus cantidades.
+4. Mantené separados los que no sean realmente intercambiables, como tomate fresco y tomate triturado.
+5. Revisá la lista final para que cada ingrediente aparezca una sola vez con su cantidad total.
+
+Si me compartís las cinco recetas y las porciones, puedo armarte la lista.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+3413543158feaee0,¿Por qué el hielo queda arriba del agua líquida? Contame en dos o tres frases.,"Al congelarse, las moléculas de agua forman una estructura más abierta, por lo que el hielo es menos denso que el agua líquida. Por eso flota en la superficie.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+368937bfbc82224b,"Cada colectivo lleva una caja con ocho cuadernos; si salen tres, ¿cuántos cuadernos transportás?",Transportás 24 cuadernos.,24 cuadernos.
+37a0cada95d0fd98,"Cada colectivo lleva una caja con ocho cuadernos; si salen tres, ¿cuántos cuadernos transportás?","Si salen tres colectivos y transportás sus cajas, son **24 cuadernos**.",24 cuadernos.
+388dbced5b53186a,"Tengo seis archivos de 750 KB en mi computador. ¿Cuánto espacio ocupan juntos, sin contar nada más?",Ocupan **4.500 KB** en total.,4500 KB; multiplicar 750 por 6.
+38a573bdb7ecd077,"Para estimar el combustible, ¿cuántos litros gastaría un carro en 250 km si consume 6 litros cada 100 km?",Gastaría **15 litros**: 250 × 6 / 100 = 15.,"15 litros; proporción directa: 6 x 2,5."
+391af20a468e007a,Calcule la cantidad necesaria para cuatro porciones si cada una requiere 75 g de frijoles secos.,Se necesitan **300 g de frijoles secos**.,300 g; multiplicar 75 por 4.
+39bf91e6562db85f,"Para estimar el combustible, ¿cuántos litros gastaría un carro en 250 km si consume 6 litros cada 100 km?","Gastaría **15 litros**, suponiendo que el consumo se mantiene constante:
+
+250 ÷ 100 × 6 = 15 litros.","15 litros; proporción directa: 6 x 2,5."
+3a65698b99d32872,Un bus recorre 12 km a 30 km/h. ¿Cuántos minutos tarda en completar ese trayecto?,Tarda **24 minutos**.,24 minutos; 12/30 de hora.
+3a89540cd226d5f5,"Voy a limpiar la pantalla de la compu, que ya apagué y desconecté. ¿Qué cuidados debo tener?","- Usa un paño de microfibra limpio y suave; no papel ni telas ásperas.
+- Pasa primero el paño seco, sin apretar.
+- Si quedan marcas, humedécelo apenas con agua destilada o un limpiador indicado para pantallas. **Nunca rocíes líquido directamente**: aplícalo al paño y evita que entre por los bordes.
+- No uses limpiavidrios, amoníaco, acetona ni otros productos abrasivos o disolventes. Usa alcohol solo si el fabricante de la pantalla lo permite.
+- Deja que se seque por completo antes de volver a conectarla.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+3aa80fd078f63ef1,Quiero respaldar tres documentos de la compu en una memoria externa. ¿Cómo le hago y qué puedo checar para asegurarme de que sí se copiaron?,"1. Conecta la memoria externa y espera a que aparezca en la compu.
+2. Abre la carpeta donde están los tres documentos. Selecciónalos y elige **Copiar**.
+3. Abre la memoria externa, elige la carpeta de destino y selecciona **Pegar**. Usa *copiar*, no *cortar*, para conservar los originales.
+4. Para comprobarlo:
+   - Verifica que estén los **tres archivos**, con los nombres esperados.
+   - Comprueba que sus tamaños no sean cero y, si puedes, que coincidan con los originales.
+   - Abre cada copia desde la memoria y confirma que se ve correctamente.
+5. Expulsa la memoria de forma segura antes de desconectarla.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+3ad0948ca581db4a,¿Por qué el hielo queda arriba del agua líquida? Contame en dos o tres frases.,"Al congelarse, las moléculas de agua forman una estructura abierta que ocupa más espacio. Por eso, el hielo es menos denso que el agua líquida y flota.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+3b72a4dcfbdd5d69,"¿Cuántos mililitros son 2,5 litros? Hacé la conversión, por favor.","2,5 litros × 1.000 = **2.500 mililitros**.",2500 mililitros.
+3bd2227da57a36de,Describa un procedimiento para copiar tres documentos del equipo a un dispositivo externo y verificar la integridad de la copia sin borrar los originales.,"1. Conecte el dispositivo externo y confirme que aparece como unidad disponible.
+2. Identifique los tres documentos y compruebe que el dispositivo tenga espacio suficiente.
+3. Cópielos —use **Copiar y pegar**, no **Cortar y pegar**— a una carpeta del dispositivo externo. No elimine ni mueva los originales.
+4. Verifique la copia comparando los nombres y tamaños de los tres archivos. Para una comprobación más sólida, calcule el hash SHA-256 de cada original y de su copia: deben coincidir.
+5. Abra las copias para confirmar que se leen correctamente y, después, expulse el dispositivo de forma segura. Los originales permanecerán en el equipo.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+3c0896857cd1b3dc,"¿Me resumes esto en una frase? El taller empieza a las 10; el camión A tarda 15 minutos y el B, 25. Conviene salir con margen.","El taller empieza a las 10; el camión A tarda 15 minutos y el B, 25, así que conviene salir con margen.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+3ca6e4552ef2795d,Una receta lleva 75 g de fríjoles por persona. ¿Cuánto debo alistar para cuatro personas?,Debes alistar **300 g de fríjoles** (75 g × 4 personas).,300 g; multiplicar 75 por 4.
+3d5c4adb9386cc40,"Explique brevemente, en dos o tres frases, la causa física por la que el hielo flota en agua líquida.","El hielo flota porque es menos denso que el agua líquida. Al congelarse, los enlaces de hidrógeno forman una estructura más abierta que ocupa más volumen para la misma cantidad de agua.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+3e0c7b0425f56ecc,Quiero respaldar tres documentos de la compu en una memoria externa. ¿Cómo le hago y qué puedo checar para asegurarme de que sí se copiaron?,"1. Conecta la memoria externa y espera a que aparezca en la compu.
+2. Abre la carpeta donde están los tres documentos y selecciónalos.
+3. **Cópialos** (no los cortes) y pégalos en una carpeta de la memoria externa. Espera a que termine la transferencia.
+4. Para comprobarlo:
+   - Abre la memoria y verifica que estén los tres archivos, con los nombres esperados.
+   - Comprueba que sus tamaños sean razonables y abre cada uno desde la memoria para confirmar que se lee bien.
+   - Si quieres una verificación adicional, compara el tamaño de cada archivo con el original.
+5. Expulsa la memoria de forma segura antes de desconectarla.
+
+Conserva los originales en la compu hasta confirmar que las copias funcionan.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+3e1e402ccb42c3a1,"Para limpiar la pantalla del computador, ¿qué cuidados debe tener usted? El equipo está apagado y desconectado.","- Use un paño de microfibra limpio y suave, sin presionar la pantalla.
+- Si es necesario, humedézcalo ligeramente con agua destilada o con un limpiador recomendado por el fabricante. No rocíe líquido directamente sobre la pantalla.
+- Evite el papel y los productos abrasivos, con amoníaco, acetona o lejía.
+- Evite que entre humedad en los bordes o las conexiones y deje secar antes de encender el equipo.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+3e281fc43aa1b8e6,"El colectivo tarda 12 minutos por tramo; si hacés tres viajes iguales, ¿cuánto tiempo sumás?","Si cada viaje es un tramo de 12 minutos, sumás **36 minutos**.",36 minutos; multiplicar 12 por 3.
+3e8c73f83c761646,"En una sola frase, contame qué dice esto: el taller arranca a las 10; el colectivo A tarda 15 minutos y el B, 25, así que conviene salir con tiempo.","El taller empieza a las 10 y conviene salir con tiempo porque el colectivo A tarda 15 minutos y el B, 25.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+3f8678ac5f89de3d,¿Me ayuda a calcular cuánto tiempo de viaje acumulo si cada trayecto en bus toma 12 minutos y hago tres recorridos iguales?,Acumulas **36 minutos** de viaje (12 × 3).,36 minutos; multiplicar 12 por 3.
+3ffb589a1ecd9ed1,"El camión A tarda 20 minutos y cuesta 8; el B tarda 35 y cuesta 5. Si mi tope son 10 y quiero llegar antes, ¿cuál elijo?","Elige el camión A: cuesta 8 (dentro de tu tope de 10) y tarda menos, 20 minutos.",La A: cumple el tope de 10 y tarda menos.
+403ba2e849a2200b,Un bus recorre 12 km a 30 km/h. ¿Cuántos minutos tarda en completar ese trayecto?,Tarda **24 minutos**.,24 minutos; 12/30 de hora.
+413dc9fc1d151460,Voy a respaldar en la compu las fotos de mi celular. ¿Cómo checo que sí se copiaron bien antes de borrar algo?,"Hazlo así, sin borrar ni mover todavía:
+
+1. **Copia** las fotos a una carpeta de la computadora; no uses “cortar”.
+2. **Comprueba que terminó** la transferencia y que no aparezcan errores.
+3. Compara la **cantidad de archivos** del celular con la de la carpeta copiada; ten en cuenta que algunos álbumes pueden incluir elementos que no se copiaron.
+4. Abre varias fotos y videos, incluidos algunos antiguos y recientes. Amplía alguna foto para comprobar que se ve completa y con buena calidad.
+5. Revisa que la carpeta esté realmente guardada en la computadora y no solo en la nube como archivos pendientes de descargar.
+6. Si son irremplazables, haz **otra copia** en un disco externo o en otro lugar.
+
+Borra del celular solo cuando hayas comprobado la copia y puedas volver a abrirla.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+41ab86d60d8a6549,Quiero pasar las fotos del celular a la compu y guardar otra copia en un pendrive. ¿Qué archivos abrís para fijarte que se hayan copiado bien antes de borrar los originales?,"Antes de borrar los originales, abrí **en la compu y también directamente desde el pendrive**:
+
+- La primera y la última foto, y varias elegidas al azar.
+- Algunas fotos de archivos grandes y de cada formato que tengas.
+- Algunos videos, para comprobar que se reproducen.
+
+Compará también la cantidad de archivos y sus tamaños con los originales. Abrir una muestra ayuda a detectar problemas, pero no garantiza que se hayan copiado todos correctamente. Para comprobarlo con más seguridad, compará las **sumas de verificación** de cada archivo original con las de ambas copias.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+4279b7f590eab94d,"Explique brevemente, en dos o tres frases, la causa física por la que el hielo flota en agua líquida.","El hielo flota porque, al congelarse, las moléculas de agua forman una estructura cristalina más abierta que ocupa más volumen. Así, el hielo tiene menor densidad que el agua líquida y el empuje lo mantiene a flote.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+42c94a267df1e0d3,Le programaron una reunión de 45 minutos que empieza a las 9:20. ¿A qué hora debe quedar libre usted?,A las 10:05.,A las 10:05.
+42df14b0fc832c13,Le programaron una reunión de 45 minutos que empieza a las 9:20. ¿A qué hora debe quedar libre usted?,A las 10:05.,A las 10:05.
+431c3f5685bf8931,"El bus sale cada 20 minutos desde las 8:00. Si llego a la parada a las 8:07 y se respeta el horario, ¿a qué hora pasa el siguiente?",El siguiente bus pasa a las 8:20.,A las 8:20; explicar que la salida de 8:00 ya pasó.
+433bf23baecc0788,"Sintetice en una oración: el taller inicia a las 10:00, una ruta tarda 15 minutos y otra 25; se aconseja prever tiempo adicional.","El taller inicia a las 10:00; las rutas tardan 15 y 25 minutos, y se aconseja prever tiempo adicional.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+440f90c36da22148,"Sintetice en una oración: el taller inicia a las 10:00, una ruta tarda 15 minutos y otra 25; se aconseja prever tiempo adicional.","El taller comienza a las 10:00; las rutas tardan 15 y 25 minutos, y se aconseja prever tiempo adicional.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+44e3ff83655258dc,Necesito hacer un backup de tres documentos del computador en una memoria externa. ¿Qué pasos recomienda y cómo puedo mirar si quedaron bien copiados?,"1. Conecta la memoria externa y comprueba que tenga espacio suficiente.
+2. Localiza los tres documentos en el computador, selecciónalos y elige **Copiar**.
+3. Abre la memoria externa, entra en la carpeta de destino y elige **Pegar**. Espera a que termine la copia.
+4. Comprueba que aparecen los tres archivos y abre cada uno **desde la memoria externa** para verificar que su contenido sea legible. También puedes comparar su tamaño con el de los originales.
+5. Para una comprobación más rigurosa, compara los valores **SHA-256** de cada original y su copia: deben coincidir.
+6. Expulsa la memoria de forma segura antes de desconectarla. Conserva los originales en el computador.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+45ed46d9c0e17983,"En tres días leí 18, 24 y 30 páginas. ¿Qué promedio te da a vos por día?",El promedio es de **24 páginas por día**.,24 páginas por día.
+4613d3dd570c30cd,"¿Me convierte 2,5 litros a mililitros y me indica el resultado?","2,5 litros equivalen a **2.500 mililitros**.",2500 mililitros.
+4766b6c0aa961b84,Describa cómo transferir las fotografías del teléfono al equipo y validar la copia antes de eliminar los archivos originales.,"1. Conecte el teléfono al equipo con un cable USB, desbloquéelo y autorice la conexión o seleccione **Transferencia de archivos**, si se solicita.
+2. Abra el importador de fotos del equipo o el explorador de archivos. Copie —no mueva— las fotografías y los vídeos a una carpeta del equipo. Incluya las carpetas que contengan archivos que desee conservar.
+3. Antes de borrar nada, compruebe que la copia se completó:
+   - Compare la cantidad de archivos y, si no hubo conversión de formato, su tamaño total.
+   - Abra varias fotografías y reproduzca algunos vídeos desde la carpeta de destino.
+   - Si dispone de una herramienta de verificación, compare las sumas de comprobación de los archivos originales y copiados.
+4. Cuando haya validado la copia, elimine los originales desde el teléfono. Si usa un servicio de fotos sincronizado, compruebe antes si al borrarlos también se eliminarán de la nube o de otros dispositivos.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+47f6363b2c63ebc3,Un coche rinde 6 litros por cada 100 km. ¿Cuánto combustible ocuparía para recorrer 250 km?,Necesitaría **15 litros** de combustible.,"15 litros; proporción directa: 6 x 2,5."
+4884ad286d50f4d2,"Si el auto consume 6 litros cada 100 km, ¿cuántos litros necesitás para hacer 250 km al mismo ritmo?",Necesitás **15 litros**.,"15 litros; proporción directa: 6 x 2,5."
+49d0f168e1e37adf,"¿Por qué el hielo flota en el agua? Explícamelo en dos o tres frases, sin complicarlo de más.","El hielo flota porque es menos denso que el agua líquida. Al congelarse, las moléculas de agua se ordenan y ocupan más espacio, por lo que el hielo queda en la superficie.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+4b166dd7ebe29547,Necesito hacer un backup de tres documentos del computador en una memoria externa. ¿Qué pasos recomienda y cómo puedo mirar si quedaron bien copiados?,"1. Conecta la memoria externa y espera a que aparezca en el computador.
+2. Abre la carpeta donde están los tres documentos. Selecciónalos y elige **Copiar**.
+3. Abre la memoria, crea una carpeta si quieres y elige **Pegar**. Copiar, en vez de mover, conserva los originales.
+4. Comprueba que estén los tres archivos y que sus nombres y tamaños coincidan con los originales. Abre cada copia desde la memoria para confirmar que se puede leer.
+5. Expulsa la memoria de forma segura antes de desconectarla.
+
+Si los documentos son importantes, conserva también otra copia en un lugar distinto.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+4bf2af57e438af55,El hielo suele flotar en el agua. ¿Me explica en dos o tres frases cuál es la razón?,"Al congelarse, los enlaces de hidrógeno ordenan las moléculas de agua en una estructura más abierta que ocupa más volumen. Por eso el hielo es menos denso que el agua líquida y flota.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+4c19b7165fc1c5d3,Voy a preparar una lista de compras para cinco comidas. ¿Me indica cómo reunir los ingredientes de las recetas y revisar que no se repitan productos?,"Para preparar una sola lista para las cinco comidas:
+
+1. **Reúne los ingredientes** de cada receta, con sus cantidades y unidades.
+2. **Unifica los nombres** de productos equivalentes: por ejemplo, «tomate» y «tomates»; distingue variedades si importa.
+3. **Agrupa los repetidos** y suma sus cantidades, convirtiendo antes las unidades cuando sea necesario (por ejemplo, gramos y kilos).
+4. **Anota por separado** los ingredientes sin cantidad exacta o las alternativas.
+5. **Comprueba lo que ya tienes** en casa y réstalo de la cantidad total.
+6. **Ordena la lista por secciones** —verduras, lácteos, despensa, etc.— para facilitar la compra.
+
+Si me envías las cinco recetas, puedo reunir los ingredientes y señalar los productos repetidos.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+4c209e35a8459b40,"¿Me convierte 2,5 litros a mililitros y me indica el resultado?","2,5 litros = **2.500 mililitros**.",2500 mililitros.
+4d819f3d37634e75,Arrancás una reunión a las 9:20 y calculás que dura tres cuartos de hora. ¿A qué hora quedás libre?,A las 10:05.,A las 10:05.
+4de4802fb23f751b,Salen tres camiones con una caja de ocho cuadernos cada uno. ¿Cuántos cuadernos llevan entre todos?,Llevan **24 cuadernos** en total: 3 × 8 = 24.,24 cuadernos.
+4de90de22ac468eb,Un coche rinde 6 litros por cada 100 km. ¿Cuánto combustible ocuparía para recorrer 250 km?,Necesitaría **15 litros** de combustible.,"15 litros; proporción directa: 6 x 2,5."
+4e7ab8889663de58,Para una receta se usan 75 g de frijoles por persona. ¿Cuántos gramos compro si van a comer cuatro?,Compra **300 g de frijoles**: 75 g × 4 = 300 g.,300 g; multiplicar 75 por 4.
+512ff4b038e406df,¿Por qué el hielo queda arriba del agua líquida? Contame en dos o tres frases.,"El hielo queda arriba porque es menos denso que el agua líquida. Al congelarse, las moléculas forman una estructura más abierta, que ocupa más volumen para la misma cantidad de agua.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+514a6a7570c47293,"Tengo seis archivos de 750 KB en mi computador. ¿Cuánto espacio ocupan juntos, sin contar nada más?","Juntos ocupan **4.500 KB**, es decir, **4,5 MB** si 1 MB equivale a 1.000 KB.",4500 KB; multiplicar 750 por 6.
+526c6702bd6ab4f8,Quiero pasar las fotos del celular a la compu y guardar otra copia en un pendrive. ¿Qué archivos abrís para fijarte que se hayan copiado bien antes de borrar los originales?,"Abrí las **copias tanto en la compu como en el pendrive**:
+
+- Si son pocas, abrí todas las fotos. Si son muchas, revisá al menos las primeras, las últimas y una selección al azar de cada carpeta y tipo de archivo. Miralas en tamaño completo, no solo como miniaturas.
+- Si también copiaste videos, reproducí algunos y comprobá el principio, el medio y el final, con sonido.
+
+Antes de borrar los originales, compará además la cantidad y el tamaño de los archivos en las dos copias. Una muestra no garantiza que estén todos bien: para una comprobación más segura, compará las **sumas de verificación** de cada archivo con su original.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+52c5a7accdad45f6,Una receta lleva 75 g de fríjoles por persona. ¿Cuánto debo alistar para cuatro personas?,Debes alistar **300 g de fríjoles**.,300 g; multiplicar 75 por 4.
+53414d2932414286,Tengo tres documentos en la compu y quiero guardarlos en un pendrive. ¿Cómo armás la copia y qué conviene abrir para fijarme si quedó bien?,"1. Conectá el pendrive y abrí el explorador de archivos.
+2. Seleccioná los tres documentos, elegí **Copiar** y luego **Pegar** dentro del pendrive. Así conservás los originales en la compu.
+3. Abrí cada documento **desde el pendrive** y comprobá que se vea y se pueda leer correctamente.
+4. Cerrá los archivos y expulsá el pendrive de forma segura antes de retirarlo.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+5513aa90bbfec609,"Determine la duración, en minutos, de un recorrido de 12 km a velocidad constante de 30 km/h.",La duración es **24 minutos**.,24 minutos; 12/30 de hora.
+5594d4bae2348b41,Quiero armar la lista para cinco comidas. ¿Cómo juntás los ingredientes de las recetas y te fijás que no se repitan?,"Pasame las cinco recetas y junto los ingredientes en una sola lista. Para evitar repeticiones, unifico nombres equivalentes —por ejemplo, «tomate» y «tomates»— y sumo las cantidades cuando corresponda, respetando las unidades. Si un ingrediente aparece con cantidades o unidades distintas, lo dejo aclarado en vez de convertirlo sin saber cómo medirlo.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+55d3703bf828034d,Tengo tres documentos en la compu y quiero guardarlos en un pendrive. ¿Cómo armás la copia y qué conviene abrir para fijarme si quedó bien?,"1. Conectá el pendrive y abrílo en el explorador de archivos.
+2. Seleccioná los tres documentos en la compu, elegí **Copiar** y pegálos dentro del pendrive. Así conservás los originales.
+3. Cuando termine, abrí desde el pendrive cada documento y comprobá que se vea bien. También verificá que estén los tres archivos.
+4. Expulsá el pendrive de forma segura antes de desconectarlo.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+56406c121b69f35a,"En una mezcla de 14 unidades con proporción 2:5, calcule la cantidad correspondiente al componente menor.",La proporción tiene 7 partes en total. Cada parte equivale a 2 unidades; el componente menor corresponde a 2 partes: **4 unidades**.,4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+569fe018c83c927b,¿Me ayuda a calcular cuánto tiempo de viaje acumulo si cada trayecto en bus toma 12 minutos y hago tres recorridos iguales?,12 minutos × 3 recorridos = **36 minutos** de viaje en total.,36 minutos; multiplicar 12 por 3.
+585e28d6fdd6a9f3,"En una mezcla de 14 unidades con proporción 2:5, calcule la cantidad correspondiente al componente menor.",4 unidades.,4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+58bb4c3606fbba43,"Calcule el tamaño total de seis archivos de 750 KB cada uno, excluyendo otros datos del equipo.",El tamaño total es **4.500 KB**.,4500 KB; multiplicar 750 por 6.
+591a73ff10826a62,¿Me puede indicar cinco pasos para precalentar el horno a 180 °C y hornear una preparación durante 20 minutos? Incluya una precaución de seguridad.,"1. Retire del horno los objetos que no sean necesarios y compruebe que esté vacío.
+2. Ajuste la temperatura a **180 °C** y enciéndalo.
+3. Espere a que el horno indique que alcanzó esa temperatura.
+4. Introduzca la preparación en un recipiente apto para horno, cierre la puerta y programe **20 minutos**.
+5. Al terminar, compruebe la cocción y retire el recipiente con guantes térmicos: las superficies estarán calientes.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+591cd430b709e27a,Salen tres camiones con una caja de ocho cuadernos cada uno. ¿Cuántos cuadernos llevan entre todos?,Llevan 24 cuadernos entre todos.,24 cuadernos.
+5a3f1d424bfa0061,Necesito pasar 2.5 litros a mililitros. ¿Cuánto es?,2.5 litros equivalen a **2500 mililitros**.,2500 mililitros.
+5a7d2bdecb202564,Tengo que precalentar el horno a 180 °C y dejar la preparación 20 minutos. ¿Me armás cinco pasos y una precaución para sacarla?,"1. Precalentá el horno a 180 °C.
+2. Colocá la preparación en una fuente apta para horno.
+3. Cuando el horno alcance la temperatura, poné la fuente dentro.
+4. Dejala cocinar durante 20 minutos.
+5. Retirala y comprobá que esté lista.
+
+**Precaución:** Usá guantes de horno para sacar la fuente caliente y apoyala sobre una superficie resistente al calor.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+5b3fe5e63d96e06e,"Si el camión avanza 12 km a una velocidad constante de 30 km/h, ¿cuánto tarda?",Tarda **24 minutos**.,24 minutos; 12/30 de hora.
+5b64f969016a4eee,Guardé seis archivos de 750 KB en la compu. ¿Cuánto espacio ocupan entre todos?,Ocupan **4500 KB** en total.,4500 KB; multiplicar 750 por 6.
+5bd3bc6f0bb94125,El colectivo hace 12 km a 30 km/h. ¿Cuánto tardás en cubrir ese trayecto?,Tardás **24 minutos**.,24 minutos; 12/30 de hora.
+5bd54a43b337737a,Guardé seis archivos de 750 KB en la compu. ¿Cuánto espacio ocupan entre todos?,Ocupan **4.500 KB** en total.,4500 KB; multiplicar 750 por 6.
+5cdc893ab6e68351,"Para estimar el combustible, ¿cuántos litros gastaría un carro en 250 km si consume 6 litros cada 100 km?",Gastaría **15 litros**: 250 × 6 / 100 = 15.,"15 litros; proporción directa: 6 x 2,5."
+5cfd18f72f993433,"Si una mezcla se prepara con ingredientes en proporción 2 a 5 y debe rendir 14 unidades, ¿cuántas corresponden a la parte menor?",La parte menor corresponde a **4 unidades**.,4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+5d343d018a875e1c,Tengo tres documentos en la compu y quiero guardarlos en un pendrive. ¿Cómo armás la copia y qué conviene abrir para fijarme si quedó bien?,"1. Conectá el pendrive y abrí la carpeta donde están los tres documentos.
+2. Seleccionalos y elegí **Copiar** (Ctrl+C).
+3. Abrí el pendrive y elegí **Pegar** (Ctrl+V). Así conservás también los originales en la compu.
+4. Cuando termine, abrí desde el pendrive cada uno de los tres documentos para comprobar que se ven bien.
+5. Después, expulsá el pendrive de forma segura.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+5d3646eefaedd896,La junta va a durar 45 minutos y la puse a las 9:20. ¿A qué hora se acaba?,Se acaba a las 10:05.,A las 10:05.
+5d7a04992b4b56c3,Una receta lleva 75 g de fríjoles por persona. ¿Cuánto debo alistar para cuatro personas?,Debes alistar **300 g de fríjoles**.,300 g; multiplicar 75 por 4.
+5e2a9557e577489e,Quiero armar carpetas por año y tema para ordenar 12 archivos de la compu. ¿Cómo lo harías sin tocar el contenido?,"Lo haría **moviendo los archivos, sin editarlos ni renombrarlos**:
+
+1. Haz una copia de seguridad de los 12 archivos.
+2. Crea una carpeta principal, por ejemplo, `Archivos organizados`.
+3. Dentro, crea una carpeta por año y, dentro de cada año, una por tema.  
+   Ejemplo: `2024/Facturas/` y `2024/Proyectos/`.
+4. Clasifica cada archivo usando su fecha y tema según el nombre o sus propiedades, sin cambiar su contenido.
+5. Mueve cada archivo a su carpeta correspondiente y comprueba que estén los 12.
+
+Si no se puede determinar el año o el tema, déjalo aparte en una carpeta `Por clasificar` hasta confirmarlo.","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+5e2ca3989e14475a,"Voy a limpiar la pantalla de la compu, que ya apagué y desconecté. ¿Qué cuidados debo tener?","- Espera a que la pantalla esté fría.
+- Usa un paño de microfibra limpio y suave, sin presionar. No uses papel ni estropajos.
+- Si quedan manchas, humedece ligeramente el paño con agua destilada; nunca rocíes líquido directamente sobre la pantalla.
+- Evita que entre humedad por los bordes, puertos o aberturas.
+- No uses limpiavidrios, amoníaco, acetona ni alcohol, salvo que el fabricante lo autorice.
+- Deja que se seque por completo antes de volver a conectarla y encenderla.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+5e3a4141c2375195,"Cada colectivo lleva una caja con ocho cuadernos; si salen tres, ¿cuántos cuadernos transportás?","Si salen tres colectivos, transportan **24 cuadernos**.",24 cuadernos.
+5eac5b18cfc06175,"El colectivo tarda 12 minutos por tramo; si hacés tres viajes iguales, ¿cuánto tiempo sumás?","Si cada viaje es un tramo, sumás **36 minutos**. Si cada viaje incluye ida y vuelta, son **72 minutos**.",36 minutos; multiplicar 12 por 3.
+5ece98aef7b46816,"Para cuatro personas, armás la receta con 75 g de porotos por cabeza. ¿Cuántos gramos precisás poner?",Necesitás 300 g de porotos.,300 g; multiplicar 75 por 4.
+5edd346734b80031,"Tengo 12 archivos en el computador y quisiera ordenarlos por año y tema, sin cambiar su contenido. ¿Cómo podría organizarlos en carpetas?","Una forma sencilla es crear una carpeta principal y ordenar primero por año y luego por tema:
+
+```text
+Archivos/
+├── 2023/
+│   ├── Trabajo/
+│   └── Estudios/
+├── 2024/
+│   ├── Trabajo/
+│   └── Personal/
+└── 2025/
+    └── Estudios/
+```
+
+Mueve cada archivo a la carpeta que corresponda según su año y tema. Esto no cambia su contenido. Si no sabes dónde ubicar alguno, déjalo temporalmente en una carpeta `Por clasificar`.","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+5f2b2d05171612f7,"Leí 18 páginas un día, 24 al siguiente y 30 el tercero. ¿Cuál fue mi promedio diario?",Tu promedio fue de **24 páginas al día**.,24 páginas por día.
+5f2b480be914fc7c,"Tengo dos opciones de bus: la A tarda 20 minutos y cuesta 8; la B tarda 35 y cuesta 5. Si lo principal es llegar rápido y puedo pagar hasta 10, ¿cuál me conviene?","Te conviene la opción A: tarda menos (20 minutos) y cuesta 8, dentro de tu presupuesto de 10.",La A: cumple el tope de 10 y tarda menos.
+5fd01858974c4289,"Calcule el promedio diario de lectura a partir de los valores 18, 24 y 30 páginas.",El promedio diario es **24 páginas**: (18 + 24 + 30) ÷ 3 = 24.,24 páginas por día.
+5fda2b5cf302a5da,Tengo que precalentar el horno a 180 °C y dejar la preparación 20 minutos. ¿Me armás cinco pasos y una precaución para sacarla?,"1. Precalentá el horno a 180 °C.
+2. Colocá la preparación en una fuente apta para horno.
+3. Introducí la fuente cuando el horno esté caliente.
+4. Dejala cocinar durante 20 minutos.
+5. Apagá el horno y retirala.
+
+**Precaución:** Usá guantes de horno para evitar quemaduras.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+604df52734adf79e,"El colectivo tarda 12 minutos por tramo; si hacés tres viajes iguales, ¿cuánto tiempo sumás?","Si cada viaje corresponde a un tramo, sumás **36 minutos**.",36 minutos; multiplicar 12 por 3.
+60583e75e74d1a9b,"Tengo 12 archivos en el computador y quisiera ordenarlos por año y tema, sin cambiar su contenido. ¿Cómo podría organizarlos en carpetas?","Puedes crear una carpeta principal y, dentro, organizar los archivos primero por año y luego por tema:
+
+```text
+Archivos/
+├── Año 1/
+│   ├── Tema A/
+│   └── Tema B/
+└── Año 2/
+    ├── Tema A/
+    └── Tema B/
+```
+
+Sustituye los nombres del ejemplo por los años y temas que correspondan. Después, mueve cada uno de los 12 archivos a su carpeta; **su contenido permanecerá intacto**.","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+61539d676879b8df,Una receta lleva 75 g de fríjoles por persona. ¿Cuánto debo alistar para cuatro personas?,Debes alistar **300 g de fríjoles**.,300 g; multiplicar 75 por 4.
+61d11206e3ef39e5,Quiero pasar las fotos del celular a la compu y guardar otra copia en un pendrive. ¿Qué archivos abrís para fijarte que se hayan copiado bien antes de borrar los originales?,"Abrí algunas fotos y videos **desde la compu y desde el pendrive**: elegí archivos de distintas fechas, incluidos los más recientes y alguno grande. Comprobá que se vean completos y, en los videos, que se reproduzcan con sonido.
+
+También compará la cantidad de archivos y el tamaño de las carpetas. No borres los originales hasta verificar ambas copias.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+62f23405f1af80d0,"Compare las dos alternativas: una tarda 20 minutos y cuesta 8 unidades; la otra tarda 35 y cuesta 5. Con un límite de 10 y prioridad al tiempo, determine la opción adecuada.","Suponiendo que el límite de 10 se refiere al costo, ambas opciones lo cumplen. Como se prioriza el tiempo, la adecuada es la de **20 minutos y 8 unidades**.",La A: cumple el tope de 10 y tarda menos.
+62fe6eeaef189046,"Convierta 2,5 litros a mililitros e informe el valor equivalente.","2,5 litros equivalen a **2.500 mililitros**.",2500 mililitros.
+6327a505010e4c83,En la compu guardé seis archivos de 750 KB cada uno; ¿cuánto espacio ocupan en total?,"Ocupan **4500 KB** en total, es decir, **4,5 MB** si 1 MB = 1000 KB.",4500 KB; multiplicar 750 por 6.
+63c146eb1b6c8578,"Proponga una estructura de carpetas para clasificar 12 archivos por año y tema, preservando su contenido.","Como ejemplo, supongamos tres años y dos temas, con dos archivos por combinación:
+
+```text
+archivos/
+├── 2022/
+│   ├── tema_A/  (archivo_01, archivo_02)
+│   └── tema_B/  (archivo_03, archivo_04)
+├── 2023/
+│   ├── tema_A/  (archivo_05, archivo_06)
+│   └── tema_B/  (archivo_07, archivo_08)
+└── 2024/
+    ├── tema_A/  (archivo_09, archivo_10)
+    └── tema_B/  (archivo_11, archivo_12)
+```
+
+Los nombres de archivo son marcadores: conserve los nombres originales y mueva cada archivo sin modificar su contenido.","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+63d01ff4dff13e4b,"El colectivo pasa cada 20 minutos desde las 8:00; si llegás a la parada a las 8:07, ¿a qué hora viene el próximo?","El próximo pasa a las 8:20, suponiendo que mantiene el intervalo de 20 minutos.",A las 8:20; explicar que la salida de 8:00 ya pasó.
+644d85a5ae81375c,"Tengo dos opciones de bus: la A tarda 20 minutos y cuesta 8; la B tarda 35 y cuesta 5. Si lo principal es llegar rápido y puedo pagar hasta 10, ¿cuál me conviene?","Te conviene la opción **A**: tarda 20 minutos y cuesta 8, dentro de tu presupuesto de 10.",La A: cumple el tope de 10 y tarda menos.
+650ce71e7c2c403b,"Compare las dos alternativas: una tarda 20 minutos y cuesta 8 unidades; la otra tarda 35 y cuesta 5. Con un límite de 10 y prioridad al tiempo, determine la opción adecuada.","Suponiendo que el límite de 10 se refiere al costo, ambas opciones cumplen el presupuesto. Como se prioriza el tiempo, conviene la de **20 minutos y 8 unidades**.",La A: cumple el tope de 10 y tarda menos.
+65320bfcbe45c5fb,"El camión sale cada 20 minutos a partir de las 8. Si llego a las 8:07, ¿cuál es la próxima salida?",A las 8:20.,A las 8:20; explicar que la salida de 8:00 ya pasó.
+663bd217c12af820,"El camión sale cada 20 minutos a partir de las 8. Si llego a las 8:07, ¿cuál es la próxima salida?",La próxima salida es a las **8:20**.,A las 8:20; explicar que la salida de 8:00 ya pasó.
+666e4159b7e4cb0f,Tengo 12 archivos en la compu y quiero acomodarlos por año y tema. ¿Cómo los organizo en carpetas sin modificar nada?,"Crea una carpeta principal y, dentro, subcarpetas por **año** y luego por **tema**. Por ejemplo:
+
+```text
+Archivos/
+├── 2023/
+│   ├── Trabajo/
+│   └── Personal/
+└── 2024/
+    ├── Trabajo/
+    └── Personal/
+```
+
+Después **mueve** cada archivo a la carpeta correspondiente: moverlo no cambia su contenido ni su nombre, solo su ubicación. Si quieres conservar los originales exactamente donde están, **cópialos** a esas carpetas en vez de moverlos. Si no sabes el año o tema de algún archivo, déjalo en una carpeta `Por clasificar`.","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+667481405507eef4,"¿Me convierte 2,5 litros a mililitros y me indica el resultado?","2,5 litros = **2500 mililitros**.",2500 mililitros.
+66809174114336df,Describa cómo transferir las fotografías del teléfono al equipo y validar la copia antes de eliminar los archivos originales.,"1. **Conecte el teléfono al equipo** con un cable USB, desbloquéelo y autorice la conexión. Si aparece la opción, seleccione «Transferencia de archivos» o «Transferencia de fotos».
+2. **Copie, no mueva, las fotografías** al equipo mediante el explorador de archivos o una aplicación de importación. Si las fotos están almacenadas solo en la nube, descargue primero los originales.
+3. **Valide la copia antes de borrar nada**:
+   - Compare la cantidad de archivos y el tamaño total de las carpetas, teniendo en cuenta que algunas aplicaciones pueden convertir o agrupar archivos.
+   - Abra varias fotos de distintas fechas y compruebe que se ven correctamente y con la calidad esperada.
+   - Para una comprobación más rigurosa, compare las sumas de verificación de los archivos originales y sus copias, si dispone de una herramienta para ello.
+4. **Haga otra copia de seguridad**, preferiblemente en un dispositivo o servicio independiente.
+5. Solo cuando haya verificado las copias, elimine los originales del teléfono. Si usa sincronización en la nube, compruebe antes si borrarlos también los eliminará de la nube y de otros dispositivos.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+673ae7e5a30c0f68,"Leí 18 páginas un día, 24 al siguiente y 30 el tercero. ¿Cuál fue mi promedio diario?",Tu promedio diario fue de **24 páginas**: (18 + 24 + 30) ÷ 3 = 24.,24 páginas por día.
+67f6fb90390ebc66,Arrancás una reunión a las 9:20 y calculás que dura tres cuartos de hora. ¿A qué hora quedás libre?,Quedás libre a las 10:05.,A las 10:05.
+68b833caa3444366,"Si el auto consume 6 litros cada 100 km, ¿cuántos litros necesitás para hacer 250 km al mismo ritmo?",Necesitás **15 litros**.,"15 litros; proporción directa: 6 x 2,5."
+6973878fc249c973,"Tengo seis archivos de 750 KB en mi computador. ¿Cuánto espacio ocupan juntos, sin contar nada más?","Juntos ocupan **4.500 KB**, es decir, **4,5 MB** si se usa el sistema decimal.",4500 KB; multiplicar 750 por 6.
+6a1119fd33b2297d,"El colectivo pasa cada 20 minutos desde las 8:00; si llegás a la parada a las 8:07, ¿a qué hora viene el próximo?",A las 8:20.,A las 8:20; explicar que la salida de 8:00 ya pasó.
+6ac3687f9468da09,Quiero respaldar tres documentos de la compu en una memoria externa. ¿Cómo le hago y qué puedo checar para asegurarme de que sí se copiaron?,"1. Conecta la memoria externa a la computadora y abre su carpeta en el explorador de archivos.
+2. Busca los tres documentos, selecciónalos y cópialos con **Ctrl+C** (Windows) o **⌘+C** (Mac).
+3. Ve a la carpeta de la memoria y pégalos con **Ctrl+V** o **⌘+V**. Espera a que termine la copia.
+
+Para comprobarla, revisa que los tres archivos aparezcan en la memoria, compara sus tamaños con los originales y abre cada uno **desde la memoria** para verificar que se vea correctamente.
+
+Por último, expulsa la memoria de forma segura antes de desconectarla. Conserva los originales en la computadora.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+6b0ec03e1847efd6,"Si una mezcla se prepara con ingredientes en proporción 2 a 5 y debe rendir 14 unidades, ¿cuántas corresponden a la parte menor?",La parte menor corresponde a **4 unidades**: \(14 \times \frac{2}{2+5} = 4\).,4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+6bffd9034b4db78e,"El camión sale cada 20 minutos a partir de las 8. Si llego a las 8:07, ¿cuál es la próxima salida?",La próxima salida es a las 8:20.,A las 8:20; explicar que la salida de 8:00 ya pasó.
+6cb8dfc58021b4b1,¿Por qué el hielo queda arriba del agua líquida? Contame en dos o tres frases.,"Al congelarse, las moléculas de agua forman una estructura abierta que ocupa más espacio. Por eso, el hielo es menos denso que el agua líquida y flota.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+6d1f86c9bd84bee1,Calcule la cantidad necesaria para cuatro porciones si cada una requiere 75 g de frijoles secos.,Se necesitan **300 g de frijoles secos** para cuatro porciones.,300 g; multiplicar 75 por 4.
+6d41fb78380d0f7e,Salen tres camiones con una caja de ocho cuadernos cada uno. ¿Cuántos cuadernos llevan entre todos?,Llevan **24 cuadernos** entre todos.,24 cuadernos.
+71282d43153ac8b0,"En tres días leí 18, 24 y 30 páginas. ¿Qué promedio te da a vos por día?",El promedio es **24 páginas por día**: (18 + 24 + 30) ÷ 3 = 24.,24 páginas por día.
+71379959adcb7f05,Necesito pasar 2.5 litros a mililitros. ¿Cuánto es?,"2.5 litros equivalen a **2,500 mililitros**.",2500 mililitros.
+7182de0cbcd4b7c0,Tengo que limpiar la pantalla de la compu; ya está apagada y desenchufada. ¿Qué tendría que hacer para no dañarla?,"1. Limpia la pantalla con un **paño de microfibra limpio y seco**, sin presionar.
+2. Si quedan manchas, humedece ligeramente el paño con agua destilada y pásalo con suavidad. **No rocíes líquido directamente** sobre la pantalla ni dejes que entre por los bordes.
+3. Sécala con otra zona seca del paño y espera a que esté completamente seca antes de encenderla.
+
+Evita papel, esponjas abrasivas y productos con alcohol, amoníaco u otros disolventes, salvo que el fabricante los autorice.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+720ea47c76cdd033,"Voy a limpiar la pantalla de la compu, que ya apagué y desconecté. ¿Qué cuidados debo tener?","- Usa un paño de microfibra limpio y suave. Primero, pásalo en seco, sin presionar.
+- Si quedan manchas, humedece ligeramente el paño con agua destilada; no rocíes la pantalla directamente.
+- Evita que entre líquido por los bordes, puertos o ranuras.
+- No uses papel, esponjas abrasivas, limpiavidrios, amoníaco ni alcohol, salvo que el fabricante lo indique expresamente.
+- Deja que se seque por completo antes de volver a conectarla y encenderla.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+727e1e4c88f1b0d5,Quiero respaldar tres documentos de la compu en una memoria externa. ¿Cómo le hago y qué puedo checar para asegurarme de que sí se copiaron?,"1. Conecta la memoria externa y espera a que aparezca en la computadora.
+2. Abre la carpeta donde están los documentos. Selecciónalos y elige **Copiar** (no **Cortar**).
+3. Abre la memoria, crea una carpeta si quieres y elige **Pegar**. Espera a que termine la copia.
+4. Comprueba que estén los tres archivos en la memoria:
+   - Revisa sus nombres y tamaños.
+   - Abre cada uno desde la memoria para confirmar que se puede leer.
+   - Si puedes, compara los tamaños con los originales.
+5. Expulsa la memoria de forma segura antes de desconectarla.
+
+Si me dices si usas Windows o Mac, te doy los pasos exactos.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+72b5b7567014e160,Calcule el total de cuadernos transportados por tres vehículos con ocho cuadernos cada uno.,3 vehículos × 8 cuadernos = **24 cuadernos**.,24 cuadernos.
+734fea833236c49d,"Explique cómo consolidar los ingredientes de cinco recetas en una lista única, sumando cantidades cuando corresponda y eliminando duplicados.","1. Extrae los ingredientes y sus cantidades de las cinco recetas.
+2. Unifica los nombres que se refieran al mismo ingrediente y comprueba que tengan la misma presentación o preparación.
+3. Convierte las cantidades a unidades compatibles. Por ejemplo, 0,5 kg y 200 g se convierten en 500 g y 200 g.
+4. Suma las cantidades de cada ingrediente equivalente y escribe una sola entrada: **harina: 700 g**.
+5. Si las unidades no son directamente convertibles o falta alguna cantidad, consérvalas por separado o indícalo, en lugar de hacer una suma aproximada.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+73d9d94083f640fb,"Determine la duración, en minutos, de un recorrido de 12 km a velocidad constante de 30 km/h.",El recorrido dura **24 minutos**.,24 minutos; 12/30 de hora.
+7463f31677528832,Indique un procedimiento seguro para limpiar la pantalla de un equipo apagado y desconectado.,"1. Confirme que el equipo esté apagado y desconectado, y deje que la pantalla se enfríe.
+2. Retire el polvo con un paño limpio, suave y sin pelusa.
+3. Si quedan manchas, humedezca apenas el paño con agua —preferiblemente destilada— o con un producto aprobado por el fabricante. **No rocíe líquido directamente sobre la pantalla.**
+4. Limpie con suavidad, sin presionar, y seque con otra parte limpia del paño.
+
+Evite papel, productos abrasivos, limpiacristales, amoníaco y disolventes.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+7501932bb5868042,"Resuma en una frase: el taller empieza a las 10:00; el bus A tarda 15 minutos y el B, 25. Para llegar antes, se recomienda salir con tiempo.","El taller empieza a las 10:00; el bus A tarda 15 minutos y el B, 25, así que conviene salir con antelación.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+760237c2953c0210,"El colectivo A tarda 20 minutos y sale 8; el B demora 35 y sale 5. Si querés llegar rápido y tenés hasta 10, ¿cuál te sirve?","Si querés llegar lo antes posible, te sirve el **B**: llega a las 5:35. El A llega a las 8:20. **Ambos** llegan antes de las 10.",La A: cumple el tope de 10 y tarda menos.
+76497bb784183981,"Explique cómo consolidar los ingredientes de cinco recetas en una lista única, sumando cantidades cuando corresponda y eliminando duplicados.","Para consolidar los ingredientes de cinco recetas:
+
+1. **Reúne** todos los ingredientes con sus cantidades y unidades.
+2. **Unifica los nombres** que se refieran al mismo ingrediente y comprueba que tengan la misma presentación. Por ejemplo, no mezcles tomate fresco con tomate triturado salvo que sean intercambiables.
+3. **Convierte las unidades compatibles** a una unidad común, como gramos o mililitros.
+4. **Suma las cantidades** de cada ingrediente repetido y deja una sola entrada en la lista.
+5. **Mantén separadas** las cantidades que no puedas convertir con seguridad, como gramos y tazas sin conocer la equivalencia.
+
+Por ejemplo, si dos recetas requieren 200 g y 300 g de harina, la lista final debe indicar **500 g de harina**.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+767d84175bef7661,"En una sola frase, contame qué dice esto: el taller arranca a las 10; el colectivo A tarda 15 minutos y el B, 25, así que conviene salir con tiempo.","El taller empieza a las 10 y conviene salir con tiempo, ya que el colectivo A tarda 15 minutos y el B, 25.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+76861e1d12b9efcb,"Explique brevemente, en dos o tres frases, la causa física por la que el hielo flota en agua líquida.","El hielo flota porque su densidad es menor que la del agua líquida. Al congelarse, los enlaces de hidrógeno organizan las moléculas en una estructura abierta que ocupa más volumen.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+7702457e7e96b0ee,¿Me puede indicar cinco pasos para precalentar el horno a 180 °C y hornear una preparación durante 20 minutos? Incluya una precaución de seguridad.,"1. Retire los objetos que haya dentro del horno y coloque la rejilla a la altura adecuada.
+2. Encienda el horno y ajuste la temperatura a **180 °C**.
+3. Espere a que alcance esa temperatura, según el indicador del horno.
+4. Introduzca la preparación y programe el temporizador para **20 minutos**.
+5. Al terminar, retire la preparación con guantes o manoplas térmicas para evitar quemaduras.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+7778b3af51f53199,"¿Cuántos mililitros son 2,5 litros? Hacé la conversión, por favor.","2,5 litros son **2.500 mililitros**.
+
+2,5 × 1.000 = 2.500 ml.",2500 mililitros.
+7926ca03fbf4d1c1,"Explique cómo consolidar los ingredientes de cinco recetas en una lista única, sumando cantidades cuando corresponda y eliminando duplicados.","1. Extrae todos los ingredientes de las cinco recetas.
+2. Normaliza los nombres para identificar duplicados (por ejemplo, «tomate» y «tomates»).
+3. Comprueba que las cantidades estén en unidades compatibles; convierte las unidades cuando sea necesario.
+4. Suma las cantidades de cada ingrediente repetido.
+5. Conserva por separado los ingredientes o formatos que no sean equivalentes (por ejemplo, cebolla fresca y cebolla en polvo).
+6. Presenta cada ingrediente una sola vez, con su cantidad total. Si una receta no indica cantidad, déjala señalada como «cantidad no especificada» en vez de inventarla.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+79815a8f0641f88e,"Tengo 12 archivos en el computador y quisiera ordenarlos por año y tema, sin cambiar su contenido. ¿Cómo podría organizarlos en carpetas?","Puedes crear una carpeta principal y organizarla por **año → tema**:
+
+```text
+Archivos/
+├── 2022/
+│   ├── Trabajo/
+│   └── Finanzas/
+├── 2023/
+│   ├── Trabajo/
+│   └── Viajes/
+└── 2024/
+    ├── Trabajo/
+    └── Personal/
+```
+
+Mueve cada archivo a la carpeta que corresponda según su fecha y tema. Así no cambias su contenido. Si no sabes el año exacto, déjalo temporalmente en una carpeta como `Por clasificar`.","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+79e1ee9d204a0e97,"El bus sale cada 20 minutos desde las 8:00. Si llego a la parada a las 8:07 y se respeta el horario, ¿a qué hora pasa el siguiente?",A las 8:20.,A las 8:20; explicar que la salida de 8:00 ya pasó.
+79f7f993dcd4cd40,Estoy armando las compras para cinco comidas. ¿Cómo junto lo de las recetas y checo que no anote dos veces lo mismo?,"Haz una lista por ingrediente, no por receta:
+
+1. Anota cada ingrediente y cantidad de las cinco recetas.
+2. Junta los nombres equivalentes: por ejemplo, “tomate” y “jitomate” si se refieren a lo mismo.
+3. Suma las cantidades, convirtiéndolas antes a una misma unidad (g, ml o unidades).
+4. Mantén separados los ingredientes parecidos pero distintos, como cebolla blanca y morada.
+5. Revisa la despensa y descuenta lo que ya tienes.
+
+Ejemplo: 1 cebolla + 2 cebollas → **3 cebollas**. Si compartes las recetas, puedo unificarlas en una lista y señalar posibles duplicados.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+7aa7c3f18bbeeb30,"Convierta 2,5 litros a mililitros e informe el valor equivalente.","2,5 litros equivalen a **2500 mililitros**.",2500 mililitros.
+7b5d395d53519f58,Tengo que limpiar la pantalla de la compu; ya está apagada y desenchufada. ¿Qué tendría que hacer para no dañarla?,"1. Retira el polvo suavemente con un paño de microfibra limpio y seco.
+2. Si quedan manchas, humedece ligeramente el paño con agua destilada y pásalo sin presionar. No rocíes líquido directamente sobre la pantalla.
+3. Evita que entre humedad por los bordes y deja que se seque por completo antes de enchufarla.
+
+No uses papel, estropajos, limpiacristales ni productos con alcohol, amoníaco o disolventes. Si el fabricante indica un método específico, sigue sus instrucciones.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+7cffa454adeaf1c5,"Para cuatro personas, armás la receta con 75 g de porotos por cabeza. ¿Cuántos gramos precisás poner?",Necesitás **300 g de porotos**.,300 g; multiplicar 75 por 4.
+7d0e9d19b7b6ee72,Voy a hornear algo durante 20 minutos. ¿Qué cinco pasos sigo para precalentar el horno a 180 °C y sacar la preparación sin quemarme?,"1. Coloca la rejilla a la altura deseada antes de encender el horno.
+2. Ajusta el horno a **180 °C** y espera a que alcance esa temperatura.
+3. Introduce la preparación en un recipiente apto para horno y cierra la puerta.
+4. Programa **20 minutos** de cocción.
+5. Al terminar, apaga el horno, abre la puerta con cuidado del vapor y usa guantes térmicos para sacar el recipiente. Déjalo sobre una superficie resistente al calor.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+7e253894bc3946d3,"Calcule el promedio diario de lectura a partir de los valores 18, 24 y 30 páginas.",El promedio diario es **24 páginas**.,24 páginas por día.
+7efaf824a3a57ed9,En la compu guardé seis archivos de 750 KB cada uno; ¿cuánto espacio ocupan en total?,Ocupan **4.500 KB** en total.,4500 KB; multiplicar 750 por 6.
+7f0b16461e38e6f8,Guardé seis archivos de 750 KB en la compu. ¿Cuánto espacio ocupan entre todos?,"Ocupan **4.500 KB**, es decir, **4,5 MB** (usando 1 MB = 1.000 KB).",4500 KB; multiplicar 750 por 6.
+7f3a8303cc271a23,"Calcule el tamaño total de seis archivos de 750 KB cada uno, excluyendo otros datos del equipo.",6 × 750 KB = **4.500 KB**.,4500 KB; multiplicar 750 por 6.
+7f7a5e42251ae993,"¿Me convierte 2,5 litros a mililitros y me indica el resultado?","2,5 litros = **2.500 mililitros**.",2500 mililitros.
+814c8eacaff9abc2,El colectivo hace 12 km a 30 km/h. ¿Cuánto tardás en cubrir ese trayecto?,Tardás **24 minutos**.,24 minutos; 12/30 de hora.
+81cece7a412fa9e7,"Compare las dos alternativas: una tarda 20 minutos y cuesta 8 unidades; la otra tarda 35 y cuesta 5. Con un límite de 10 y prioridad al tiempo, determine la opción adecuada.","Suponiendo que el límite de 10 se refiere al costo, ambas opciones lo cumplen. Como se prioriza el tiempo, conviene elegir la de **20 minutos y costo 8**.",La A: cumple el tope de 10 y tarda menos.
+82159df7ac111d54,Voy a respaldar en la compu las fotos de mi celular. ¿Cómo checo que sí se copiaron bien antes de borrar algo?,"Antes de borrar nada:
+
+1. **Espera a que termine la copia** y revisa que no haya mensajes de error.
+2. **Compara la cantidad y el tamaño** de los archivos en el celular y en la compu. Asegúrate de incluir videos y todas las carpetas que quieras respaldar.
+3. **Abre varias fotos y videos desde la compu**, incluidos los más antiguos, los más recientes y algunos al azar. Comprueba que se vean completos y con buena resolución.
+4. Para una comprobación más rigurosa, compara las **sumas de verificación** de los archivos originales y las copias, si puedes acceder a ambas.
+5. Si las fotos son importantes, guarda **otra copia en un disco externo o en la nube**.
+
+Ten cuidado si usas una galería sincronizada con la nube: **borrar una foto del celular puede borrarla también de otros dispositivos**. Verifica que el respaldo sea una copia independiente antes de eliminarla.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+8342bb4e11aa1fcd,"En una sola frase, contame qué dice esto: el taller arranca a las 10; el colectivo A tarda 15 minutos y el B, 25, así que conviene salir con tiempo.","El taller empieza a las 10, los colectivos A y B tardan 15 y 25 minutos respectivamente, y conviene salir con tiempo.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+8433635cefcd5272,"Durante tres días leí 18, 24 y 30 páginas. ¿Cuántas páginas leí en promedio por día?",Leíste **24 páginas por día** en promedio: (18 + 24 + 30) ÷ 3 = 24.,24 páginas por día.
+848329256fb76777,"Proponga una estructura de carpetas para clasificar 12 archivos por año y tema, preservando su contenido.","Supuesto: organizar primero por **año** y luego por **tema**, sin modificar el contenido ni los nombres originales.
+
+```text
+Archivo/
+├── [Año 1]/
+│   ├── [Tema A]/
+│   └── [Tema B]/
+├── [Año 2]/
+│   ├── [Tema A]/
+│   └── [Tema B]/
+└── [Año 3]/
+    ├── [Tema A]/
+    └── [Tema B]/
+```
+
+Coloque cada uno de los 12 archivos en la carpeta correspondiente y conserve su nombre y extensión. Como no se especifican los años ni los temas, las carpetas son una plantilla; cree solo las que necesite.","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+84a3617ad09229a5,Guardé seis archivos de 750 KB en la compu. ¿Cuánto espacio ocupan entre todos?,Ocupan **4500 KB** en total.,4500 KB; multiplicar 750 por 6.
+857658a40ae13aae,Quiero guardar en mi computador una copia de las fotos del celular. ¿Cómo verifico que los archivos se abran antes de borrar los originales?,"1. **Copia, no muevas**, las fotos al computador y espera a que termine la transferencia.
+2. Desconecta el celular y abre las fotos desde la carpeta del computador. Comprueba que se vean completas y que puedas ampliarlas. Si hay videos, reprodúcelos.
+3. Compara la cantidad de archivos y sus tamaños con los originales. Si son muchos, prueba fotos de distintas fechas y formatos; ten en cuenta que una muestra no garantiza que todas estén bien.
+4. Para una comprobación completa, abre cada archivo y, si puedes, compara sus sumas de verificación (por ejemplo, SHA-256) entre el celular y la copia.
+
+Antes de borrar los originales, conserva preferiblemente **una segunda copia**. Si usas sincronización en la nube, comprueba cómo funciona: borrar una foto del celular podría borrarla también de la nube.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+85ba1fb9d24005da,"¿Me resumes esto en una frase? El taller empieza a las 10; el camión A tarda 15 minutos y el B, 25. Conviene salir con margen.","El taller comienza a las 10; los camiones A y B tardan 15 y 25 minutos, respectivamente, por lo que conviene salir con margen.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+869280545233df87,"Tengo seis archivos de 750 KB en mi computador. ¿Cuánto espacio ocupan juntos, sin contar nada más?",Ocupan **4500 KB** en total.,4500 KB; multiplicar 750 por 6.
+8828208107db9577,"Determine la siguiente hora de salida de un servicio con frecuencia de 20 minutos desde las 8:00, considerando una llegada a las 8:07.",La siguiente salida es a las **8:20**.,A las 8:20; explicar que la salida de 8:00 ya pasó.
+88a438893e497007,Quiero pasar las fotos del celular a la compu y guardar otra copia en un pendrive. ¿Qué archivos abrís para fijarte que se hayan copiado bien antes de borrar los originales?,"Abriría los archivos **desde la compu y desde el pendrive**, no desde el celular:
+
+- Varias fotos, incluidas algunas antiguas, recientes y de distintos formatos.
+- Algunos videos, comprobando que se reproduzcan con imagen y sonido.
+
+También compararía la cantidad y el tamaño total de los archivos. Eso ayuda a detectar faltantes, pero **una muestra no garantiza que todo se haya copiado bien**. Para mayor seguridad antes de borrar los originales, compararía las sumas de verificación de cada archivo original con las de ambas copias.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+892075bcbf5869e9,"Resuma en una frase: el taller empieza a las 10:00; el bus A tarda 15 minutos y el B, 25. Para llegar antes, se recomienda salir con tiempo.","El taller empieza a las 10:00; los buses A y B tardan 15 y 25 minutos, respectivamente, por lo que se recomienda salir con tiempo para llegar antes.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+894c8d12aae0cced,Indique un procedimiento seguro para limpiar la pantalla de un equipo apagado y desconectado.,"1. Use un paño de microfibra limpio y seco para retirar el polvo, sin presionar.
+2. Para las manchas, humedezca ligeramente el paño con agua o un producto recomendado por el fabricante. No aplique líquidos directamente sobre la pantalla.
+3. Limpie suavemente y evite que la humedad entre por los bordes.
+4. Deje secar por completo antes de conectar y encender el equipo.
+
+No use limpiadores abrasivos, amoníaco ni disolventes.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+89da3112af4e25fe,Tengo que limpiar la pantalla de la compu; ya está apagada y desenchufada. ¿Qué tendría que hacer para no dañarla?,"- Comprueba las instrucciones del fabricante, si las tienes.
+- Pasa suavemente un paño limpio de microfibra seco.
+- Si queda suciedad, humedece apenas el paño con agua destilada; nunca rocíes líquido directamente sobre la pantalla. Evita que entre humedad por los bordes.
+- No presiones ni uses papel, limpiacristales, alcohol, amoníaco o productos abrasivos.
+- Deja que se seque por completo antes de encenderla.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+89fa71de44baca45,El colectivo hace 12 km a 30 km/h. ¿Cuánto tardás en cubrir ese trayecto?,Tardás **24 minutos**.,24 minutos; 12/30 de hora.
+8acb9bc9ad3339c0,"En una mezcla de 14 unidades con proporción 2:5, calcule la cantidad correspondiente al componente menor.",El componente menor corresponde a **4 unidades**.,4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+8ae368d13c2bf7a1,El colectivo hace 12 km a 30 km/h. ¿Cuánto tardás en cubrir ese trayecto?,Tardás 24 minutos.,24 minutos; 12/30 de hora.
+8b160a13075e8b59,"Determine la duración, en minutos, de un recorrido de 12 km a velocidad constante de 30 km/h.",La duración es **24 minutos**.,24 minutos; 12/30 de hora.
+8ba71c8dc2f065b9,"El colectivo A tarda 20 minutos y sale 8; el B demora 35 y sale 5. Si querés llegar rápido y tenés hasta 10, ¿cuál te sirve?","El **colectivo A**: cuesta 8, está dentro de tu presupuesto y tarda 20 minutos.",La A: cumple el tope de 10 y tarda menos.
+8be122144d043df1,Tengo tres documentos en la compu y quiero guardarlos en un pendrive. ¿Cómo armás la copia y qué conviene abrir para fijarme si quedó bien?,"1. Conectá el pendrive y abrilo en el explorador de archivos.
+2. Seleccioná los tres documentos, copialos y pegalos en el pendrive. Si están en carpetas distintas, podés copiarlos por separado.
+3. Para comprobar la copia, abrí **cada documento desde el pendrive** y verificá que se vea su contenido.
+4. Expulsá el pendrive de forma segura antes de retirarlo.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+8c13d0e7eb0d4c73,"¿Por qué el hielo flota en el agua? Explícamelo en dos o tres frases, sin complicarlo de más.","El hielo flota porque es menos denso que el agua líquida. Al congelarse, sus moléculas se ordenan dejando más espacio entre ellas, por lo que el hielo ocupa más volumen y queda en la superficie.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+8cf396427a578805,Guardé seis archivos de 750 KB en la compu. ¿Cuánto espacio ocupan entre todos?,"En total ocupan **4.500 KB**, es decir, **4,5 MB** si 1 MB = 1.000 KB.",4500 KB; multiplicar 750 por 6.
+8ddff5731334829d,Quiero guardar en mi computador una copia de las fotos del celular. ¿Cómo verifico que los archivos se abran antes de borrar los originales?,"1. **Copia, no muevas**, las fotos al computador y espera a que termine la transferencia. Si algunas están solo en la nube, descarga también los originales.
+2. Compara la cantidad de archivos y el tamaño total en el celular y en la copia. Revisa también las carpetas con videos y otros formatos.
+3. Abre desde el computador varias fotos de distintas fechas y carpetas, y reproduce algunos videos completos. Si un archivo no abre, comprueba que el computador admita su formato antes de concluir que está dañado.
+4. Para una comprobación más completa, usa una herramienta que intente leer todos los archivos o compare sus sumas de verificación con las de los originales. Abrir solo una muestra no garantiza que todos estén bien.
+5. Guarda otra copia en un disco externo o servicio de almacenamiento y verifica que también sea accesible.
+
+Borra los originales solo cuando estés conforme con la copia. **Si las fotos están sincronizadas con la nube**, comprueba antes si borrarlas del celular también las eliminará de allí.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+8e0cb12e05c70c6d,"Tengo seis archivos de 750 KB en mi computador. ¿Cuánto espacio ocupan juntos, sin contar nada más?","Juntos ocupan **4.500 KB**, es decir, **4,5 MB** si 1 MB = 1.000 KB.",4500 KB; multiplicar 750 por 6.
+8e3271f10c640cbd,"El camión sale cada 20 minutos a partir de las 8. Si llego a las 8:07, ¿cuál es la próxima salida?",La próxima salida es a las **8:20**.,A las 8:20; explicar que la salida de 8:00 ya pasó.
+8fd513ed590733a7,"El camión A tarda 20 minutos y cuesta 8; el B tarda 35 y cuesta 5. Si mi tope son 10 y quiero llegar antes, ¿cuál elijo?","Si el tope de **10 es de gasto**, elige el camión **A**: cuesta 8 y tarda 20 minutos.
+
+Si el tope es de **10 minutos**, ninguno llega a tiempo.",La A: cumple el tope de 10 y tarda menos.
+91140c1c5e092a24,"Determine la siguiente hora de salida de un servicio con frecuencia de 20 minutos desde las 8:00, considerando una llegada a las 8:07.",La siguiente salida es a las **8:20**.,A las 8:20; explicar que la salida de 8:00 ya pasó.
+91be3caa82eb2f76,Para una receta se usan 75 g de frijoles por persona. ¿Cuántos gramos compro si van a comer cuatro?,Compra 300 g de frijoles.,300 g; multiplicar 75 por 4.
+91d3bdee2d676337,"Resuma en una frase: el taller empieza a las 10:00; el bus A tarda 15 minutos y el B, 25. Para llegar antes, se recomienda salir con tiempo.","El taller empieza a las 10:00; el bus A tarda 15 minutos y el B, 25, por lo que se recomienda salir con suficiente antelación.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+928f88da6d37d5a7,"En una sola frase, contame qué dice esto: el taller arranca a las 10; el colectivo A tarda 15 minutos y el B, 25, así que conviene salir con tiempo.","El taller empieza a las 10 y conviene salir con tiempo porque el colectivo A tarda 15 minutos y el B, 25.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+92e8aeaaa1644e25,"Determine la siguiente hora de salida de un servicio con frecuencia de 20 minutos desde las 8:00, considerando una llegada a las 8:07.",La siguiente salida es a las **8:20**.,A las 8:20; explicar que la salida de 8:00 ya pasó.
+939b70b648751f34,¿Me puede indicar cinco pasos para precalentar el horno a 180 °C y hornear una preparación durante 20 minutos? Incluya una precaución de seguridad.,"1. Encienda el horno y ajuste la temperatura a **180 °C**.
+2. Espere a que alcance la temperatura indicada.
+3. Introduzca la preparación en un recipiente apto para horno.
+4. Programe un temporizador para **20 minutos**.
+5. Al terminar, apague el horno y retire la preparación usando guantes de cocina para evitar quemaduras.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+93a2c7374466c2cc,"Si el camión tarda 12 minutos por recorrido y hago tres, ¿cuánto tiempo de viaje junto en total?",36 minutos en total.,36 minutos; multiplicar 12 por 3.
+93b0f2cc88be9b78,Tengo que precalentar el horno a 180 °C y dejar la preparación 20 minutos. ¿Me armás cinco pasos y una precaución para sacarla?,"1. Encendé el horno y ajustalo a 180 °C.
+2. Esperá a que alcance esa temperatura.
+3. Colocá la preparación en el horno.
+4. Dejala cocinar durante 20 minutos.
+5. Apagá el horno y sacá la preparación.
+
+**Precaución:** Usá guantes de cocina para retirarla: el recipiente estará caliente.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+943749ae217f0e65,Determine la hora de finalización de una reunión que inicia a las 9:20 y dura 45 minutos.,La reunión termina a las **10:05**.,A las 10:05.
+949a2537d0275085,"Explique brevemente, en dos o tres frases, la causa física por la que el hielo flota en agua líquida.","El hielo flota porque, al congelarse, las moléculas de agua forman una estructura cristalina más abierta que ocupa más volumen que la misma masa de agua líquida. Por eso, el hielo es menos denso y el empuje del agua lo mantiene en la superficie.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+94d26bd014da5759,"El colectivo A tarda 20 minutos y sale 8; el B demora 35 y sale 5. Si querés llegar rápido y tenés hasta 10, ¿cuál te sirve?","Si 8 y 5 son los precios y 10 es tu presupuesto, te sirve el **A**: cuesta 8 y tarda 20 minutos, menos que el B.",La A: cumple el tope de 10 y tarda menos.
+954b6229cb1db7b1,Calcule el tiempo total de tres trayectos de 12 minutos cada uno.,El tiempo total es de **36 minutos**.,36 minutos; multiplicar 12 por 3.
+95d3e8bbe0c962bb,Voy a hornear algo durante 20 minutos. ¿Qué cinco pasos sigo para precalentar el horno a 180 °C y sacar la preparación sin quemarme?,"1. Retira del horno las bandejas u objetos que no necesites y coloca la rejilla a la altura adecuada.
+2. Enciende el horno y ajusta la temperatura a **180 °C**; espera a que indique que ha alcanzado esa temperatura.
+3. Con cuidado, coloca dentro la preparación en un recipiente apto para horno y programa **20 minutos**.
+4. Al terminar, apaga el horno y ponte guantes de cocina secos y resistentes al calor.
+5. Abre la puerta apartando la cara y el cuerpo del vapor, saca el recipiente sujetándolo con ambos guantes y déjalo sobre una superficie resistente al calor.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+966b06659babb363,Quiero guardar en mi computador una copia de las fotos del celular. ¿Cómo verifico que los archivos se abran antes de borrar los originales?,"Antes de borrar nada:
+
+1. **Comprueba que la copia terminó** y que los archivos aparecen en la carpeta del computador. Compara la cantidad de fotos y videos con la del celular, si puedes.
+2. **Abre varias fotos** de distintas fechas y carpetas, no solo las miniaturas. Ábrelas a tamaño completo y revisa que no estén cortadas ni dañadas. Prueba también algunos videos.
+3. **Verifica formatos especiales**: si un archivo HEIC o RAW no se abre, podría faltar una aplicación compatible; eso no demuestra que esté dañado.
+4. **Mantén los originales por ahora** y, si son importantes, haz una segunda copia en otro disco o en un servicio de respaldo.
+
+Borra los originales solo después de confirmar que la copia está completa y se abre correctamente.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+9791b743c3854dba,"El colectivo tarda 12 minutos por tramo; si hacés tres viajes iguales, ¿cuánto tiempo sumás?","Si cada viaje es un tramo de 12 minutos, sumás **36 minutos**.",36 minutos; multiplicar 12 por 3.
+97cad58b91789f37,"Enumere cinco pasos para precalentar un horno a 180 °C, hornear durante 20 minutos e incluir una medida de seguridad al retirar la preparación.","1. Precalienta el horno a 180 °C.
+2. Coloca la preparación en una bandeja apta para horno.
+3. Cuando el horno alcance 180 °C, introduce la bandeja.
+4. Hornea durante 20 minutos.
+5. Retira la bandeja con guantes térmicos y colócala sobre una superficie resistente al calor.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+984fb6fedee694cf,Necesito pasar 2.5 litros a mililitros. ¿Cuánto es?,2.5 litros son **2500 mililitros**.,2500 mililitros.
+987ea7430603a558,"Leí 18 páginas un día, 24 al siguiente y 30 el tercero. ¿Cuál fue mi promedio diario?",Tu promedio fue de **24 páginas al día**: (18 + 24 + 30) ÷ 3 = 24.,24 páginas por día.
+9888e1590ffe2b83,"En una mezcla de 14 unidades con proporción 2:5, calcule la cantidad correspondiente al componente menor.",El componente menor corresponde a **4 unidades**: \(14 \times \frac{2}{2+5} = 4\).,4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+98c235ef89ce4432,El hielo suele flotar en el agua. ¿Me explica en dos o tres frases cuál es la razón?,"Al congelarse, las moléculas de agua forman una estructura cristalina más abierta que ocupa más volumen que el agua líquida. Por eso el hielo es menos denso y flota.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+9a2bed33ca4a6b8d,"Leí 18 páginas un día, 24 al siguiente y 30 el tercero. ¿Cuál fue mi promedio diario?",Tu promedio fue de **24 páginas diarias**.,24 páginas por día.
+9a3f7979468f5ca2,"Explique brevemente, en dos o tres frases, la causa física por la que el hielo flota en agua líquida.","El hielo flota porque es menos denso que el agua líquida. Al congelarse, las moléculas de agua forman una estructura cristalina abierta, mantenida por enlaces de hidrógeno, que ocupa más volumen para la misma masa.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+9a5008b6c728dcfc,"Si el camión tarda 12 minutos por recorrido y hago tres, ¿cuánto tiempo de viaje junto en total?","En total, 36 minutos.",36 minutos; multiplicar 12 por 3.
+9a6312b10986aadc,Tengo tres documentos en la compu y quiero guardarlos en un pendrive. ¿Cómo armás la copia y qué conviene abrir para fijarme si quedó bien?,"1. Conectá el pendrive y abrilo en el explorador de archivos.
+2. Seleccioná los tres documentos en la compu, elegí **Copiar** y luego **Pegar** dentro del pendrive. Así conservás también los originales.
+3. Abrí cada documento **desde el pendrive**, no desde la carpeta original, y comprobá que se vea su contenido correctamente.
+4. Cerrá los documentos y expulsá el pendrive de forma segura antes de retirarlo.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+9a8ebcb0ee55a280,"Si una mezcla se prepara con ingredientes en proporción 2 a 5 y debe rendir 14 unidades, ¿cuántas corresponden a la parte menor?",La parte menor corresponde a **4 unidades**.,4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+9aa088fe02028f42,Voy a hornear algo durante 20 minutos. ¿Qué cinco pasos sigo para precalentar el horno a 180 °C y sacar la preparación sin quemarme?,"1. Coloca la rejilla a la altura adecuada y comprueba que el horno esté vacío.
+2. Ajusta el horno a **180 °C** y espera a que indique que terminó de precalentar.
+3. Con cuidado, introduce la preparación y programa **20 minutos**.
+4. Al terminar, ponte guantes de horno secos y abre la puerta manteniendo la cara y las manos apartadas del vapor y del calor.
+5. Saca la preparación sujetándola bien con los guantes y déjala sobre una superficie resistente al calor.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+9accde23a807d5e3,Tenés que repartir 14 unidades según una proporción de 2 a 5. ¿Cuántas van para la parte más chica?,La parte más chica recibe **4 unidades**.,4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+9b0386a3ae818d76,"Si el camión tarda 12 minutos por recorrido y hago tres, ¿cuánto tiempo de viaje junto en total?",36 minutos en total.,36 minutos; multiplicar 12 por 3.
+9b11d53da7538eda,Un bus recorre 12 km a 30 km/h. ¿Cuántos minutos tarda en completar ese trayecto?,Tarda **24 minutos**.,24 minutos; 12/30 de hora.
+9b61cde29f4d4e09,Voy a preparar una lista de compras para cinco comidas. ¿Me indica cómo reunir los ingredientes de las recetas y revisar que no se repitan productos?,"Para preparar una sola lista para las cinco comidas:
+
+1. Reúne las recetas y anota todos sus ingredientes y cantidades, ajustados al número de comensales.
+2. Agrupa los ingredientes con el mismo nombre y unifica las unidades cuando sea posible.
+3. Suma las cantidades repetidas: por ejemplo, 2 tomates + 3 tomates = **5 tomates**.
+4. Revisa la despensa y resta lo que ya tienes.
+5. Organiza la lista final por categorías, como frutas y verduras, lácteos, carnes y productos de despensa.
+
+Comprueba que los productos parecidos sean realmente intercambiables antes de agruparlos; por ejemplo, leche y leche sin lactosa pueden requerir entradas separadas.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+9bba2c72289fc69c,Indique un procedimiento seguro para limpiar la pantalla de un equipo apagado y desconectado.,"1. Compruebe que el equipo esté apagado y desconectado; deje que la pantalla se enfríe.
+2. Quite el polvo con un paño de microfibra limpio y seco, sin presionar.
+3. Si quedan manchas, humedezca apenas el paño con agua destilada o con un producto autorizado por el fabricante. **No rocíe líquido directamente sobre la pantalla.**
+4. Limpie con suavidad y espere a que se seque por completo antes de conectar el equipo.
+
+Evite limpiadores abrasivos, amoníaco y disolventes, salvo que el fabricante indique expresamente que son adecuados.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+9c7d2fc79e895bda,Calcule el total de cuadernos transportados por tres vehículos con ocho cuadernos cada uno.,24 cuadernos.,24 cuadernos.
+9cf825df76071ed7,Un coche rinde 6 litros por cada 100 km. ¿Cuánto combustible ocuparía para recorrer 250 km?,Consumiría **15 litros**.,"15 litros; proporción directa: 6 x 2,5."
+9d0e3316d66219d8,"Enumere cinco pasos para precalentar un horno a 180 °C, hornear durante 20 minutos e incluir una medida de seguridad al retirar la preparación.","1. Encienda el horno y ajuste la temperatura a 180 °C.
+2. Espere a que alcance esa temperatura.
+3. Introduzca la preparación en un recipiente apto para horno.
+4. Hornee durante 20 minutos.
+5. Apague el horno y retire la preparación usando guantes térmicos.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+9d37d97015d09928,Quiero guardar en mi computador una copia de las fotos del celular. ¿Cómo verifico que los archivos se abran antes de borrar los originales?,"1. **Copia, sin mover**, las fotos del celular a una carpeta del computador. Comprueba que la copia haya terminado y compara la cantidad de archivos y el tamaño total de las carpetas.
+2. Desconecta el celular y abre las fotos **desde la carpeta del computador**. Para verificar cada archivo, abre todos; revisar solo una muestra no garantiza que los demás se abran.
+3. Guarda otra copia en una ubicación distinta antes de borrar los originales.
+
+Si usas sincronización en la nube, comprueba cómo funciona antes de borrar: eliminar una foto del celular podría eliminarla también de la nube o de otros dispositivos.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+9d461ac48c63dbe4,La junta va a durar 45 minutos y la puse a las 9:20. ¿A qué hora se acaba?,Se acaba a las 10:05.,A las 10:05.
+9d551d02641812bd,Arrancás una reunión a las 9:20 y calculás que dura tres cuartos de hora. ¿A qué hora quedás libre?,Quedás libre a las 10:05.,A las 10:05.
+9dc02184e576831d,¿Me puede indicar cinco pasos para precalentar el horno a 180 °C y hornear una preparación durante 20 minutos? Incluya una precaución de seguridad.,"1. Retire del horno las bandejas u objetos que no necesite.
+2. Encienda el horno y ajuste la temperatura a **180 °C**.
+3. Espere a que alcance esa temperatura; use el indicador del horno si lo tiene.
+4. Coloque la preparación en el horno con cuidado y programe **20 minutos**.
+5. Al terminar, compruebe si está lista y retírela con guantes térmicos.
+
+**Precaución:** mantenga las manos y el rostro alejados del vapor y de las superficies calientes al abrir el horno.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+9ddfbf44c0006d94,Calcule la cantidad necesaria para cuatro porciones si cada una requiere 75 g de frijoles secos.,Se necesitan **300 g de frijoles secos** (4 × 75 g).,300 g; multiplicar 75 por 4.
+9e12d726763fd1f6,Necesito hacer un backup de tres documentos del computador en una memoria externa. ¿Qué pasos recomienda y cómo puedo mirar si quedaron bien copiados?,"1. Conecta la memoria externa y espera a que aparezca en el computador.
+2. Localiza los tres documentos y selecciónalos.
+3. Elige **Copiar** (no **Cortar**) y pégalos en una carpeta de la memoria. Así conservas los originales.
+4. Espera a que termine la copia y expulsa la memoria de forma segura antes de desconectarla.
+
+Para comprobarlo, abre la memoria y verifica que estén los tres documentos. Compara sus nombres y tamaños con los originales y, si puedes, abre cada copia para confirmar que se ve correctamente.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+9e830b5a8e3227c0,Determine el consumo correspondiente a 250 km con una tasa constante de 6 litros por cada 100 km.,El consumo es **15 litros**: \(250 \times 6 / 100 = 15\).,"15 litros; proporción directa: 6 x 2,5."
+9e86c40b1188f8c9,"El camión A tarda 20 minutos y cuesta 8; el B tarda 35 y cuesta 5. Si mi tope son 10 y quiero llegar antes, ¿cuál elijo?","Elige el **camión A**: tarda menos (20 minutos) y cuesta 8, dentro de tu tope de 10.",La A: cumple el tope de 10 y tarda menos.
+9e994f0977fd9316,"Determine la duración, en minutos, de un recorrido de 12 km a velocidad constante de 30 km/h.",La duración es de **24 minutos**.,24 minutos; 12/30 de hora.
+9f85e4ef8c7bdb39,"Determine la siguiente hora de salida de un servicio con frecuencia de 20 minutos desde las 8:00, considerando una llegada a las 8:07.",La siguiente salida es a las **8:20**.,A las 8:20; explicar que la salida de 8:00 ya pasó.
+9fc9db0a1ba7a584,Quiero armar carpetas por año y tema para ordenar 12 archivos de la compu. ¿Cómo lo harías sin tocar el contenido?,"Supondría que el año y el tema pueden identificarse por el nombre o las propiedades de cada archivo.
+
+1. Haría una lista de los 12 archivos y asignaría a cada uno un año y un tema. Si alguno no es claro, te consultaría.
+2. Crearía una estructura como esta:
+   ```text
+   Archivos/
+   ├── [año]/
+   │   ├── [tema]/
+   │   └── [otro tema]/
+   └── [otro año]/
+       └── [tema]/
+   ```
+3. Movería cada archivo a su carpeta, sin abrirlo, editarlo ni cambiarle el nombre.
+4. Comprobaría que los 12 estén en su destino y se puedan abrir.","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+9fe34eb1ad30554c,"Explique cómo consolidar los ingredientes de cinco recetas en una lista única, sumando cantidades cuando corresponda y eliminando duplicados.","1. Anota todos los ingredientes de las cinco recetas en una tabla.
+2. Unifica los nombres de los mismos ingredientes (por ejemplo, «tomate» y «tomates»).
+3. Convierte las cantidades a unidades compatibles antes de sumarlas; no combines medidas incompatibles sin una conversión fiable.
+4. Suma las cantidades de cada ingrediente repetido.
+5. Deja una sola entrada por ingrediente y conserva por separado las cantidades que no se puedan combinar.
+
+El resultado será una lista única, sin duplicados y con las cantidades totales cuando sea posible.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+a025c8de7f96996d,Una receta lleva 75 g de fríjoles por persona. ¿Cuánto debo alistar para cuatro personas?,Debes alistar **300 g de fríjoles**: 75 g × 4 personas.,300 g; multiplicar 75 por 4.
+a0919725ab555a30,"El camión sale cada 20 minutos a partir de las 8. Si llego a las 8:07, ¿cuál es la próxima salida?",La próxima salida es a las 8:20.,A las 8:20; explicar que la salida de 8:00 ya pasó.
+a14dd35d4617f712,Le programaron una reunión de 45 minutos que empieza a las 9:20. ¿A qué hora debe quedar libre usted?,A las **10:05**.,A las 10:05.
+a1eab3a4558077a4,"Enumere cinco pasos para precalentar un horno a 180 °C, hornear durante 20 minutos e incluir una medida de seguridad al retirar la preparación.","1. Retira del horno las bandejas u objetos que no vayas a usar.
+2. Enciende el horno y ajusta la temperatura a **180 °C**.
+3. Espera a que alcance esa temperatura.
+4. Introduce la preparación y hornéala durante **20 minutos**.
+5. Al retirarla, usa guantes térmicos y evita tocar las superficies calientes.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+a1fbf23c511cc512,Un coche rinde 6 litros por cada 100 km. ¿Cuánto combustible ocuparía para recorrer 250 km?,Consumiría **15 litros**.,"15 litros; proporción directa: 6 x 2,5."
+a23b3714c84470f1,Quiero armar carpetas por año y tema para ordenar 12 archivos de la compu. ¿Cómo lo harías sin tocar el contenido?,"Usaría los nombres y, cuando haga falta, los metadatos para identificar el año y el tema, sin editar los archivos. Crearía una estructura como esta:
+
+```text
+Archivos/
+├── [año]/
+│   ├── [tema]/
+│   └── [otro tema]/
+└── Sin clasificar/
+```
+
+Después movería cada uno de los 12 archivos a su carpeta correspondiente, sin cambiar su nombre ni contenido. Usaría el mismo criterio de año para todos y dejaría en «Sin clasificar» los que no pueda identificar con seguridad.","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+a2cd3c7d0a9b2698,"En tres días leí 18, 24 y 30 páginas. ¿Qué promedio te da a vos por día?",El promedio es de **24 páginas por día**: (18 + 24 + 30) ÷ 3 = 24.,24 páginas por día.
+a32f443db0a8622d,Calcule el total de cuadernos transportados por tres vehículos con ocho cuadernos cada uno.,3 × 8 = **24 cuadernos**.,24 cuadernos.
+a3c622bdd2302f8e,Para una receta se usan 75 g de frijoles por persona. ¿Cuántos gramos compro si van a comer cuatro?,75 × 4 = **300 g de frijoles**.,300 g; multiplicar 75 por 4.
+a418e618b8a250f6,El hielo suele flotar en el agua. ¿Me explica en dos o tres frases cuál es la razón?,"El hielo flota porque es menos denso que el agua líquida: al congelarse, sus moléculas forman una estructura más abierta que ocupa más espacio. Por eso, el empuje del agua puede sostenerlo parcialmente sumergido.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+a5ac4918abd04d14,Calcule el tiempo total de tres trayectos de 12 minutos cada uno.,36 minutos.,36 minutos; multiplicar 12 por 3.
+a64cb0d50903f15e,Tengo tres documentos en la compu y quiero guardarlos en un pendrive. ¿Cómo armás la copia y qué conviene abrir para fijarme si quedó bien?,"1. Conectá el pendrive y abrilo.
+2. En la compu, seleccioná los tres documentos y elegí **Copiar**.
+3. Pegalos en una carpeta del pendrive. Así conservás también los originales en la compu.
+4. Para comprobar la copia, abrí **los documentos desde el pendrive** —no los originales— y fijate que se vean completos y sin errores.
+5. Al terminar, expulsá el pendrive de forma segura antes de desconectarlo.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+a65009f4436ea1fb,"Para cuatro personas, armás la receta con 75 g de porotos por cabeza. ¿Cuántos gramos precisás poner?",Precisás **300 g de porotos**.,300 g; multiplicar 75 por 4.
+a6b442f08b64545e,Voy a preparar una lista de compras para cinco comidas. ¿Me indica cómo reunir los ingredientes de las recetas y revisar que no se repitan productos?,"1. **Reúne las cinco recetas** y anota cada ingrediente con su cantidad.
+2. **Ajusta las cantidades** al número de raciones que vas a preparar.
+3. **Unifica nombres y unidades**: por ejemplo, usa el mismo nombre para “tomate” y “tomates”, y convierte gramos y kilogramos a una sola unidad.
+4. **Combina los productos repetidos** y suma sus cantidades. Mantén separados los que no sean intercambiables, como tomate fresco y tomate triturado.
+5. **Revisa lo que ya tienes** y resta esas cantidades de la lista.
+6. **Ordena la lista por categorías** y comprueba que cada producto aparezca una sola vez, con la cantidad total que necesitas comprar.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+a6e28dc07dc7b2a9,"Si el auto consume 6 litros cada 100 km, ¿cuántos litros necesitás para hacer 250 km al mismo ritmo?",Necesitás **15 litros**.,"15 litros; proporción directa: 6 x 2,5."
+a6f9d29c83db41e0,Determine el consumo correspondiente a 250 km con una tasa constante de 6 litros por cada 100 km.,El consumo es **15 litros**.,"15 litros; proporción directa: 6 x 2,5."
+a7329abb15857bfb,Estoy armando las compras para cinco comidas. ¿Cómo junto lo de las recetas y checo que no anote dos veces lo mismo?,"Para reunir las compras de las cinco comidas:
+
+1. **Anota todos los ingredientes** con sus cantidades, ajustadas al número de porciones que prepararás.
+2. **Agrupa los que sean iguales**, aunque aparezcan con nombres distintos, como «tomate» y «jitomate», si las recetas se refieren al mismo ingrediente.
+3. **Unifica las unidades y suma las cantidades**: por ejemplo, 200 g de arroz + 300 g = 500 g.
+4. **Revisa diferencias importantes** antes de juntar: no siempre son intercambiables ingredientes frescos y secos, o presentaciones distintas.
+5. **Resta lo que ya tienes** y deja cada ingrediente en una sola línea de la lista final.
+
+Si me compartes las cinco recetas y sus porciones, puedo juntarlas en una lista de compras.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+a770e10108c6b909,La junta va a durar 45 minutos y la puse a las 9:20. ¿A qué hora se acaba?,Se acaba a las 10:05.,A las 10:05.
+a79a8a5fe9118453,"Durante tres días leí 18, 24 y 30 páginas. ¿Cuántas páginas leí en promedio por día?",Leíste **24 páginas por día** en promedio.,24 páginas por día.
+a93c23d4b7c66a4c,Tengo que precalentar el horno a 180 °C y dejar la preparación 20 minutos. ¿Me armás cinco pasos y una precaución para sacarla?,"1. Encendé el horno y ajustalo a 180 °C.
+2. Esperá a que alcance esa temperatura.
+3. Colocá la preparación en un recipiente apto para horno.
+4. Introducila y dejala cocinar durante 20 minutos.
+5. Apagá el horno y sacá la preparación.
+
+**Precaución:** Usá guantes de cocina para retirar el recipiente, porque estará muy caliente.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+a9bea78afe01b212,"Compare las dos alternativas: una tarda 20 minutos y cuesta 8 unidades; la otra tarda 35 y cuesta 5. Con un límite de 10 y prioridad al tiempo, determine la opción adecuada.","Suponiendo que el límite de 10 corresponde al coste, ambas alternativas lo cumplen. La opción adecuada es la de **20 minutos y 8 unidades**, porque prioriza el menor tiempo: ahorra 15 minutos a cambio de 3 unidades adicionales.",La A: cumple el tope de 10 y tarda menos.
+aabe4d9b3dc5b7a4,"El colectivo tarda 12 minutos por tramo; si hacés tres viajes iguales, ¿cuánto tiempo sumás?",36 minutos.,36 minutos; multiplicar 12 por 3.
+aafa212cf67452e3,"Enumere cinco pasos para precalentar un horno a 180 °C, hornear durante 20 minutos e incluir una medida de seguridad al retirar la preparación.","1. Encienda el horno y seleccione 180 °C.
+2. Espere a que alcance la temperatura.
+3. Introduzca la preparación en el horno.
+4. Hornee durante 20 minutos.
+5. Apague el horno y retire la preparación usando guantes térmicos.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+ab359678fa6d5b57,Tenés que repartir 14 unidades según una proporción de 2 a 5. ¿Cuántas van para la parte más chica?,La parte más chica recibe **4 unidades**.,4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+ac949d54ec0dc815,Voy a preparar 14 unidades de una mezcla cuya proporción es 2:5. ¿Cuántas unidades lleva el ingrediente que va en menor cantidad?,El ingrediente que va en menor cantidad lleva **4 unidades**.,4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+ad0f6ece99d6b712,Describa un procedimiento para copiar tres documentos del equipo a un dispositivo externo y verificar la integridad de la copia sin borrar los originales.,"1. Conecte el dispositivo externo y confirme que tiene espacio suficiente.
+2. Identifique los tres documentos y cópielos —no los corte ni los mueva— a una carpeta del dispositivo.
+3. Verifique que estén los tres archivos y que sus tamaños coincidan con los originales.
+4. Para una comprobación más rigurosa, calcule el hash SHA-256 de cada original y de su copia. Si los hashes de cada pareja coinciden, las copias son idénticas.
+5. Expulse el dispositivo de forma segura. Los originales permanecerán en el equipo.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+ad4128f583649160,Tengo que limpiar la pantalla de la compu; ya está apagada y desenchufada. ¿Qué tendría que hacer para no dañarla?,"1. Comprueba que la pantalla esté fría y quita el polvo con un paño de microfibra limpio y seco.
+2. Si quedan manchas, humedece apenas el paño con agua destilada; nunca rocíes líquido directamente sobre la pantalla.
+3. Pasa el paño con suavidad, sin presionar. Evita que entre humedad por los bordes.
+4. Deja que se seque por completo antes de enchufarla.
+
+No uses limpiacristales, amoníaco, disolventes, papel de cocina ni productos abrasivos. Si el fabricante indica un método específico, sigue sus instrucciones.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+ade1c2fb5cf14681,"El bus sale cada 20 minutos desde las 8:00. Si llego a la parada a las 8:07 y se respeta el horario, ¿a qué hora pasa el siguiente?",El siguiente pasa a las 8:20.,A las 8:20; explicar que la salida de 8:00 ya pasó.
+adf79b8daab15ce0,Le programaron una reunión de 45 minutos que empieza a las 9:20. ¿A qué hora debe quedar libre usted?,Debe quedar libre a las 10:05.,A las 10:05.
+aed8949038479a71,"Calcule el tamaño total de seis archivos de 750 KB cada uno, excluyendo otros datos del equipo.",6 × 750 KB = **4500 KB**.,4500 KB; multiplicar 750 por 6.
+af082f41ba9570ac,Voy a preparar 14 unidades de una mezcla cuya proporción es 2:5. ¿Cuántas unidades lleva el ingrediente que va en menor cantidad?,El ingrediente en menor cantidad lleva **4 unidades**.,4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+af192c73d5c4b347,El hielo suele flotar en el agua. ¿Me explica en dos o tres frases cuál es la razón?,"Al congelarse, las moléculas de agua forman una estructura cristalina más abierta que ocupa más volumen que el agua líquida. Por eso, el hielo es menos denso y flota.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+afd6655c0aaeb61c,"Convierta 2,5 litros a mililitros e informe el valor equivalente.","2,5 litros equivalen a **2.500 mililitros**.",2500 mililitros.
+b07c842006bfe632,Un bus recorre 12 km a 30 km/h. ¿Cuántos minutos tarda en completar ese trayecto?,"Tarda **24 minutos**.
+
+\(12 \div 30 = 0{,}4\) horas; \(0{,}4 \times 60 = 24\) minutos.",24 minutos; 12/30 de hora.
+b105f120beebc120,"Calcule el tamaño total de seis archivos de 750 KB cada uno, excluyendo otros datos del equipo.","El tamaño total es **4.500 KB** (4,5 MB, usando 1 MB = 1.000 KB).",4500 KB; multiplicar 750 por 6.
+b15c78b8a1561179,Quiero armar carpetas por año y tema para ordenar 12 archivos de la compu. ¿Cómo lo harías sin tocar el contenido?,"Lo haría así:
+
+1. **Crear carpetas por año** y, dentro, una por tema. Por ejemplo:  
+   `2023/Viajes/` · `2023/Trabajo/` · `2024/Trabajo/`
+2. **Clasificar los 12 archivos** por su fecha y tema, sin abrirlos ni editar su contenido. Si alguno no se puede clasificar, dejarlo en `Por revisar`.
+3. **Moverlos conservando sus nombres originales**. Moverlos no cambia el contenido; si quieres máxima seguridad, primero haz una copia de respaldo.
+4. Si un archivo encaja en varios temas, elegir uno como principal en vez de duplicarlo.","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+b16a067f9b26fcc1,"¿Por qué el hielo flota en el agua? Explícamelo en dos o tres frases, sin complicarlo de más.","El hielo flota porque, al congelarse, el agua forma una estructura más abierta que ocupa más espacio. Así, el hielo es menos denso que el agua líquida y queda en la superficie.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+b19c1bdfd71837ce,"Para cuatro personas, armás la receta con 75 g de porotos por cabeza. ¿Cuántos gramos precisás poner?",Necesitás **300 g de porotos**.,300 g; multiplicar 75 por 4.
+b22827c1553b5b3c,"Calcule el promedio diario de lectura a partir de los valores 18, 24 y 30 páginas.",El promedio diario es **24 páginas**.,24 páginas por día.
+b2aa295f913b6038,"Determine la siguiente hora de salida de un servicio con frecuencia de 20 minutos desde las 8:00, considerando una llegada a las 8:07.",La siguiente salida es a las **8:20**.,A las 8:20; explicar que la salida de 8:00 ya pasó.
+b2b310d66cde9fc8,Necesito pasar 2.5 litros a mililitros. ¿Cuánto es?,"2,5 litros son **2500 mililitros**.",2500 mililitros.
+b3178f08667ea93e,"Para estimar el combustible, ¿cuántos litros gastaría un carro en 250 km si consume 6 litros cada 100 km?",Gastaría **15 litros**: \(250 \times 6 / 100 = 15\).,"15 litros; proporción directa: 6 x 2,5."
+b37d0be57dca6486,"En una sola frase, contame qué dice esto: el taller arranca a las 10; el colectivo A tarda 15 minutos y el B, 25, así que conviene salir con tiempo.","El taller empieza a las 10 y, como el colectivo A tarda 15 minutos y el B 25, conviene salir con tiempo.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+b3e1147a549c5b8e,"El colectivo pasa cada 20 minutos desde las 8:00; si llegás a la parada a las 8:07, ¿a qué hora viene el próximo?",El próximo pasa a las 8:20.,A las 8:20; explicar que la salida de 8:00 ya pasó.
+b3e55c5d016a2ad2,"Tengo dos opciones de bus: la A tarda 20 minutos y cuesta 8; la B tarda 35 y cuesta 5. Si lo principal es llegar rápido y puedo pagar hasta 10, ¿cuál me conviene?","Te conviene la opción A: tarda menos (20 minutos) y cuesta 8, dentro de tu límite de 10.",La A: cumple el tope de 10 y tarda menos.
+b4267dc85f764c68,"Explique cómo consolidar los ingredientes de cinco recetas en una lista única, sumando cantidades cuando corresponda y eliminando duplicados.","Para consolidar las cinco recetas:
+
+1. **Reúne** todos los ingredientes con sus cantidades y unidades.
+2. **Unifica los nombres** que se refieran al mismo ingrediente y agrúpalos. Mantén separados los que difieran de forma relevante, como leche entera y leche desnatada.
+3. **Convierte las cantidades a unidades compatibles** antes de sumarlas. Por ejemplo, 1 kg de harina más 250 g son 1,25 kg de harina.
+4. **Anota cada ingrediente una sola vez** con su cantidad total. Si no puedes convertir las unidades con seguridad, consérvalas por separado; por ejemplo, «2 huevos y 100 g de huevo».
+5. **Señala las cantidades imprecisas o ausentes**, como «sal al gusto», sin inventar una cantidad.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+b4e149e53eea77a6,Quiero armar carpetas por año y tema para ordenar 12 archivos de la compu. ¿Cómo lo harías sin tocar el contenido?,"Lo haría así, sin editar ni renombrar los archivos:
+
+1. **Revisar los 12 archivos** y anotar para cada uno su año y tema, según el contenido o la fecha que quieras usar.
+2. **Crear carpetas** con esta estructura:  
+   `Año/ Tema/`  
+   Por ejemplo: `2023/ Facturas/`.
+3. **Mover cada archivo** a su carpeta correspondiente, conservando su nombre.
+4. Si alguno no encaja claramente, dejarlo aparte en una carpeta temporal como `Por clasificar`.
+5. Comprobar que estén los 12 archivos y abrir algunos para verificar que siguen intactos.
+
+Moverlos no cambia su contenido. Si quieres conservar también las fechas de creación, conviene hacer una copia de seguridad antes, porque algunos sistemas pueden modificarlas al mover archivos entre discos.","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+b53d6e2d1b88806e,"¿Me resumes esto en una frase? El taller empieza a las 10; el camión A tarda 15 minutos y el B, 25. Conviene salir con margen.","El taller empieza a las 10 y conviene que los camiones A y B, que tardan 15 y 25 minutos respectivamente, salgan con margen.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+b5de57e46ef3709f,"El bus sale cada 20 minutos desde las 8:00. Si llego a la parada a las 8:07 y se respeta el horario, ¿a qué hora pasa el siguiente?",A las 8:20.,A las 8:20; explicar que la salida de 8:00 ya pasó.
+b6db091160566151,¿Me ayuda a calcular cuánto tiempo de viaje acumulo si cada trayecto en bus toma 12 minutos y hago tres recorridos iguales?,Acumulas **36 minutos** de viaje en total (12 × 3).,36 minutos; multiplicar 12 por 3.
+b75da8c62c50b6fc,"En tres días leí 18, 24 y 30 páginas. ¿Qué promedio te da a vos por día?",El promedio es de **24 páginas por día**.,24 páginas por día.
+b767847744bba134,Calcule la cantidad necesaria para cuatro porciones si cada una requiere 75 g de frijoles secos.,Se necesitan **300 g de frijoles secos**.,300 g; multiplicar 75 por 4.
+b7ed054653b0d24c,"El colectivo tarda 12 minutos por tramo; si hacés tres viajes iguales, ¿cuánto tiempo sumás?",36 minutos.,36 minutos; multiplicar 12 por 3.
+b8856592009ed59e,"¿Por qué el hielo flota en el agua? Explícamelo en dos o tres frases, sin complicarlo de más.","El hielo flota porque es menos denso que el agua líquida: al congelarse, sus moléculas forman una estructura más abierta que ocupa más volumen. Por eso, el agua líquida más densa queda debajo y el hielo permanece en la superficie.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+b8a0cb543898bbca,"Compare las dos alternativas: una tarda 20 minutos y cuesta 8 unidades; la otra tarda 35 y cuesta 5. Con un límite de 10 y prioridad al tiempo, determine la opción adecuada.","Ambas opciones respetan el límite de 10. Como la prioridad es el tiempo, conviene la primera: tarda 20 minutos y cuesta 8 unidades.",La A: cumple el tope de 10 y tarda menos.
+b8abba8887bd30b1,"Proponga una estructura de carpetas para clasificar 12 archivos por año y tema, preservando su contenido.","Una estructura posible, sin modificar el contenido ni los nombres originales:
+
+```text
+Archivos/
+├── 2023/
+│   ├── Tema A/
+│   └── Tema B/
+├── 2024/
+│   ├── Tema A/
+│   └── Tema C/
+└── 2025/
+    ├── Tema B/
+    └── Tema C/
+```
+
+Coloque cada archivo en la carpeta correspondiente a su año y tema. Como no se indican los años ni los temas concretos, la distribución de los 12 archivos dependerá de esos datos.","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+b9020fd99c2d54df,"¿Me resumes esto en una frase? El taller empieza a las 10; el camión A tarda 15 minutos y el B, 25. Conviene salir con margen.","El taller empieza a las 10; el camión A tarda 15 minutos y el B, 25, así que conviene salir con margen.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+b97a8e4e57b1b8e2,Quiero respaldar tres documentos de la compu en una memoria externa. ¿Cómo le hago y qué puedo checar para asegurarme de que sí se copiaron?,"1. Conecta la memoria externa a la computadora y abre su carpeta en el explorador de archivos.
+2. Busca los tres documentos, selecciónalos y elige **Copiar**. Si están en carpetas distintas, puedes copiarlos uno por uno.
+3. Entra en la carpeta de la memoria externa y elige **Pegar**. Espera a que termine la copia.
+4. Comprueba que aparezcan los tres archivos, con los nombres y tamaños esperados. Abre cada uno **desde la memoria externa** para verificar que se pueda leer.
+5. Expulsa la memoria de forma segura antes de desconectarla.
+
+Conserva los documentos originales en la computadora: así tendrás una copia en cada lugar.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+ba487557d889f0a7,Voy a preparar 14 unidades de una mezcla cuya proporción es 2:5. ¿Cuántas unidades lleva el ingrediente que va en menor cantidad?,El ingrediente que va en menor cantidad lleva **4 unidades**.,4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+ba50e90f43e28798,Una receta lleva 75 g de fríjoles por persona. ¿Cuánto debo alistar para cuatro personas?,Debes alistar **300 g de fríjoles**.,300 g; multiplicar 75 por 4.
+ba69fcf59081c3c0,En la compu guardé seis archivos de 750 KB cada uno; ¿cuánto espacio ocupan en total?,Ocupan **4.500 KB** en total.,4500 KB; multiplicar 750 por 6.
+ba96688efb2140d6,Para una receta se usan 75 g de frijoles por persona. ¿Cuántos gramos compro si van a comer cuatro?,Compra 300 g de frijoles.,300 g; multiplicar 75 por 4.
+bb76ea554cc14ba6,"Determine la duración, en minutos, de un recorrido de 12 km a velocidad constante de 30 km/h.",El recorrido dura **24 minutos**.,24 minutos; 12/30 de hora.
+bb802b037164a324,Para una receta se usan 75 g de frijoles por persona. ¿Cuántos gramos compro si van a comer cuatro?,Compra **300 g de frijoles** (75 g × 4).,300 g; multiplicar 75 por 4.
+bbd1581fbf52b7c3,"Si una mezcla se prepara con ingredientes en proporción 2 a 5 y debe rendir 14 unidades, ¿cuántas corresponden a la parte menor?",La parte menor corresponde a **4 unidades**: \(14 \times \frac{2}{2+5} = 4\).,4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+bcba045f616f9521,"Determine la siguiente hora de salida de un servicio con frecuencia de 20 minutos desde las 8:00, considerando una llegada a las 8:07.",La siguiente salida es a las **8:20**.,A las 8:20; explicar que la salida de 8:00 ya pasó.
+bce621f5e1331d11,"Enumere cinco pasos para precalentar un horno a 180 °C, hornear durante 20 minutos e incluir una medida de seguridad al retirar la preparación.","1. Enciende el horno y ajusta la temperatura a 180 °C.
+2. Espera a que alcance esa temperatura.
+3. Introduce la preparación en un recipiente apto para horno.
+4. Hornea durante 20 minutos.
+5. Apaga el horno y retira la preparación con guantes térmicos.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+bcf3030b7383ddbf,"Cada colectivo lleva una caja con ocho cuadernos; si salen tres, ¿cuántos cuadernos transportás?",Transportás 24 cuadernos: 3 colectivos × 8 cuadernos cada uno.,24 cuadernos.
+bd35383725b73bce,Calcule el tiempo total de tres trayectos de 12 minutos cada uno.,36 minutos.,36 minutos; multiplicar 12 por 3.
+bde12889d901884f,"El bus sale cada 20 minutos desde las 8:00. Si llego a la parada a las 8:07 y se respeta el horario, ¿a qué hora pasa el siguiente?",El siguiente pasa a las 8:20.,A las 8:20; explicar que la salida de 8:00 ya pasó.
+bdf4cf337ed96dd7,"Proponga una estructura de carpetas para clasificar 12 archivos por año y tema, preservando su contenido.","Una opción es organizar los archivos primero por año y después por tema. Por ejemplo, suponiendo dos años y dos temas:
+
+```text
+Documentos/
+├── Año_1/
+│   ├── Tema_A/
+│   │   ├── Archivo_01
+│   │   ├── Archivo_02
+│   │   └── Archivo_03
+│   └── Tema_B/
+│       ├── Archivo_04
+│       ├── Archivo_05
+│       └── Archivo_06
+└── Año_2/
+    ├── Tema_A/
+    │   ├── Archivo_07
+    │   ├── Archivo_08
+    │   └── Archivo_09
+    └── Tema_B/
+        ├── Archivo_10
+        ├── Archivo_11
+        └── Archivo_12
+```
+
+Los nombres son ilustrativos. Mueva cada archivo a la carpeta correspondiente sin modificar su contenido ni su nombre original.","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+bea810bb4cea6e32,Necesito hacer un backup de tres documentos del computador en una memoria externa. ¿Qué pasos recomienda y cómo puedo mirar si quedaron bien copiados?,"1. Conecta la memoria externa y comprueba que el computador la reconozca y tenga espacio suficiente.
+2. Selecciona los tres documentos y elige **Copiar**. Abre la memoria externa y elige **Pegar**. Espera a que termine la copia.
+3. Para verificarla, comprueba que aparezcan los tres archivos y que su tamaño coincida con el de los originales. Después, abre cada copia **desde la memoria externa** y revisa que su contenido sea accesible.
+4. Expulsa la memoria de forma segura antes de desconectarla.
+
+Conserva los originales en el computador: usa **copiar**, no **cortar**.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+bf72b48d309229fd,Voy a respaldar en la compu las fotos de mi celular. ¿Cómo checo que sí se copiaron bien antes de borrar algo?,"1. **Copia, no muevas**, las fotos y videos a la computadora.
+2. Compara la cantidad de archivos y el tamaño total de las carpetas. Revisa también otras carpetas del celular y los archivos que estén solo en la nube.
+3. Abre varias fotos y videos desde la computadora, incluidos algunos antiguos y recientes. Comprueba que se vean completos y que los videos se reproduzcan.
+4. Para una verificación más fiable, usa una herramienta que compare las **sumas de verificación** de todos los archivos originales y sus copias. Deben coincidir si se copiaron sin convertirlos.
+5. Si puedes, guarda otra copia en un disco externo o en la nube antes de borrar los originales.
+
+Ten cuidado con las bibliotecas sincronizadas: borrar una foto del celular podría borrarla también de la nube o de otros dispositivos.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+c034dad9c5ce8a7f,Voy a hornear algo durante 20 minutos. ¿Qué cinco pasos sigo para precalentar el horno a 180 °C y sacar la preparación sin quemarme?,"1. Coloca la rejilla a la altura deseada y enciende el horno a 180 °C.
+2. Espera a que alcance la temperatura; normalmente lo indica una luz o un aviso.
+3. Introduce la preparación y programa un temporizador para 20 minutos.
+4. Al terminar, apaga el horno y abre la puerta con cuidado, apartándote del vapor.
+5. Ponte guantes de horno, saca la preparación y déjala sobre una superficie resistente al calor.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+c0372c72316ebfe6,"Leí 18 páginas un día, 24 al siguiente y 30 el tercero. ¿Cuál fue mi promedio diario?",Tu promedio fue de **24 páginas al día**.,24 páginas por día.
+c0c0f416943a964f,Tengo 12 archivos en la compu y quiero acomodarlos por año y tema. ¿Cómo los organizo en carpetas sin modificar nada?,"Si por “sin modificar nada” te refieres a no cambiar el contenido ni los nombres, crea carpetas y **mueve** los archivos sin editarlos. Por ejemplo:
+
+```text
+Archivos/
+├── 2022/
+│   ├── Tema A/
+│   └── Tema B/
+├── 2023/
+│   ├── Tema A/
+│   └── Tema C/
+└── 2024/
+    └── Tema B/
+```
+
+Revisa el año y el tema de cada archivo, crea las carpetas necesarias y arrastra cada archivo a su lugar. Si tampoco quieres cambiar su ubicación original, crea **copias** en esas carpetas o usa accesos directos; moverlos sí cambia dónde están guardados.","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+c120e235eaad9fee,Necesito pasar 2.5 litros a mililitros. ¿Cuánto es?,"2.5 litros equivalen a **2,500 mililitros**.",2500 mililitros.
+c2f87474506cdcb7,Calcule la cantidad necesaria para cuatro porciones si cada una requiere 75 g de frijoles secos.,Se necesitan **300 g de frijoles secos**.,300 g; multiplicar 75 por 4.
+c3bfd956ced1c45c,"Para cuatro personas, armás la receta con 75 g de porotos por cabeza. ¿Cuántos gramos precisás poner?",Precisás **300 g de porotos**.,300 g; multiplicar 75 por 4.
+c3d3b8a66dc146d4,Voy a preparar una lista de compras para cinco comidas. ¿Me indica cómo reunir los ingredientes de las recetas y revisar que no se repitan productos?,"Para preparar una lista única para las cinco comidas:
+
+1. **Anote todos los ingredientes** de cada receta, con cantidad y unidad.
+2. **Agrupe los nombres iguales**: por ejemplo, «tomate» y «tomates» cuentan como el mismo producto.
+3. **Sume las cantidades** solo si corresponden a la misma forma y unidad. Convierta las unidades cuando sea necesario.
+4. **Mantenga separados los productos distintos**: por ejemplo, tomate fresco y tomate en conserva, o cebolla roja y blanca.
+5. **Revise la lista final** por producto y compruebe si ya tiene algo en casa.
+
+Puede usar una tabla como esta:
+
+| Producto | Comida 1 | Comida 2 | … | Total |
+|---|---:|---:|---:|---:|
+| Cebolla | 1 unidad | ½ unidad | … | 1½ unidades |
+
+Si comparte las cinco recetas, puedo reunir los ingredientes y eliminar los duplicados por usted.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+c48e7fe2d924b1bc,¿Me ayuda a calcular cuánto tiempo de viaje acumulo si cada trayecto en bus toma 12 minutos y hago tres recorridos iguales?,12 minutos × 3 recorridos = **36 minutos** en total.,36 minutos; multiplicar 12 por 3.
+c51def85947fe66c,Voy a preparar 14 unidades de una mezcla cuya proporción es 2:5. ¿Cuántas unidades lleva el ingrediente que va en menor cantidad?,"La proporción suma 7 partes. Cada parte equivale a 2 unidades, así que el ingrediente en menor cantidad lleva **4 unidades**.",4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+c6babb0dec0aeefb,"Sintetice en una oración: el taller inicia a las 10:00, una ruta tarda 15 minutos y otra 25; se aconseja prever tiempo adicional.","El taller comienza a las 10:00; las rutas duran 15 o 25 minutos, así que conviene prever tiempo adicional.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+c6e12b48d3e12b82,"Voy a limpiar la pantalla de la compu, que ya apagué y desconecté. ¿Qué cuidados debo tener?","- Usa un paño de microfibra limpio y suave; primero prueba a retirar el polvo en seco.
+- Si quedan manchas, humedece ligeramente el paño con agua destilada y limpia sin presionar. **No rocíes líquido directamente sobre la pantalla**.
+- Evita que la humedad entre por los bordes, puertos o aberturas.
+- No uses papel de cocina, estropajos, limpiacristales ni productos con amoníaco o disolventes. Usa alcohol solo si el fabricante lo permite.
+- Deja que se seque por completo antes de volver a conectarla.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+c72aa0f31cfd7178,"Cada colectivo lleva una caja con ocho cuadernos; si salen tres, ¿cuántos cuadernos transportás?","Si salen tres colectivos, transportan **24 cuadernos**.",24 cuadernos.
+c7e80733b16db905,Describa cómo transferir las fotografías del teléfono al equipo y validar la copia antes de eliminar los archivos originales.,"1. **Conecte el teléfono** al equipo con un cable USB, desbloquéelo y autorice el acceso. En el equipo, importe o **copie** las fotos a una carpeta; no use «mover» ni elimine nada del teléfono durante la transferencia. También puede descargarlas desde un servicio en la nube, si las tiene sincronizadas.
+2. **Compruebe la copia** antes de borrar: compare la cantidad de archivos, revise que el tamaño total sea razonable y abra varias fotos y videos —incluidos algunos recientes— para confirmar que se ven completos. Verifique también que estén en la carpeta correcta y, si importa, que se conserven las fechas.
+3. Para mayor seguridad, haga una segunda copia en otro disco o servicio de almacenamiento.
+4. **Solo después de validar**, elimine las originales desde el teléfono. Si usa sincronización en la nube, confirme cómo funciona: borrar una foto del teléfono podría borrarla también de la nube. No vacíe «Eliminados recientemente» hasta estar seguro de que la copia es válida.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+c909184c74bcb3c9,Voy a hornear algo durante 20 minutos. ¿Qué cinco pasos sigo para precalentar el horno a 180 °C y sacar la preparación sin quemarme?,"1. Retira objetos del horno y ponlo a **180 °C**.
+2. Espera a que indique que alcanzó la temperatura.
+3. Con guantes de horno secos, coloca la preparación en la rejilla y programa **20 minutos**.
+4. Al terminar, abre la puerta con cuidado, apartándote del vapor y del aire caliente.
+5. Con los guantes puestos, saca la preparación con ambas manos y déjala sobre una superficie resistente al calor.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+c92c9a7d474083bf,"¿Cuántos mililitros son 2,5 litros? Hacé la conversión, por favor.","2,5 litros × 1.000 = **2.500 mililitros**.",2500 mililitros.
+ca28ea98502eea6b,"Tengo dos opciones de bus: la A tarda 20 minutos y cuesta 8; la B tarda 35 y cuesta 5. Si lo principal es llegar rápido y puedo pagar hasta 10, ¿cuál me conviene?","Te conviene la opción A: tarda menos (20 minutos) y cuesta 8, dentro de tu límite de 10.",La A: cumple el tope de 10 y tarda menos.
+ca4fd1aded50f0a8,Tengo que precalentar el horno a 180 °C y dejar la preparación 20 minutos. ¿Me armás cinco pasos y una precaución para sacarla?,"1. Precalentá el horno a 180 °C.
+2. Colocá la preparación en una fuente apta para horno.
+3. Cuando el horno alcance esa temperatura, introducí la fuente.
+4. Dejala cocinar durante 20 minutos.
+5. Al terminar, apagá el horno y retirala.
+
+**Precaución:** Usá guantes de cocina; la fuente estará caliente.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+ca9d7df5ea97e5d4,Voy a respaldar en la compu las fotos de mi celular. ¿Cómo checo que sí se copiaron bien antes de borrar algo?,"Antes de borrar nada:
+
+1. **Espera a que termine la copia** y expulsa el celular de forma segura.
+2. En la compu, **compara la cantidad de fotos y videos** con la del celular. Ten en cuenta que pueden variar si hay álbumes ocultos, capturas o elementos de apps.
+3. **Abre varios archivos** de distintas fechas: revisa que se vean completos y con buena resolución; reproduce también algunos videos.
+4. Comprueba que la carpeta tenga un **tamaño razonable** y que no haya errores ni archivos de tamaño cero.
+5. Si son importantes, haz **una segunda copia** en otro disco o lugar antes de borrarlos.
+
+Si usas una app que sincroniza fotos, verifica cómo funciona: borrar del celular podría borrarlas también de la nube.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+cae1c6664e5be5a0,"El colectivo A tarda 20 minutos y sale 8; el B demora 35 y sale 5. Si querés llegar rápido y tenés hasta 10, ¿cuál te sirve?","Si ambos salen antes de las 10, te sirve el A: tarda 20 minutos y llega a las 8:20. El B tarda 35 minutos.",La A: cumple el tope de 10 y tarda menos.
+cb9a61bdfea3c7d3,Para una receta se usan 75 g de frijoles por persona. ¿Cuántos gramos compro si van a comer cuatro?,Compra **300 g de frijoles**.,300 g; multiplicar 75 por 4.
+cb9c2e8755a25214,"Si el camión avanza 12 km a una velocidad constante de 30 km/h, ¿cuánto tarda?","Tarda **24 minutos**: \(12 \div 30 = 0{,}4\) horas.",24 minutos; 12/30 de hora.
+cbd54e46fbce1aec,Determine el consumo correspondiente a 250 km con una tasa constante de 6 litros por cada 100 km.,El consumo es de **15 litros**: \(250 \times 6 / 100 = 15\).,"15 litros; proporción directa: 6 x 2,5."
+ccf66fa9e449f280,"Calcule el tamaño total de seis archivos de 750 KB cada uno, excluyendo otros datos del equipo.","El tamaño total es **4.500 KB**, es decir, **4,5 MB** usando unidades decimales.",4500 KB; multiplicar 750 por 6.
+cd751124db3fa9ce,Determine la hora de finalización de una reunión que inicia a las 9:20 y dura 45 minutos.,La reunión finaliza a las **10:05**.,A las 10:05.
+cd8d4bc7b6ac9501,"Resuma en una frase: el taller empieza a las 10:00; el bus A tarda 15 minutos y el B, 25. Para llegar antes, se recomienda salir con tiempo.","Como el taller empieza a las 10:00 y los buses A y B tardan 15 y 25 minutos, respectivamente, se recomienda salir con antelación.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+cdda708d3a4b786f,"Durante tres días leí 18, 24 y 30 páginas. ¿Cuántas páginas leí en promedio por día?",Leíste un promedio de **24 páginas por día**.,24 páginas por día.
+ce6f79fbe18bde35,"En tres días leí 18, 24 y 30 páginas. ¿Qué promedio te da a vos por día?",El promedio es **24 páginas por día**: (18 + 24 + 30) ÷ 3 = 24.,24 páginas por día.
+cea4ccbe9f81b3fb,"Para limpiar la pantalla del computador, ¿qué cuidados debe tener usted? El equipo está apagado y desconectado.","- Use un paño de microfibra limpio y suave.
+- Si hace falta, humedézcalo apenas con agua o con un producto aprobado para pantallas; nunca rocíe líquido directamente sobre la pantalla.
+- Limpie sin presionar y evite que entre humedad por los bordes.
+- No use papel, paños ásperos, limpiavidrios, alcohol, amoníaco ni productos abrasivos.
+- Deje que la pantalla se seque por completo antes de volver a conectar el equipo.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+cfaa432296ae40d1,"El colectivo pasa cada 20 minutos desde las 8:00; si llegás a la parada a las 8:07, ¿a qué hora viene el próximo?","A las 8:20, suponiendo que cumple el horario.",A las 8:20; explicar que la salida de 8:00 ya pasó.
+cfc45c2f49c07deb,Voy a preparar 14 unidades de una mezcla cuya proporción es 2:5. ¿Cuántas unidades lleva el ingrediente que va en menor cantidad?,El ingrediente en menor cantidad lleva **4 unidades**.,4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+d0a2f0ab569486f7,"Si el camión avanza 12 km a una velocidad constante de 30 km/h, ¿cuánto tarda?","Tarda **24 minutos**: 12 ÷ 30 = 0,4 horas.",24 minutos; 12/30 de hora.
+d0afc517d6e4dd54,Calcule el tiempo total de tres trayectos de 12 minutos cada uno.,El tiempo total es **36 minutos**.,36 minutos; multiplicar 12 por 3.
+d0b4558044cc2c99,El colectivo hace 12 km a 30 km/h. ¿Cuánto tardás en cubrir ese trayecto?,"Tardás **24 minutos**, suponiendo que mantiene esa velocidad durante todo el trayecto.",24 minutos; 12/30 de hora.
+d160abc2bab80123,"Calcule el promedio diario de lectura a partir de los valores 18, 24 y 30 páginas.",El promedio diario es **24 páginas**: (18 + 24 + 30) ÷ 3 = 24.,24 páginas por día.
+d1a8799e0d39d66a,"Compare las dos alternativas: una tarda 20 minutos y cuesta 8 unidades; la otra tarda 35 y cuesta 5. Con un límite de 10 y prioridad al tiempo, determine la opción adecuada.","Si el límite de 10 se refiere al costo, ambas opciones lo cumplen. Como la prioridad es el tiempo, la adecuada es la de **20 minutos y 8 unidades**.",La A: cumple el tope de 10 y tarda menos.
+d245517b2be6cf5d,¿Me puede indicar cinco pasos para precalentar el horno a 180 °C y hornear una preparación durante 20 minutos? Incluya una precaución de seguridad.,"1. Encienda el horno y ajuste la temperatura a 180 °C.
+2. Espere hasta que alcance esa temperatura.
+3. Introduzca la preparación en un recipiente apto para horno.
+4. Hornee durante 20 minutos; puede usar un temporizador.
+5. Apague el horno y retire la preparación con guantes térmicos para evitar quemaduras.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+d296102d5a45f121,"Para limpiar la pantalla del computador, ¿qué cuidados debe tener usted? El equipo está apagado y desconectado.","Use un paño de microfibra limpio y suave, apenas humedecido con agua o con un producto indicado para pantallas. No rocíe líquido directamente sobre la pantalla ni presione con fuerza. Evite papel, limpiavidrios, alcohol y productos abrasivos. Déjela secar por completo antes de volver a conectar el equipo.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+d3078ff21ecfdf15,"Si cada uno de tres buses lleva una caja con ocho cuadernos, ¿cuántos cuadernos se transportan en total?",Se transportan **24 cuadernos** en total: 3 × 8 = 24.,24 cuadernos.
+d320f543fbd64861,"Durante tres días leí 18, 24 y 30 páginas. ¿Cuántas páginas leí en promedio por día?",Leíste **24 páginas por día** en promedio: (18 + 24 + 30) ÷ 3 = 24.,24 páginas por día.
+d396b7380e22c026,"El camión A tarda 20 minutos y cuesta 8; el B tarda 35 y cuesta 5. Si mi tope son 10 y quiero llegar antes, ¿cuál elijo?","Elige el **camión A**: tarda 20 minutos y cuesta 8, dentro de tu tope de 10.",La A: cumple el tope de 10 y tarda menos.
+d3f914a850e8e084,Tenés que repartir 14 unidades según una proporción de 2 a 5. ¿Cuántas van para la parte más chica?,4 unidades.,4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+d431fa097033b8aa,"Sintetice en una oración: el taller inicia a las 10:00, una ruta tarda 15 minutos y otra 25; se aconseja prever tiempo adicional.","El taller comienza a las 10:00; las rutas tardan 15 y 25 minutos, y se recomienda prever tiempo adicional.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+d57ac35c4421ff4f,"Convierta 2,5 litros a mililitros e informe el valor equivalente.","2,5 litros equivalen a **2.500 mililitros**.",2500 mililitros.
+d5c9f7db75587b6e,Estoy armando las compras para cinco comidas. ¿Cómo junto lo de las recetas y checo que no anote dos veces lo mismo?,"Haz una lista maestra así:
+
+| Ingrediente | Comida 1 | Comida 2 | … | Total |
+|---|---:|---:|---:|---:|
+| Cebolla | 1 | ½ | … | 1½ |
+
+1. Copia cada ingrediente de las cinco recetas y ajusta las cantidades al número de porciones que prepararás.
+2. Unifica nombres: por ejemplo, “tomate” y “jitomate” si se refieren a lo mismo.
+3. Suma solo cantidades comparables; convierte antes las unidades si hace falta (por ejemplo, gramos a kilos).
+4. Revisa la lista final por ingrediente, no por receta. Así las repeticiones se suman una sola vez.
+5. Anota aparte lo que ya tienes para comprar únicamente lo que falta.
+
+Si compartes las recetas, puedo juntarlas y revisar posibles duplicados.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+d743cab0f5063f1d,¿Por qué el hielo queda arriba del agua líquida? Contame en dos o tres frases.,"Al congelarse, los enlaces de hidrógeno ordenan las moléculas de agua en una estructura más abierta, que ocupa más volumen. Por eso el hielo es menos denso que el agua líquida y flota.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+d7ad6e3641d0f9ad,"Si el camión tarda 12 minutos por recorrido y hago tres, ¿cuánto tiempo de viaje junto en total?",36 minutos en total.,36 minutos; multiplicar 12 por 3.
+d7c1b70bb3cdd1de,¿Me ayuda a calcular cuánto tiempo de viaje acumulo si cada trayecto en bus toma 12 minutos y hago tres recorridos iguales?,12 minutos × 3 recorridos = **36 minutos** de viaje en total.,36 minutos; multiplicar 12 por 3.
+d98cf92cd617de52,Quiero armar la lista para cinco comidas. ¿Cómo juntás los ingredientes de las recetas y te fijás que no se repitan?,"Para armar una sola lista de compras:
+
+1. Reuní los ingredientes y las cantidades de las cinco recetas.
+2. Unificá los nombres y las unidades: por ejemplo, «tomate» y «tomates», o gramos y kilos.
+3. Agrupá los ingredientes iguales y sumá sus cantidades. Si una receta lleva 2 cebollas y otra 1, anotá **3 cebollas** una sola vez.
+4. Mantené separados los ingredientes que no sean equivalentes, como leche común y leche vegetal.
+5. Revisá la lista contra las cinco recetas para comprobar que no falte nada.
+
+Si me pasás las recetas, puedo juntarlas en una lista.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+da1e9d3094cb730b,"Tengo seis archivos de 750 KB en mi computador. ¿Cuánto espacio ocupan juntos, sin contar nada más?",Ocupan **4500 KB** en total.,4500 KB; multiplicar 750 por 6.
+da3ece6610186343,"Durante tres días leí 18, 24 y 30 páginas. ¿Cuántas páginas leí en promedio por día?",Leíste un promedio de **24 páginas por día**.,24 páginas por día.
+da5c0c4d5d28151b,Estoy armando las compras para cinco comidas. ¿Cómo junto lo de las recetas y checo que no anote dos veces lo mismo?,"1. **Lista los ingredientes de las cinco recetas**, con sus cantidades y unidades. Ajusta primero las porciones si hace falta.
+2. **Unifica los nombres y las unidades**: por ejemplo, escribe siempre «cebolla» y convierte ½ kg en 500 g.
+3. **Agrupa y suma los ingredientes iguales**: si una receta pide 1 cebolla y otra 2, anota **3 cebollas**. Mantén separados los productos que no sean equivalentes.
+4. **Revisa lo que ya tienes** y réstalo de cada total.
+5. Haz una lista final con **una línea por producto** y la cantidad que necesitas comprar.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+daef92603422632e,"¿Me resumes esto en una frase? El taller empieza a las 10; el camión A tarda 15 minutos y el B, 25. Conviene salir con margen.","El taller empieza a las 10 y conviene salir con margen, pues los camiones A y B tardan 15 y 25 minutos, respectivamente.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+daf9e752f077e9a1,Calcule el total de cuadernos transportados por tres vehículos con ocho cuadernos cada uno.,3 × 8 = **24 cuadernos**.,24 cuadernos.
+db2d49ab53973c8c,"Si el camión avanza 12 km a una velocidad constante de 30 km/h, ¿cuánto tarda?",Tarda **24 minutos**.,24 minutos; 12/30 de hora.
+db590fcfe8f5437e,"El camión A tarda 20 minutos y cuesta 8; el B tarda 35 y cuesta 5. Si mi tope son 10 y quiero llegar antes, ¿cuál elijo?","Elige el camión A: tarda 20 minutos y cuesta 8, dentro de tu tope de 10.",La A: cumple el tope de 10 y tarda menos.
+db5f07d0b7b88a5e,Tengo que limpiar la pantalla de la compu; ya está apagada y desenchufada. ¿Qué tendría que hacer para no dañarla?,"Para una pantalla moderna, hazlo así:
+
+1. Asegúrate de que esté apagada y fría.
+2. Pasa suavemente un paño limpio de microfibra, seco y sin pelusa.
+3. Si quedan manchas, humedece apenas el paño con agua destilada y limpia sin apretar. **No rocíes líquido directamente** sobre la pantalla.
+4. Sécala con otra parte seca del paño y espera a que esté completamente seca antes de enchufarla.
+
+Evita papel de cocina, estropajos, limpiacristales y productos con amoníaco o disolventes. Si el manual de la pantalla indica un producto específico, sigue esas instrucciones.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+dc158046cfb58bc2,Quiero armar carpetas por año y tema para ordenar 12 archivos de la compu. ¿Cómo lo harías sin tocar el contenido?,"Los organizaría así, sin abrir ni modificar el contenido:
+
+1. Revisaría los nombres y las propiedades para identificar el año y el tema. La fecha de modificación no siempre coincide con el año del documento.
+2. Crearía carpetas con esta estructura:
+   ```text
+   Archivos/
+   ├── 2023/
+   │   ├── Trabajo/
+   │   └── Personal/
+   ├── 2024/
+   │   ├── Trabajo/
+   │   └── Personal/
+   └── Por clasificar/
+   ```
+3. Movería cada archivo a su carpeta, sin cambiarle el nombre. Si no puedo determinar su año o tema, lo dejaría en «Por clasificar».
+4. Comprobaría que los **12 archivos** estén presentes y evitaría sobrescribir archivos con el mismo nombre.
+
+Los años y temas del ejemplo son ilustrativos; usaría los que correspondan a tus archivos.","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+dc4c0344129fc0c6,"¿Cuántos mililitros son 2,5 litros? Hacé la conversión, por favor.","2,5 litros × 1.000 = **2.500 mililitros**.",2500 mililitros.
+dc7089c532bbea61,"Si una mezcla se prepara con ingredientes en proporción 2 a 5 y debe rendir 14 unidades, ¿cuántas corresponden a la parte menor?","La proporción tiene 7 partes en total. Cada parte equivale a 2 unidades, así que la parte menor corresponde a **4 unidades**.",4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+ddcfccae65d1d4d8,"Resuma en una frase: el taller empieza a las 10:00; el bus A tarda 15 minutos y el B, 25. Para llegar antes, se recomienda salir con tiempo.","El taller empieza a las 10:00; los buses A y B tardan 15 y 25 minutos, respectivamente, por lo que se recomienda salir con tiempo para llegar antes.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+dea3984dd3fd0be9,Quiero pasar las fotos del celular a la compu y guardar otra copia en un pendrive. ¿Qué archivos abrís para fijarte que se hayan copiado bien antes de borrar los originales?,"Abrí **algunas fotos y videos directamente desde la compu y desde el pendrive**: elegí archivos de distintas fechas y formatos, incluidos los más grandes. Comprobá que se vean completos y que los videos se reproduzcan.
+
+Además, compará la cantidad de archivos y el tamaño de las carpetas con los del celular. **No borres los originales hasta verificar las dos copias**; si son muchas fotos, abrir una muestra no garantiza que todas estén bien.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+deb6b0c696fb6b0c,"¿Me resumes esto en una frase? El taller empieza a las 10; el camión A tarda 15 minutos y el B, 25. Conviene salir con margen.","El taller empieza a las 10; el camión A tarda 15 minutos y el B, 25, así que conviene salir con margen.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+df3e86169397ebfa,"Convierta 2,5 litros a mililitros e informe el valor equivalente.","2,5 litros equivalen a **2500 mililitros**.",2500 mililitros.
+df4c9cae4f988b48,Salen tres camiones con una caja de ocho cuadernos cada uno. ¿Cuántos cuadernos llevan entre todos?,Llevan 24 cuadernos entre todos.,24 cuadernos.
+e1901efacdc4519c,"Voy a limpiar la pantalla de la compu, que ya apagué y desconecté. ¿Qué cuidados debo tener?","- Asegúrate de que la pantalla esté fría y desconectada.
+- Usa un paño de microfibra limpio y suave; pásalo sin apretar.
+- Si hay manchas, humedece apenas el paño con agua destilada. **No rocíes líquido directamente** y evita que entre por los bordes o puertos.
+- No uses limpiavidrios, productos abrasivos ni solventes; pueden dañar el recubrimiento. Sigue el manual si recomienda un producto específico.
+- Deja que se seque por completo antes de volver a conectarla.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+e2a4d30c822f5fc9,"Explique brevemente, en dos o tres frases, la causa física por la que el hielo flota en agua líquida.","El hielo flota porque es menos denso que el agua líquida. Al congelarse, las moléculas de agua forman una estructura cristalina abierta que ocupa más volumen para la misma masa.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+e2ecf78738e0ac26,Determine la hora de finalización de una reunión que inicia a las 9:20 y dura 45 minutos.,La reunión termina a las **10:05**.,A las 10:05.
+e393453a6d250083,"Voy a limpiar la pantalla de la compu, que ya apagué y desconecté. ¿Qué cuidados debo tener?","- Asegúrate de que esté apagada, desenchufada y fría.
+- Usa un paño de microfibra limpio y suave; quita el polvo sin presionar.
+- Si hace falta, humedece apenas el paño con agua destilada o un limpiador apto para pantallas. **Nunca rocíes líquido directamente**.
+- Evita alcohol, amoníaco, limpiavidrios, productos abrasivos, toallas de papel y exceso de humedad.
+- Déjala secar por completo antes de volver a conectarla. Si el fabricante indica cuidados específicos, sigue esos.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+e3f6991baa18dc81,¿Me ayuda a calcular cuánto tiempo de viaje acumulo si cada trayecto en bus toma 12 minutos y hago tres recorridos iguales?,Acumulas **36 minutos** de viaje (12 × 3).,36 minutos; multiplicar 12 por 3.
+e4ae8631354a5fa7,Determine el consumo correspondiente a 250 km con una tasa constante de 6 litros por cada 100 km.,"El consumo es **15 litros**:
+
+\(250 \times \frac{6}{100} = 15\).","15 litros; proporción directa: 6 x 2,5."
+e54ce09daa805abd,Salen tres camiones con una caja de ocho cuadernos cada uno. ¿Cuántos cuadernos llevan entre todos?,Llevan **24 cuadernos** entre todos.,24 cuadernos.
+e618de7cebaea8a1,Quiero respaldar tres documentos de la compu en una memoria externa. ¿Cómo le hago y qué puedo checar para asegurarme de que sí se copiaron?,"1. Conecta la memoria externa y espera a que aparezca en el explorador de archivos.
+2. Busca los tres documentos, selecciónalos y elige **Copiar**. No uses «Cortar», para conservar los originales.
+3. Abre la memoria externa, entra en la carpeta donde quieras guardarlos y elige **Pegar**. Espera a que termine la copia.
+
+Para comprobarla:
+
+- Confirma que aparecen los tres archivos y que sus nombres y tamaños coinciden con los originales.
+- Abre cada archivo **desde la memoria externa** y revisa que su contenido sea legible.
+
+Por último, expulsa la memoria de forma segura antes de desconectarla.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+e70216ac2175520b,Indique un procedimiento seguro para limpiar la pantalla de un equipo apagado y desconectado.,"1. Limpie la pantalla suavemente con un paño de microfibra limpio y seco, sin presionar.
+2. Si quedan manchas, humedezca ligeramente el paño con agua destilada y vuelva a limpiar. No rocíe líquido directamente sobre la pantalla.
+3. Deje que se seque por completo antes de conectar el equipo.
+
+Evite productos abrasivos, amoníaco y disolventes. Para otros productos de limpieza, siga las indicaciones del fabricante.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+e777a3796d78e263,"Para limpiar la pantalla del computador, ¿qué cuidados debe tener usted? El equipo está apagado y desconectado.","- Use un paño de microfibra limpio y suave, seco o ligeramente humedecido con agua destilada.
+- Limpie con suavidad, sin presionar la pantalla.
+- No rocíe líquido directamente sobre ella ni permita que entre en los bordes.
+- Evite papel, productos abrasivos, amoníaco y alcohol, salvo que el fabricante los autorice.
+- Deje que la pantalla se seque por completo antes de conectar el equipo.","Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva."
+e85512985de989da,"¿Cuántos mililitros son 2,5 litros? Hacé la conversión, por favor.","2,5 litros = **2.500 mililitros**.",2500 mililitros.
+e88a99b4247661d0,¿Por qué el hielo queda arriba del agua líquida? Contame en dos o tres frases.,"Porque al congelarse, las moléculas de agua forman una estructura más abierta que ocupa más volumen. Así, el hielo es menos denso que el agua líquida y flota.","Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse."
+e9d251a481daa84c,"En una sola frase, contame qué dice esto: el taller arranca a las 10; el colectivo A tarda 15 minutos y el B, 25, así que conviene salir con tiempo.","El taller empieza a las 10 y conviene salir con tiempo, porque el colectivo A tarda 15 minutos y el B, 25.",El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.
+ea1d91e65ad6b8c7,Determine la hora de finalización de una reunión que inicia a las 9:20 y dura 45 minutos.,La reunión termina a las 10:05.,A las 10:05.
+ea3f5e3a01384788,"Proponga una estructura de carpetas para clasificar 12 archivos por año y tema, preservando su contenido.","Suponiendo que los archivos corresponden a **dos años** y **dos temas**, una estructura posible es:
+
+```text
+Archivos/
+├── Año_1/
+│   ├── Tema_A/
+│   │   ├── archivo_01
+│   │   ├── archivo_02
+│   │   └── archivo_03
+│   └── Tema_B/
+│       ├── archivo_04
+│       ├── archivo_05
+│       └── archivo_06
+└── Año_2/
+    ├── Tema_A/
+    │   ├── archivo_07
+    │   ├── archivo_08
+    │   └── archivo_09
+    └── Tema_B/
+        ├── archivo_10
+        ├── archivo_11
+        └── archivo_12
+```
+
+Los nombres son ilustrativos: conserve los nombres y el contenido originales al mover o copiar los archivos.","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+ea9ae59178701103,Voy a preparar 14 unidades de una mezcla cuya proporción es 2:5. ¿Cuántas unidades lleva el ingrediente que va en menor cantidad?,El ingrediente en menor cantidad lleva **4 unidades**.,4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+ec6236d888dcfafc,"El colectivo pasa cada 20 minutos desde las 8:00; si llegás a la parada a las 8:07, ¿a qué hora viene el próximo?",A las 8:20.,A las 8:20; explicar que la salida de 8:00 ya pasó.
+ed99c51857b07b2d,"Calcule el tamaño total de seis archivos de 750 KB cada uno, excluyendo otros datos del equipo.",El tamaño total es **4500 KB**.,4500 KB; multiplicar 750 por 6.
+ede295cdc86416ef,"Leí 18 páginas un día, 24 al siguiente y 30 el tercero. ¿Cuál fue mi promedio diario?",Tu promedio fue de **24 páginas al día**.,24 páginas por día.
+eeba47fa02a56e69,Arrancás una reunión a las 9:20 y calculás que dura tres cuartos de hora. ¿A qué hora quedás libre?,Quedás libre a las 10:05.,A las 10:05.
+ef069030d1490b92,Determine el consumo correspondiente a 250 km con una tasa constante de 6 litros por cada 100 km.,El consumo es de **15 litros**.,"15 litros; proporción directa: 6 x 2,5."
+efa5790242147add,"Enumere cinco pasos para precalentar un horno a 180 °C, hornear durante 20 minutos e incluir una medida de seguridad al retirar la preparación.","1. Enciende el horno y ajusta la temperatura a **180 °C**.
+2. Espera a que alcance esa temperatura.
+3. Coloca la preparación en un recipiente apto para horno.
+4. Introduce el recipiente y hornea durante **20 minutos**.
+5. Retíralo con guantes o manoplas térmicas para evitar quemaduras.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+f08e6fb23c8a54e3,Quiero armar la lista para cinco comidas. ¿Cómo juntás los ingredientes de las recetas y te fijás que no se repitan?,"Reúno los ingredientes de las cinco recetas, unifico los nombres equivalentes y sumo las cantidades cuando corresponde. Por ejemplo, si dos recetas llevan 1 cebolla cada una, en la lista pongo 2 cebollas. Si las unidades no se pueden convertir con seguridad, las dejo separadas.
+
+Pasame las recetas y te armo la lista consolidada.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+f0a247ac99b247ca,"Si el camión tarda 12 minutos por recorrido y hago tres, ¿cuánto tiempo de viaje junto en total?","En total, **36 minutos** de viaje.",36 minutos; multiplicar 12 por 3.
+f17745c9244f1a03,Tengo 12 archivos en la compu y quiero acomodarlos por año y tema. ¿Cómo los organizo en carpetas sin modificar nada?,"Puedes crear una carpeta principal y ordenar dentro por **año** y luego por **tema**:
+
+```text
+Archivos organizados/
+├── [Año]/
+│   ├── [Tema]/
+│   └── [Tema]/
+└── [Año]/
+    └── [Tema]/
+```
+
+Copia cada archivo en la carpeta que corresponda, sin cambiar su nombre ni contenido. Así conservas los originales en su ubicación actual. Si no sabes el año o el tema de alguno, usa una carpeta llamada «Por clasificar».","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+f1a3f90e84ab7845,"¿Cuántos mililitros son 2,5 litros? Hacé la conversión, por favor.","2,5 litros = **2500 mililitros**.",2500 mililitros.
+f1baa7974a2c4bf5,Le programaron una reunión de 45 minutos que empieza a las 9:20. ¿A qué hora debe quedar libre usted?,A las 10:05.,A las 10:05.
+f3858b422fb6877c,"Tengo 12 archivos en el computador y quisiera ordenarlos por año y tema, sin cambiar su contenido. ¿Cómo podría organizarlos en carpetas?","Puedes crear una carpeta principal y organizarla primero por **año** y luego por **tema**:
+
+```text
+Archivos/
+├── 2023/
+│   ├── Trabajo/
+│   └── Personal/
+└── 2024/
+    ├── Trabajo/
+    └── Personal/
+```
+
+Después, mueve cada archivo a la carpeta correspondiente. Esto no cambia su contenido; solo cambia dónde está guardado. Si algún archivo encaja en varios temas, elige el tema principal para evitar duplicarlo.","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+f52c6a754947fefd,La junta va a durar 45 minutos y la puse a las 9:20. ¿A qué hora se acaba?,Se acaba a las 10:05.,A las 10:05.
+f56ff223e89fb108,Necesito hacer un backup de tres documentos del computador en una memoria externa. ¿Qué pasos recomienda y cómo puedo mirar si quedaron bien copiados?,"1. Conecta la memoria externa y espera a que aparezca en el computador.
+2. Abre la carpeta donde están los tres documentos y selecciónalos.
+3. **Cópialos** (no los cortes): clic derecho → **Copiar**; luego abre la memoria y elige **Pegar**.
+4. Espera a que termine la copia y confirma que aparecen allí los tres documentos.
+5. Revisa que los nombres y tamaños coincidan con los originales. Para mayor seguridad, abre cada copia desde la memoria y comprueba que se vea correctamente.
+6. Expulsa la memoria de forma segura antes de desconectarla.","Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales."
+f70a742095df4b39,"Tengo 12 archivos en el computador y quisiera ordenarlos por año y tema, sin cambiar su contenido. ¿Cómo podría organizarlos en carpetas?","Puedes crear una carpeta principal y, dentro, una carpeta por año y subcarpetas por tema:
+
+```text
+Archivos/
+├── Año 1/
+│   ├── Tema A/
+│   └── Tema B/
+└── Año 2/
+    ├── Tema A/
+    └── Tema B/
+```
+
+Sustituye los nombres por los años y temas que correspondan y mueve cada uno de los 12 archivos a su subcarpeta. Moverlos no cambia su contenido.","Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido."
+f77599243db145f0,Un coche rinde 6 litros por cada 100 km. ¿Cuánto combustible ocuparía para recorrer 250 km?,Necesitaría **15 litros** de combustible.,"15 litros; proporción directa: 6 x 2,5."
+f7c9000554afb9e2,La junta va a durar 45 minutos y la puse a las 9:20. ¿A qué hora se acaba?,A las 10:05.,A las 10:05.
+f7f90ff28c0d2e83,Tenés que repartir 14 unidades según una proporción de 2 a 5. ¿Cuántas van para la parte más chica?,"La proporción tiene 7 partes en total. Cada parte vale 2 unidades, así que la parte más chica recibe **4 unidades**.",4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+f8102399f3d9c24b,Describa cómo transferir las fotografías del teléfono al equipo y validar la copia antes de eliminar los archivos originales.,"1. Conecte el teléfono al equipo con un cable USB. Desbloquéelo y, si se solicita, autorice el acceso o seleccione **Transferencia de archivos**.
+2. Abra la herramienta de importación de fotos del equipo o la carpeta de fotografías del teléfono. Seleccione los archivos y **cópielos**, sin moverlos, a una carpeta del equipo.
+3. Compruebe que se copiaron todos los archivos seleccionados: compare la cantidad y, cuando sea posible, los tamaños. Abra varias fotos y vídeos, incluidos los más recientes, para verificar que se ven correctamente.
+4. Una vez validada la copia, elimine del teléfono únicamente los originales comprobados. Si usa sincronización en la nube, revise antes si borrarlos también los eliminará de otros dispositivos.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+f8e2b5c1d6f39d3a,"Si el auto consume 6 litros cada 100 km, ¿cuántos litros necesitás para hacer 250 km al mismo ritmo?",Necesitás **15 litros**.,"15 litros; proporción directa: 6 x 2,5."
+f942b1737b2820ba,Estoy armando las compras para cinco comidas. ¿Cómo junto lo de las recetas y checo que no anote dos veces lo mismo?,"Haz una lista maestra así:
+
+1. **Anota cada ingrediente de las cinco recetas** con cantidad y unidad.
+2. **Unifica nombres equivalentes**: por ejemplo, “cebolla picada” y “1 cebolla” van juntas; no mezcles variedades distintas si la receta las distingue.
+3. **Suma las cantidades** solo cuando sean el mismo ingrediente y puedas comparar las unidades. Convierte antes si hace falta (por ejemplo, gramos a kilos).
+4. **Revisa duplicados** buscando cada ingrediente en la lista maestra antes de agregarlo.
+5. **Comprueba la despensa** y descuenta lo que ya tienes.
+
+Ejemplo:  
+- Receta 1: 2 cebollas  
+- Receta 2: 1 cebolla  
+- Lista final: **3 cebollas**
+
+Si me pasas las cinco recetas, puedo juntar los ingredientes y señalar posibles duplicados.","Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes."
+f9a669b19a72fd93,Quiero guardar en mi computador una copia de las fotos del celular. ¿Cómo verifico que los archivos se abran antes de borrar los originales?,"Para comprobarlo con seguridad:
+
+1. **Copia** las fotos al computador; no uses «mover» ni borres nada todavía.
+2. Abre la carpeta copiada y **abre varias fotos** en tamaño completo, no solo las miniaturas. Prueba también videos y algunos archivos antiguos o de distintos formatos.
+3. Comprueba que la carpeta copiada tenga una **cantidad de archivos similar** a la del celular y que las fotos se vean completas, sin errores.
+4. Si quieres mayor seguridad, desconecta el celular, reinicia el computador y vuelve a abrir algunos archivos desde la copia.
+5. Si algunas no abren, puede faltar un programa compatible —por ejemplo, para HEIC—; eso no significa necesariamente que estén dañadas.
+
+Borra los originales solo cuando hayas confirmado la copia. Para mayor tranquilidad, conserva además otra copia en un disco externo o en la nube.","Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla."
+f9f880f98a9bb793,"Determine la duración, en minutos, de un recorrido de 12 km a velocidad constante de 30 km/h.",La duración del recorrido es de **24 minutos**.,24 minutos; 12/30 de hora.
+fb459cf7f140b1f0,Un bus recorre 12 km a 30 km/h. ¿Cuántos minutos tarda en completar ese trayecto?,Tarda **24 minutos**.,24 minutos; 12/30 de hora.
+fc2d664da5a13f47,"El colectivo A tarda 20 minutos y sale 8; el B demora 35 y sale 5. Si querés llegar rápido y tenés hasta 10, ¿cuál te sirve?","Si querés llegar **lo antes posible** y ambos salen el mismo día, te sirve el **B**: llega a las 5:35; el A llega a las 8:20. El A tarda menos en el viaje, pero sale más tarde.",La A: cumple el tope de 10 y tarda menos.
+fd597edf0483ea4f,"En una mezcla de 14 unidades con proporción 2:5, calcule la cantidad correspondiente al componente menor.",El componente menor corresponde a **4 unidades**.,4 unidades; hay 7 partes y cada una equivale a 2 unidades.
+fe9878673ac8c215,Un bus recorre 12 km a 30 km/h. ¿Cuántos minutos tarda en completar ese trayecto?,Tarda 24 minutos.,24 minutos; 12/30 de hora.
+feec8571d6b6d7b7,Voy a hornear algo durante 20 minutos. ¿Qué cinco pasos sigo para precalentar el horno a 180 °C y sacar la preparación sin quemarme?,"1. Ajusta el horno a **180 °C**.
+2. Espera a que el indicador señale que ha alcanzado la temperatura.
+3. Introduce la preparación y cierra la puerta.
+4. Programa 20 minutos y apaga el horno al terminar.
+5. Abre la puerta con cuidado, apartándote del vapor. Saca la preparación con guantes de horno y colócala sobre una superficie resistente al calor.","Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar."
+ff195f6f6046a859,"¿Me convierte 2,5 litros a mililitros y me indica el resultado?","2,5 litros = **2.500 mililitros**.",2500 mililitros.
+ff31f5baa622e877,Calcule la cantidad necesaria para cuatro porciones si cada una requiere 75 g de frijoles secos.,4 × 75 g = **300 g de frijoles secos**.,300 g; multiplicar 75 por 4.
+ffe97760c1b1fe8e,"Si el camión avanza 12 km a una velocidad constante de 30 km/h, ¿cuánto tarda?",Tarda **24 minutos**.,24 minutos; 12/30 de hora.

@@ -1,0 +1,97 @@
+﻿item,variedad,replica,cohorte,marcador_de_clave,a_presente,b_presente
+I001,co,1,piloto_reutilizado,36 minutos,1,1
+I001,co,2,piloto_reutilizado,36 minutos,1,1
+I001,co,3,piloto_reutilizado,36 minutos,1,1
+I001,mx,1,piloto_reutilizado,36 minutos,1,1
+I001,mx,2,piloto_reutilizado,36 minutos,1,1
+I001,mx,3,piloto_reutilizado,36 minutos,1,1
+I001,rio,1,piloto_reutilizado,36 minutos,1,1
+I001,rio,2,piloto_reutilizado,36 minutos,1,1
+I001,rio,3,piloto_reutilizado,36 minutos,1,1
+I001,std,1,piloto_reutilizado,36 minutos,1,1
+I001,std,2,piloto_reutilizado,36 minutos,1,1
+I001,std,3,piloto_reutilizado,36 minutos,1,1
+I002,co,1,recoleccion_adicional,15 litros,1,1
+I002,co,2,recoleccion_adicional,15 litros,1,1
+I002,co,3,recoleccion_adicional,15 litros,1,1
+I002,mx,1,recoleccion_adicional,15 litros,1,1
+I002,mx,2,recoleccion_adicional,15 litros,1,1
+I002,mx,3,recoleccion_adicional,15 litros,1,1
+I002,rio,1,recoleccion_adicional,15 litros,1,1
+I002,rio,2,recoleccion_adicional,15 litros,1,1
+I002,rio,3,recoleccion_adicional,15 litros,1,1
+I002,std,1,recoleccion_adicional,15 litros,1,1
+I002,std,2,recoleccion_adicional,15 litros,1,1
+I002,std,3,recoleccion_adicional,15 litros,1,1
+I003,co,1,recoleccion_adicional,4500 KB,1,1
+I003,co,2,recoleccion_adicional,4500 KB,1,1
+I003,co,3,recoleccion_adicional,4500 KB,1,1
+I003,mx,1,recoleccion_adicional,4500 KB,1,1
+I003,mx,2,recoleccion_adicional,4500 KB,1,1
+I003,mx,3,recoleccion_adicional,4500 KB,1,1
+I003,rio,1,recoleccion_adicional,4500 KB,1,1
+I003,rio,2,recoleccion_adicional,4500 KB,1,1
+I003,rio,3,recoleccion_adicional,4500 KB,1,1
+I003,std,1,recoleccion_adicional,4500 KB,1,1
+I003,std,2,recoleccion_adicional,4500 KB,1,1
+I003,std,3,recoleccion_adicional,4500 KB,1,1
+I004,co,1,recoleccion_adicional,300 g,1,1
+I004,co,2,recoleccion_adicional,300 g,1,1
+I004,co,3,recoleccion_adicional,300 g,1,1
+I004,mx,1,recoleccion_adicional,300 g,1,1
+I004,mx,2,recoleccion_adicional,300 g,1,1
+I004,mx,3,recoleccion_adicional,300 g,1,1
+I004,rio,1,recoleccion_adicional,300 g,1,1
+I004,rio,2,recoleccion_adicional,300 g,1,1
+I004,rio,3,recoleccion_adicional,300 g,1,1
+I004,std,1,recoleccion_adicional,300 g,1,1
+I004,std,2,recoleccion_adicional,300 g,1,1
+I004,std,3,recoleccion_adicional,300 g,1,1
+I005,co,1,recoleccion_adicional,10:05,1,1
+I005,co,2,recoleccion_adicional,10:05,1,1
+I005,co,3,recoleccion_adicional,10:05,1,1
+I005,mx,1,recoleccion_adicional,10:05,1,1
+I005,mx,2,recoleccion_adicional,10:05,1,1
+I005,mx,3,recoleccion_adicional,10:05,1,1
+I005,rio,1,recoleccion_adicional,10:05,1,1
+I005,rio,2,recoleccion_adicional,10:05,1,1
+I005,rio,3,recoleccion_adicional,10:05,1,1
+I005,std,1,recoleccion_adicional,10:05,1,1
+I005,std,2,recoleccion_adicional,10:05,1,1
+I005,std,3,recoleccion_adicional,10:05,1,1
+I006,co,1,recoleccion_adicional,4 unidades,1,1
+I006,co,2,recoleccion_adicional,4 unidades,1,1
+I006,co,3,recoleccion_adicional,4 unidades,1,1
+I006,mx,1,recoleccion_adicional,4 unidades,1,1
+I006,mx,2,recoleccion_adicional,4 unidades,1,1
+I006,mx,3,recoleccion_adicional,4 unidades,1,1
+I006,rio,1,recoleccion_adicional,4 unidades,1,1
+I006,rio,2,recoleccion_adicional,4 unidades,1,1
+I006,rio,3,recoleccion_adicional,4 unidades,1,1
+I006,std,1,recoleccion_adicional,4 unidades,1,1
+I006,std,2,recoleccion_adicional,4 unidades,1,1
+I006,std,3,recoleccion_adicional,4 unidades,1,1
+I007,co,1,recoleccion_adicional,24 cuadernos,1,1
+I007,co,2,recoleccion_adicional,24 cuadernos,1,1
+I007,co,3,recoleccion_adicional,24 cuadernos,1,1
+I007,mx,1,recoleccion_adicional,24 cuadernos,1,1
+I007,mx,2,recoleccion_adicional,24 cuadernos,1,1
+I007,mx,3,recoleccion_adicional,24 cuadernos,1,1
+I007,rio,1,recoleccion_adicional,24 cuadernos,1,1
+I007,rio,2,recoleccion_adicional,24 cuadernos,1,1
+I007,rio,3,recoleccion_adicional,24 cuadernos,1,1
+I007,std,1,recoleccion_adicional,24 cuadernos,1,1
+I007,std,2,recoleccion_adicional,24 cuadernos,1,1
+I007,std,3,recoleccion_adicional,24 cuadernos,1,1
+I051,co,1,piloto_reutilizado,8:20,1,1
+I051,co,2,piloto_reutilizado,8:20,1,1
+I051,co,3,piloto_reutilizado,8:20,1,1
+I051,mx,1,piloto_reutilizado,8:20,1,1
+I051,mx,2,piloto_reutilizado,8:20,1,1
+I051,mx,3,piloto_reutilizado,8:20,1,1
+I051,rio,1,piloto_reutilizado,8:20,1,1
+I051,rio,2,piloto_reutilizado,8:20,1,1
+I051,rio,3,piloto_reutilizado,8:20,1,1
+I051,std,1,piloto_reutilizado,8:20,1,1
+I051,std,2,piloto_reutilizado,8:20,1,1
+I051,std,3,piloto_reutilizado,8:20,1,1

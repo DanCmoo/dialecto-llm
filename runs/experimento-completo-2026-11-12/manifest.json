@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0",
+  "run_id": "experimento-completo-2026-11-12",
+  "created_at_utc": "2026-11-12T05:31:08-05:00",
+  "phase": "main",
+  "analysis_eligible": false,
+  "schedule_policy": "complete item blocks; paired model calls; seeded order",
+  "randomization_seed": 20261103,
+  "items": [
+    "I001",
+    "I002",
+    "I003",
+    "I004",
+    "I005",
+    "I006",
+    "I007",
+    "I008",
+    "I009",
+    "I010",
+    "I011",
+    "I012",
+    "I013",
+    "I014",
+    "I015",
+    "I016",
+    "I017",
+    "I018",
+    "I019",
+    "I020",
+    "I021",
+    "I022",
+    "I023",
+    "I024",
+    "I025",
+    "I026",
+    "I027",
+    "I028",
+    "I029",
+    "I030",
+    "I031",
+    "I032",
+    "I033",
+    "I034",
+    "I035",
+    "I036",
+    "I037",
+    "I038",
+    "I039",
+    "I040",
+    "I041",
+    "I042",
+    "I043",
+    "I044",
+    "I045",
+    "I046",
+    "I047",
+    "I048",
+    "I049",
+    "I050",
+    "I051",
+    "I052",
+    "I053",
+    "I054",
+    "I055",
+    "I056",
+    "I057",
+    "I058",
+    "I059",
+    "I060"
+  ],
+  "dialects": [
+    "co",
+    "mx",
+    "rio",
+    "std"
+  ],
+  "repetitions": 3,
+  "models": [
+    {
+      "alias": "gpt6_luna",
+      "requested_model_id": "gpt-6-luna",
+      "snapshot_policy": "rolling model alias; persist response.model for every call",
+      "input_usd_per_million": 0.1,
+      "output_usd_per_million": 0.5
+    },
+    {
+      "alias": "gpt61_terra",
+      "requested_model_id": "gpt-6.1-terra",
+      "snapshot_policy": "rolling model alias; persist response.model for every call",
+      "input_usd_per_million": 1.0,
+      "output_usd_per_million": 5.0
+    }
+  ],
+  "local_request_limit_per_model_rolling_24h": 100,
+  "requests_per_minute": {
+    "gpt6_luna": 10,
+    "gpt61_terra": 3
+  },
+  "generation": {
+    "system_instruction": "Responde en español con precisión y de forma concisa. Respeta el formato y las restricciones explícitas. Si la consulta no determina una respuesta única, indica los supuestos. No añadas datos locales que no se soliciten.",
+    "reasoning_effort": {
+      "gpt6_luna": "medium",
+      "gpt61_terra": "medium"
+    },
+    "max_output_tokens": 1024,
+    "tools_enabled": false,
+    "store": false,
+    "temperature": "omitted",
+    "top_p": "omitted",
+    "single_turn": true
+  },
+  "input_hashes": {
+    "config_sha256": "16e782aebdb32f178ff83b6aacc5c2d39249072d27157befb82d78c03403cfaa",
+    "bank_sha256": "045268d66f8236b5341aa8bae2c05a837fb9463a7a2f767c853041615d00acdb",
+    "schedule_sha256": "990fb76a27f4ddebcc49c7fdfb9b3fdf5760b82d56ff73ccea74b158cd2df841"
+  },
+  "calls_per_batch_per_model": {
+    "day1": {
+      "gpt6_luna": 48,
+      "gpt61_terra": 48
+    },
+    "day2": {
+      "gpt61_terra": 48,
+      "gpt6_luna": 48
+    },
+    "day3": {
+      "gpt61_terra": 48,
+      "gpt6_luna": 48
+    },
+    "day4": {
+      "gpt6_luna": 48,
+      "gpt61_terra": 48
+    },
+    "day5": {
+      "gpt6_luna": 48,
+      "gpt61_terra": 48
+    },
+    "day6": {
+      "gpt61_terra": 48,
+      "gpt6_luna": 48
+    },
+    "day7": {
+      "gpt6_luna": 48,
+      "gpt61_terra": 48
+    },
+    "day8": {
+      "gpt6_luna": 48,
+      "gpt61_terra": 48
+    },
+    "day9": {
+      "gpt6_luna": 48,
+      "gpt61_terra": 48
+    },
+    "day10": {
+      "gpt61_terra": 48,
+      "gpt6_luna": 48
+    },
+    "day11": {
+      "gpt6_luna": 48,
+      "gpt61_terra": 48
+    },
+    "day12": {
+      "gpt6_luna": 48,
+      "gpt61_terra": 48
+    },
+    "day13": {
+      "gpt6_luna": 48,
+      "gpt61_terra": 48
+    },
+    "day14": {
+      "gpt61_terra": 48,
+      "gpt6_luna": 48
+    },
+    "day15": {
+      "gpt61_terra": 48,
+      "gpt6_luna": 48
+    }
+  },
+  "total_calls": 1440,
+  "inputs_are_snapshotted": true,
+  "notes": [
+    "No API request was made while creating this plan.",
+    "All 60 items are scheduled for the 1,440-response study; import completed pilot records before execution. Analysis remains gated by the documented approvals.",
+    "The account quota can change; re-check Limits before each daily batch."
+  ],
+  "pilot_reuse": {
+    "source_run_id": "piloto-pareado-20261111",
+    "imported_completed_calls": 144,
+    "source_manifest_sha256": "4a01ed88ff28b9cfe008df2e3e0995f2eeb9f74bbd2f8e9b669d0a32d9bd8b45",
+    "source_responses_sha256": "1a956b7a34d3012805f51763a588c82439f931dee76b1a730ac1480062736c58"
+  },
+  "max_requests_per_model_per_batch": 48
+}

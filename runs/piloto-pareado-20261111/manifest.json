@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "run_id": "piloto-pareado-20261111",
+  "created_at_utc": "2026-11-11T16:00:28+00:00",
+  "phase": "pilot",
+  "analysis_eligible": false,
+  "schedule_policy": "complete item blocks; paired model calls; seeded order",
+  "randomization_seed": 20261103,
+  "items": [
+    "I001",
+    "I011",
+    "I021",
+    "I031",
+    "I041",
+    "I051"
+  ],
+  "dialects": [
+    "co",
+    "mx",
+    "rio",
+    "std"
+  ],
+  "repetitions": 3,
+  "models": [
+    {
+      "alias": "gpt6_luna",
+      "requested_model_id": "gpt-6-luna",
+      "snapshot_policy": "rolling model alias; persist response.model for every call",
+      "input_usd_per_million": 0.1,
+      "output_usd_per_million": 0.5
+    },
+    {
+      "alias": "gpt61_terra",
+      "requested_model_id": "gpt-6.1-terra",
+      "snapshot_policy": "rolling model alias; persist response.model for every call",
+      "input_usd_per_million": 1.0,
+      "output_usd_per_million": 5.0
+    }
+  ],
+  "requests_per_minute": {
+    "gpt6_luna": 10,
+    "gpt61_terra": 3
+  },
+  "generation": {
+    "system_instruction": "Responde en español con precisión y de forma concisa. Respeta el formato y las restricciones explícitas. Si la consulta no determina una respuesta única, indica los supuestos. No añadas datos locales que no se soliciten.",
+    "reasoning_effort": {
+      "gpt6_luna": "medium",
+      "gpt61_terra": "medium"
+    },
+    "max_output_tokens": 1024,
+    "tools_enabled": false,
+    "store": false,
+    "temperature": "omitted",
+    "top_p": "omitted",
+    "single_turn": true
+  },
+  "input_hashes": {
+    "config_sha256": "cd774ee0ec550055bd30046cfe2a6d33cc103e9bd71d550997f7245e34dc4f29",
+    "bank_sha256": "045268d66f8236b5341aa8bae2c05a837fb9463a7a2f767c853041615d00acdb",
+    "schedule_sha256": "15da5a0daeff6fbe509f51779018724d61cb42f8c2a7fde42ed4af37c255547e"
+  },
+  "calls_per_batch_per_model": {
+    "day1": {
+      "gpt6_luna": 48,
+      "gpt61_terra": 48
+    },
+    "day2": {
+      "gpt61_terra": 24,
+      "gpt6_luna": 24
+    }
+  },
+  "total_calls": 144,
+  "inputs_are_snapshotted": true,
+  "notes": [
+    "No API request was made while creating this plan.",
+    "Pilot outputs are exploratory and excluded from the main 1,440 responses.",
+    "The account quota can change; re-check Limits before each daily batch.",
+    "Execution override: local rolling-24h safeguard raised from 50 to 100 after checking Limits; a subsequent Terra request was rejected by the API with HTTP 429 RPD limit 50. The runner stopped without automatic retry."
+  ],
+  "local_request_limit_per_model_rolling_24h": 100,
+  "quota_policy_override": {
+    "recorded_at_utc": "2026-11-11",
+    "reason": "Project Limits shows RPM and TPM but no RPD; a Terra API request later returned an explicit 429 RPD limit of 50.",
+    "visible_limits": {
+      "gpt6_luna": {
+        "rpm": 10,
+        "tpm": 60000
+      },
+      "gpt61_terra": {
+        "rpm": 3,
+        "tpm": 10000
+      }
+    },
+    "local_rolling_24h_attempt_limit_per_model": 100,
+    "api_daily_request_limit_claimed": false,
+    "api_rpd_visible_in_ui": false,
+    "api_rpd_error_observed": {
+      "model": "gpt-6.1-terra",
+      "limit": 50,
+      "used": 50,
+      "requested": 1,
+      "http_status": 429,
+      "retry_after": "28m48s"
+    }
+  },
+  "initial_local_guard_per_model_rolling_24h": 50
+}

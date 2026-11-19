@@ -1,0 +1,1202 @@
+[
+  {
+    "item_id": "I001",
+    "category": "calculo",
+    "task": "evaluacion_textual",
+    "prompt_co": "¿Me ayuda a calcular cuánto tiempo de viaje acumulo si cada trayecto en bus toma 12 minutos y hago tres recorridos iguales?",
+    "prompt_mx": "Si el camión tarda 12 minutos por recorrido y hago tres, ¿cuánto tiempo de viaje junto en total?",
+    "prompt_rio": "El colectivo tarda 12 minutos por tramo; si hacés tres viajes iguales, ¿cuánto tiempo sumás?",
+    "prompt_std": "Calcule el tiempo total de tres trayectos de 12 minutos cada uno.",
+    "answer_key": "36 minutos; multiplicar 12 por 3.",
+    "lexical_feature": "BUS",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I002",
+    "category": "calculo",
+    "task": "evaluacion_textual",
+    "prompt_co": "Para estimar el combustible, ¿cuántos litros gastaría un carro en 250 km si consume 6 litros cada 100 km?",
+    "prompt_mx": "Un coche rinde 6 litros por cada 100 km. ¿Cuánto combustible ocuparía para recorrer 250 km?",
+    "prompt_rio": "Si el auto consume 6 litros cada 100 km, ¿cuántos litros necesitás para hacer 250 km al mismo ritmo?",
+    "prompt_std": "Determine el consumo correspondiente a 250 km con una tasa constante de 6 litros por cada 100 km.",
+    "answer_key": "15 litros; proporción directa: 6 x 2,5.",
+    "lexical_feature": "CAR",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I003",
+    "category": "calculo",
+    "task": "evaluacion_textual",
+    "prompt_co": "Tengo seis archivos de 750 KB en mi computador. ¿Cuánto espacio ocupan juntos, sin contar nada más?",
+    "prompt_mx": "En la compu guardé seis archivos de 750 KB cada uno; ¿cuánto espacio ocupan en total?",
+    "prompt_rio": "Guardé seis archivos de 750 KB en la compu. ¿Cuánto espacio ocupan entre todos?",
+    "prompt_std": "Calcule el tamaño total de seis archivos de 750 KB cada uno, excluyendo otros datos del equipo.",
+    "answer_key": "4500 KB; multiplicar 750 por 6.",
+    "lexical_feature": "COMPUTER",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I004",
+    "category": "calculo",
+    "task": "evaluacion_textual",
+    "prompt_co": "Una receta lleva 75 g de fríjoles por persona. ¿Cuánto debo alistar para cuatro personas?",
+    "prompt_mx": "Para una receta se usan 75 g de frijoles por persona. ¿Cuántos gramos compro si van a comer cuatro?",
+    "prompt_rio": "Para cuatro personas, armás la receta con 75 g de porotos por cabeza. ¿Cuántos gramos precisás poner?",
+    "prompt_std": "Calcule la cantidad necesaria para cuatro porciones si cada una requiere 75 g de frijoles secos.",
+    "answer_key": "300 g; multiplicar 75 por 4.",
+    "lexical_feature": "BEAN",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I005",
+    "category": "calculo",
+    "task": "evaluacion_textual",
+    "prompt_co": "Le programaron una reunión de 45 minutos que empieza a las 9:20. ¿A qué hora debe quedar libre usted?",
+    "prompt_mx": "La junta va a durar 45 minutos y la puse a las 9:20. ¿A qué hora se acaba?",
+    "prompt_rio": "Arrancás una reunión a las 9:20 y calculás que dura tres cuartos de hora. ¿A qué hora quedás libre?",
+    "prompt_std": "Determine la hora de finalización de una reunión que inicia a las 9:20 y dura 45 minutos.",
+    "answer_key": "A las 10:05.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I006",
+    "category": "calculo",
+    "task": "evaluacion_textual",
+    "prompt_co": "Si una mezcla se prepara con ingredientes en proporción 2 a 5 y debe rendir 14 unidades, ¿cuántas corresponden a la parte menor?",
+    "prompt_mx": "Voy a preparar 14 unidades de una mezcla cuya proporción es 2:5. ¿Cuántas unidades lleva el ingrediente que va en menor cantidad?",
+    "prompt_rio": "Tenés que repartir 14 unidades según una proporción de 2 a 5. ¿Cuántas van para la parte más chica?",
+    "prompt_std": "En una mezcla de 14 unidades con proporción 2:5, calcule la cantidad correspondiente al componente menor.",
+    "answer_key": "4 unidades; hay 7 partes y cada una equivale a 2 unidades.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I007",
+    "category": "calculo",
+    "task": "evaluacion_textual",
+    "prompt_co": "Si cada uno de tres buses lleva una caja con ocho cuadernos, ¿cuántos cuadernos se transportan en total?",
+    "prompt_mx": "Salen tres camiones con una caja de ocho cuadernos cada uno. ¿Cuántos cuadernos llevan entre todos?",
+    "prompt_rio": "Cada colectivo lleva una caja con ocho cuadernos; si salen tres, ¿cuántos cuadernos transportás?",
+    "prompt_std": "Calcule el total de cuadernos transportados por tres vehículos con ocho cuadernos cada uno.",
+    "answer_key": "24 cuadernos.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I008",
+    "category": "calculo",
+    "task": "evaluacion_textual",
+    "prompt_co": "Un bus recorre 12 km a 30 km/h. ¿Cuántos minutos tarda en completar ese trayecto?",
+    "prompt_mx": "Si el camión avanza 12 km a una velocidad constante de 30 km/h, ¿cuánto tarda?",
+    "prompt_rio": "El colectivo hace 12 km a 30 km/h. ¿Cuánto tardás en cubrir ese trayecto?",
+    "prompt_std": "Determine la duración, en minutos, de un recorrido de 12 km a velocidad constante de 30 km/h.",
+    "answer_key": "24 minutos; 12/30 de hora.",
+    "lexical_feature": "BUS",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I009",
+    "category": "calculo",
+    "task": "evaluacion_textual",
+    "prompt_co": "Durante tres días leí 18, 24 y 30 páginas. ¿Cuántas páginas leí en promedio por día?",
+    "prompt_mx": "Leí 18 páginas un día, 24 al siguiente y 30 el tercero. ¿Cuál fue mi promedio diario?",
+    "prompt_rio": "En tres días leí 18, 24 y 30 páginas. ¿Qué promedio te da a vos por día?",
+    "prompt_std": "Calcule el promedio diario de lectura a partir de los valores 18, 24 y 30 páginas.",
+    "answer_key": "24 páginas por día.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I010",
+    "category": "calculo",
+    "task": "evaluacion_textual",
+    "prompt_co": "¿Me convierte 2,5 litros a mililitros y me indica el resultado?",
+    "prompt_mx": "Necesito pasar 2.5 litros a mililitros. ¿Cuánto es?",
+    "prompt_rio": "¿Cuántos mililitros son 2,5 litros? Hacé la conversión, por favor.",
+    "prompt_std": "Convierta 2,5 litros a mililitros e informe el valor equivalente.",
+    "answer_key": "2500 mililitros.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I011",
+    "category": "procedimiento",
+    "task": "evaluacion_textual",
+    "prompt_co": "Necesito hacer un backup de tres documentos del computador en una memoria externa. ¿Qué pasos recomienda y cómo puedo mirar si quedaron bien copiados?",
+    "prompt_mx": "Quiero respaldar tres documentos de la compu en una memoria externa. ¿Cómo le hago y qué puedo checar para asegurarme de que sí se copiaron?",
+    "prompt_rio": "Tengo tres documentos en la compu y quiero guardarlos en un pendrive. ¿Cómo armás la copia y qué conviene abrir para fijarme si quedó bien?",
+    "prompt_std": "Describa un procedimiento para copiar tres documentos del equipo a un dispositivo externo y verificar la integridad de la copia sin borrar los originales.",
+    "answer_key": "Incluir conectar la memoria, copiar los tres archivos y verificar apertura o tamaño; no borrar los originales.",
+    "lexical_feature": "COMPUTER",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I012",
+    "category": "procedimiento",
+    "task": "evaluacion_textual",
+    "prompt_co": "Tengo 12 archivos en el computador y quisiera ordenarlos por año y tema, sin cambiar su contenido. ¿Cómo podría organizarlos en carpetas?",
+    "prompt_mx": "Tengo 12 archivos en la compu y quiero acomodarlos por año y tema. ¿Cómo los organizo en carpetas sin modificar nada?",
+    "prompt_rio": "Quiero armar carpetas por año y tema para ordenar 12 archivos de la compu. ¿Cómo lo harías sin tocar el contenido?",
+    "prompt_std": "Proponga una estructura de carpetas para clasificar 12 archivos por año y tema, preservando su contenido.",
+    "answer_key": "Proponer carpetas por año/tema, mover/copiar archivos y comprobar ubicación; preservar el contenido.",
+    "lexical_feature": "COMPUTER",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I013",
+    "category": "procedimiento",
+    "task": "evaluacion_textual",
+    "prompt_co": "Para limpiar la pantalla del computador, ¿qué cuidados debe tener usted? El equipo está apagado y desconectado.",
+    "prompt_mx": "Voy a limpiar la pantalla de la compu, que ya apagué y desconecté. ¿Qué cuidados debo tener?",
+    "prompt_rio": "Tengo que limpiar la pantalla de la compu; ya está apagada y desenchufada. ¿Qué tendría que hacer para no dañarla?",
+    "prompt_std": "Indique un procedimiento seguro para limpiar la pantalla de un equipo apagado y desconectado.",
+    "answer_key": "Apagar y desconectar; usar paño suave; aplicar producto al paño, no a la pantalla; secar sin presión excesiva.",
+    "lexical_feature": "COMPUTER",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I014",
+    "category": "procedimiento",
+    "task": "evaluacion_textual",
+    "prompt_co": "Voy a preparar una lista de compras para cinco comidas. ¿Me indica cómo reunir los ingredientes de las recetas y revisar que no se repitan productos?",
+    "prompt_mx": "Estoy armando las compras para cinco comidas. ¿Cómo junto lo de las recetas y checo que no anote dos veces lo mismo?",
+    "prompt_rio": "Quiero armar la lista para cinco comidas. ¿Cómo juntás los ingredientes de las recetas y te fijás que no se repitan?",
+    "prompt_std": "Explique cómo consolidar los ingredientes de cinco recetas en una lista única, sumando cantidades cuando corresponda y eliminando duplicados.",
+    "answer_key": "Extraer ingredientes, sumar cantidades, unificar duplicados y revisar la lista; no inventar ingredientes.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I015",
+    "category": "procedimiento",
+    "task": "evaluacion_textual",
+    "prompt_co": "Quiero guardar en mi computador una copia de las fotos del celular. ¿Cómo verifico que los archivos se abran antes de borrar los originales?",
+    "prompt_mx": "Voy a respaldar en la compu las fotos de mi celular. ¿Cómo checo que sí se copiaron bien antes de borrar algo?",
+    "prompt_rio": "Quiero pasar las fotos del celular a la compu y guardar otra copia en un pendrive. ¿Qué archivos abrís para fijarte que se hayan copiado bien antes de borrar los originales?",
+    "prompt_std": "Describa cómo transferir las fotografías del teléfono al equipo y validar la copia antes de eliminar los archivos originales.",
+    "answer_key": "Conectar o transferir, guardar la copia y comprobar que abre; conservar las fotos originales hasta verificarla.",
+    "lexical_feature": "COMPUTER",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I016",
+    "category": "procedimiento",
+    "task": "evaluacion_textual",
+    "prompt_co": "¿Me puede indicar cinco pasos para precalentar el horno a 180 °C y hornear una preparación durante 20 minutos? Incluya una precaución de seguridad.",
+    "prompt_mx": "Voy a hornear algo durante 20 minutos. ¿Qué cinco pasos sigo para precalentar el horno a 180 °C y sacar la preparación sin quemarme?",
+    "prompt_rio": "Tengo que precalentar el horno a 180 °C y dejar la preparación 20 minutos. ¿Me armás cinco pasos y una precaución para sacarla?",
+    "prompt_std": "Enumere cinco pasos para precalentar un horno a 180 °C, hornear durante 20 minutos e incluir una medida de seguridad al retirar la preparación.",
+    "answer_key": "Seleccionar 180 °C, esperar precalentamiento, introducir la preparación, controlar 20 min y usar protección al retirar.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I017",
+    "category": "procedimiento",
+    "task": "evaluacion_textual",
+    "prompt_co": "Somos dos y debemos repartir cuatro tareas domésticas. ¿Qué distribución propone para que cada persona haga dos tareas distintas?",
+    "prompt_mx": "Hay cuatro pendientes de la casa y somos dos. ¿Cómo los repartimos para que nos toquen dos tareas diferentes a cada quien?",
+    "prompt_rio": "Tenemos cuatro tareas de la casa entre dos. ¿Cómo las repartís para que cada uno haga dos distintas?",
+    "prompt_std": "Proponga una asignación de cuatro tareas domésticas entre dos personas, con dos tareas diferentes para cada una.",
+    "answer_key": "Asignar cuatro tareas distintas, dos por persona; cualquier reparto válido.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I018",
+    "category": "procedimiento",
+    "task": "evaluacion_textual",
+    "prompt_co": "Debo repartir 24 fríjoles en seis porciones iguales. ¿Cuántos corresponden a cada porción y cómo compruebo el reparto?",
+    "prompt_mx": "Tengo 24 frijoles para seis porciones. ¿Cuántos pongo en cada una y cómo checo que quedaron parejas?",
+    "prompt_rio": "Hay que dividir 24 porotos en seis porciones iguales. ¿Cuántos van en cada una y cómo verificás la cuenta?",
+    "prompt_std": "Distribuya 24 frijoles secos en seis porciones iguales e indique una operación para comprobar el resultado.",
+    "answer_key": "Cuatro unidades por porción; sumar o multiplicar 6 por 4 para comprobar.",
+    "lexical_feature": "BEAN",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I019",
+    "category": "procedimiento",
+    "task": "evaluacion_textual",
+    "prompt_co": "Debo acordar una fecha de reunión con un compañero, pero tenemos horarios distintos. ¿Cómo podríamos comparar la disponibilidad y confirmar un horario común?",
+    "prompt_mx": "Quiero platicar con un compañero para fijar una reunión, pero nuestros horarios no coinciden. ¿Cómo le hacemos para encontrar un momento que nos funcione a los dos?",
+    "prompt_rio": "Querés acordar una reunión con un compañero, pero tienen horarios distintos. ¿Cómo comparás la disponibilidad y encontrás un momento que les sirva a ambos?",
+    "prompt_std": "Describa una estrategia respetuosa para comparar la disponibilidad de dos personas y confirmar una fecha de reunión.",
+    "answer_key": "Proponer compartir disponibilidad, comparar horarios y confirmar una fecha común con respeto.",
+    "lexical_feature": "CHAT",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I020",
+    "category": "procedimiento",
+    "task": "evaluacion_textual",
+    "prompt_co": "Voy a instalar una aplicación en el celular desde la tienda oficial. ¿Qué debería revisar en los permisos antes de abrirla?",
+    "prompt_mx": "Voy a bajar una app desde la tienda oficial del celular. ¿Qué permisos conviene checar antes de usarla?",
+    "prompt_rio": "Quiero instalar una aplicación desde la tienda oficial del celular. ¿En qué permisos te fijás antes de abrirla?",
+    "prompt_std": "Indique qué comprobaciones deben realizarse en una aplicación obtenida de la tienda oficial antes de conceder permisos y ejecutarla.",
+    "answer_key": "Usar tienda oficial, comprobar nombre/desarrollador, instalar, revisar permisos y rechazar los innecesarios.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I021",
+    "category": "explicacion",
+    "task": "evaluacion_textual",
+    "prompt_co": "El hielo suele flotar en el agua. ¿Me explica en dos o tres frases cuál es la razón?",
+    "prompt_mx": "¿Por qué el hielo flota en el agua? Explícamelo en dos o tres frases, sin complicarlo de más.",
+    "prompt_rio": "¿Por qué el hielo queda arriba del agua líquida? Contame en dos o tres frases.",
+    "prompt_std": "Explique brevemente, en dos o tres frases, la causa física por la que el hielo flota en agua líquida.",
+    "answer_key": "Porque el hielo tiene menor densidad que el agua líquida, debido a la estructura que forma al congelarse.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I022",
+    "category": "explicacion",
+    "task": "evaluacion_textual",
+    "prompt_co": "Si va a guardar una copia de un archivo importante en otro equipo, como su computador, ¿qué ventaja tendría hacerlo?",
+    "prompt_mx": "Quiero respaldar un archivo importante en otro dispositivo, por ejemplo en la compu. ¿Para qué me sirve tener esa copia?",
+    "prompt_rio": "Si se te pierde el archivo original, te queda otra copia en un segundo dispositivo, como la compu. ¿Qué ventaja le encontrás a esa precaución?",
+    "prompt_std": "Explique la utilidad de conservar una copia verificada de un archivo importante en un segundo dispositivo.",
+    "answer_key": "Reduce el riesgo de perderlo si falla o se pierde el dispositivo original; una copia debe verificarse.",
+    "lexical_feature": "COMPUTER",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I023",
+    "category": "explicacion",
+    "task": "evaluacion_textual",
+    "prompt_co": "Durante una sesión larga de estudio, ¿por qué pueden servir las pausas breves?",
+    "prompt_mx": "Cuando llevas rato estudiando, ¿por qué ayuda hacer descansos cortitos de vez en cuando?",
+    "prompt_rio": "Si estudiás durante mucho rato, ¿por qué te puede servir parar un ratito?",
+    "prompt_std": "Describa por qué una pausa breve puede ser útil durante una sesión prolongada de estudio, sin afirmar que garantice el aprendizaje.",
+    "answer_key": "Puede reducir fatiga y ayudar a recuperar atención; no afirmar que garantiza aprendizaje.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I024",
+    "category": "explicacion",
+    "task": "evaluacion_textual",
+    "prompt_co": "Dos mediciones de una misma longitud pueden dar valores ligeramente distintos. ¿A qué factores podría deberse?",
+    "prompt_mx": "Medimos lo mismo dos veces y los resultados no salen idénticos. ¿Qué cosas pueden explicar esa diferencia pequeña?",
+    "prompt_rio": "Medís la misma longitud dos veces y te dan valores un poco distintos. ¿Qué puede estar pasando?",
+    "prompt_std": "Identifique factores de medición que expliquen pequeñas discrepancias entre dos mediciones de una misma longitud.",
+    "answer_key": "Resolución del instrumento, calibración, técnica y condiciones de medición producen incertidumbre.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I025",
+    "category": "explicacion",
+    "task": "evaluacion_textual",
+    "prompt_co": "¿Me explica la diferencia entre promedio aritmético y mediana? Incluya un ejemplo breve en el que den resultados distintos.",
+    "prompt_mx": "No me queda clara la diferencia entre promedio y mediana. ¿Me la explicas con un ejemplo cortito donde no den lo mismo?",
+    "prompt_rio": "¿Cuál es la diferencia entre el promedio y la mediana? Si querés, usá un ejemplo breve en que cambien.",
+    "prompt_std": "Defina promedio aritmético y mediana, y presente un ejemplo breve en el que sus valores difieran.",
+    "answer_key": "Promedio: suma/n; mediana: valor central ordenado; un ejemplo coherente que muestre que pueden diferir.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I026",
+    "category": "explicacion",
+    "task": "evaluacion_textual",
+    "prompt_co": "Estoy preparando un informe en el computador. ¿Para qué me serviría hacer un esquema antes de redactarlo?",
+    "prompt_mx": "Voy a escribir un informe en la compu. ¿Qué gano si primero armo un esquema?",
+    "prompt_rio": "Tenés que redactar un informe en la compu. ¿En qué te ayuda armar un esquema antes de escribir?",
+    "prompt_std": "Explique qué función cumple un esquema previo en la organización y redacción de un informe.",
+    "answer_key": "Ayuda a ordenar ideas, anticipar secciones y mantener una secuencia lógica; no sustituye la revisión.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I027",
+    "category": "explicacion",
+    "task": "evaluacion_textual",
+    "prompt_co": "¿Qué le puede ocurrir a una botella llena de agua si se congela? Explique la causa.",
+    "prompt_mx": "Si meto una botella llena de agua al congelador, ¿por qué se puede dañar?",
+    "prompt_rio": "¿Por qué se puede romper una botella llena de agua cuando la dejás congelándose?",
+    "prompt_std": "Describa el cambio físico que puede dañar un recipiente lleno de agua durante la congelación.",
+    "answer_key": "El agua aumenta de volumen al congelarse y puede ejercer presión sobre el recipiente.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I028",
+    "category": "explicacion",
+    "task": "evaluacion_textual",
+    "prompt_co": "En la ventana de un bus frío aparecen gotas por fuera. ¿Me explica brevemente cómo se forman?",
+    "prompt_mx": "Cuando el vidrio del camión está frío y se llena de gotitas por fuera, ¿qué está pasando?",
+    "prompt_rio": "Se empañó la ventana fría del colectivo y quedaron gotas afuera. ¿Cómo explicás que se formen?",
+    "prompt_std": "Explique brevemente el proceso por el que se forman gotas de agua en el exterior de una superficie fría.",
+    "answer_key": "El vapor de agua del aire se enfría al tocar la superficie y se condensa en líquido.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I029",
+    "category": "explicacion",
+    "task": "evaluacion_textual",
+    "prompt_co": "¿Por qué conviene instalar actualizaciones de seguridad en el computador? Indique también una precaución básica.",
+    "prompt_mx": "La compu me pide una actualización de seguridad. ¿Para qué sirve y qué debería checar antes de instalarla?",
+    "prompt_rio": "Te aparece una actualización de seguridad en la compu. ¿Por qué conviene instalarla y qué te fijás antes?",
+    "prompt_std": "Explique el propósito de las actualizaciones de seguridad y mencione una precaución para instalarlas desde una fuente oficial.",
+    "answer_key": "Pueden corregir vulnerabilidades y errores; se recomienda respaldo y fuente oficial, sin prometer seguridad total.",
+    "lexical_feature": "COMPUTER",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I030",
+    "category": "explicacion",
+    "task": "evaluacion_textual",
+    "prompt_co": "Para un informe sobre rutas de bus, ¿cómo distingue usted una afirmación verificable de una opinión? Dé un ejemplo de cada una.",
+    "prompt_mx": "Si estoy hablando de rutas de camión, ¿cómo distingo un dato comprobable de una opinión? Dame un ejemplo de cada uno.",
+    "prompt_rio": "En un informe sobre recorridos del colectivo, ¿cómo distinguís un dato de una opinión? Tirame un ejemplo de cada uno.",
+    "prompt_std": "Defina una afirmación factual y una opinión mediante ejemplos relacionados con un horario de transporte.",
+    "answer_key": "Un hecho se puede contrastar con evidencia; una opinión expresa valoración. Ejemplos correctamente clasificados.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I031",
+    "category": "recomendacion",
+    "task": "evaluacion_textual",
+    "prompt_co": "Tengo dos opciones de bus: la A tarda 20 minutos y cuesta 8; la B tarda 35 y cuesta 5. Si lo principal es llegar rápido y puedo pagar hasta 10, ¿cuál me conviene?",
+    "prompt_mx": "El camión A tarda 20 minutos y cuesta 8; el B tarda 35 y cuesta 5. Si mi tope son 10 y quiero llegar antes, ¿cuál elijo?",
+    "prompt_rio": "El colectivo A tarda 20 minutos y sale 8; el B demora 35 y sale 5. Si querés llegar rápido y tenés hasta 10, ¿cuál te sirve?",
+    "prompt_std": "Compare las dos alternativas: una tarda 20 minutos y cuesta 8 unidades; la otra tarda 35 y cuesta 5. Con un límite de 10 y prioridad al tiempo, determine la opción adecuada.",
+    "answer_key": "La A: cumple el tope de 10 y tarda menos.",
+    "lexical_feature": "BUS",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I032",
+    "category": "recomendacion",
+    "task": "evaluacion_textual",
+    "prompt_co": "Si usted necesita un computador para redactar y navegar, ¿cuál opción cabe en su tope de 500: uno de 450 o uno de 620? No se indican las especificaciones.",
+    "prompt_mx": "Quiero una compu para escribir y navegar; una opción cuesta 450 y la otra 620. Mi máximo es 500. ¿Cuál puedo pagar? Ojo: no sabemos si ambas sirven técnicamente.",
+    "prompt_rio": "Querés una compu para escribir y navegar. Tenés dos: una sale 450 y la otra 620, con un tope de 500. ¿Cuál entra en el presupuesto? No hay datos de sus especificaciones.",
+    "prompt_std": "Determine cuál de dos equipos, con precios de 450 y 620 unidades, cumple un límite presupuestario de 500. No infiera si los equipos satisfacen los requisitos técnicos, pues no se especifican sus características.",
+    "answer_key": "La opción de 450; indicar que las necesidades de uso se cumplen solo si las especificaciones lo permiten, dato no dado.",
+    "lexical_feature": "COMPUTER",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I033",
+    "category": "recomendacion",
+    "task": "evaluacion_textual",
+    "prompt_co": "Tengo tres pendientes: uno vence hoy y toma 20 minutos, otro vence mañana y requiere una hora, y el tercero no tiene fecha y dura 15 minutos. ¿Qué orden inicial recomienda?",
+    "prompt_mx": "Una tarea vence hoy y toma 20 minutos; otra, mañana y dura una hora; la última no tiene fecha y lleva 15 minutos. ¿Por cuál empiezo y qué dejo planeado?",
+    "prompt_rio": "Tenés tres cosas pendientes: una vence hoy y te lleva 20 minutos; otra, mañana y una hora; la última no tiene fecha y dura 15. ¿Cómo ordenás las tareas?",
+    "prompt_std": "Proponga un orden inicial para tareas con vencimientos hoy, mañana y sin fecha, considerando las duraciones de 20 minutos, una hora y 15 minutos.",
+    "answer_key": "Priorizar la que vence hoy; después planificar la de mañana; la tercera puede ir después, explicando que depende de otros compromisos.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I034",
+    "category": "recomendacion",
+    "task": "evaluacion_textual",
+    "prompt_co": "Para seis personas hacen falta 450 g de fríjoles, pero solo tengo 300 g. ¿Qué ajuste proporcional puedo hacer a la receta?",
+    "prompt_mx": "La receta para seis lleva 450 g de frijoles y solo tengo 300. ¿Para cuántas porciones me alcanza si reduzco todo por igual?",
+    "prompt_rio": "La receta pide 450 g de porotos para seis, pero tenés 300 g. ¿A cuántas porciones la armás si ajustás todo en la misma proporción?",
+    "prompt_std": "Calcule el ajuste proporcional de una receta de seis porciones que requiere 450 g de frijoles secos cuando solo se dispone de 300 g.",
+    "answer_key": "Preparar dos tercios de la receta, para cuatro porciones; escalar los demás ingredientes igual.",
+    "lexical_feature": "BEAN",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I035",
+    "category": "recomendacion",
+    "task": "evaluacion_textual",
+    "prompt_co": "Quiero hablar con una colega para resolver un desacuerdo de trabajo. ¿Me sugiere una frase de apertura respetuosa y una pregunta para conocer su perspectiva?",
+    "prompt_mx": "Tengo que platicar con una compañera por un desacuerdo del trabajo. ¿Qué frase puedo usar para empezar bien y qué pregunta abierta le hago?",
+    "prompt_rio": "Quiero charlar con una compañera por un desacuerdo laboral. ¿Cómo arrancás con respeto y qué le preguntás para entender su punto de vista?",
+    "prompt_std": "Redacte una apertura no acusatoria y una pregunta abierta para iniciar una conversación respetuosa sobre un desacuerdo laboral.",
+    "answer_key": "Una frase no acusatoria y una pregunta abierta; no asumir quién tiene la razón.",
+    "lexical_feature": "CHAT",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I036",
+    "category": "recomendacion",
+    "task": "evaluacion_textual",
+    "prompt_co": "Entre dos carros, uno cuesta 9000 unidades y el otro 10500. Mi límite es 10000 y solo debo cumplir ese tope. ¿Cuál opción puedo escoger?",
+    "prompt_mx": "Un coche cuesta 9000 y el otro 10500. Si no puedo pasarme de 10000, ¿cuál sí puedo comprar?",
+    "prompt_rio": "Uno de los autos sale 9000 y el otro 10500; tenés un máximo de 10000. ¿Cuál te alcanza si solo importa el precio?",
+    "prompt_std": "Seleccione la alternativa que satisface un límite de 10000 unidades entre dos vehículos con precios de 9000 y 10500.",
+    "answer_key": "Solo el de 9000; no inferir otras características.",
+    "lexical_feature": "CAR",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I037",
+    "category": "recomendacion",
+    "task": "evaluacion_textual",
+    "prompt_co": "Tengo 30 minutos antes de salir y tres pendientes que toman 10, 15 y 20 minutos. ¿Qué combinación puedo completar exactamente en ese tiempo?",
+    "prompt_mx": "Me quedan 30 minutos antes de salir. Tengo tareas de 10, 15 y 20 minutos. ¿Cuáles junto para acabar justo a tiempo?",
+    "prompt_rio": "Antes de salir tenés media hora y tres tareas: una de 10, otra de 15 y otra de 20 minutos. ¿Qué combinación armás para terminar justo?",
+    "prompt_std": "Determine qué combinación de tareas de 10, 15 y 20 minutos suma exactamente 30 minutos.",
+    "answer_key": "Las tareas de 10 y 20 minutos suman 30; también puede señalar que la de 15 no cabe junto a ninguna otra.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I038",
+    "category": "recomendacion",
+    "task": "evaluacion_textual",
+    "prompt_co": "Para recorrer 4 km puedo caminar a 4 km/h o tomar un bus que tarda 18 minutos. Si quiero llegar antes, ¿cuál opción me recomienda?",
+    "prompt_mx": "Tengo que hacer 4 km: caminando a 4 km/h me toma una hora, y el camión tarda 18 minutos. ¿Cuál conviene si quiero llegar rápido?",
+    "prompt_rio": "Tenés que recorrer 4 km: a pie, a 4 km/h, tardás una hora; el colectivo demora 18 minutos. ¿Cuál elegís para llegar antes?",
+    "prompt_std": "Compare caminar 4 km a 4 km/h con un servicio de transporte que tarda 18 minutos e indique cuál llega primero.",
+    "answer_key": "El bus: 18 min frente a 60 min caminando; explicar cálculo.",
+    "lexical_feature": "BUS",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I039",
+    "category": "recomendacion",
+    "task": "evaluacion_textual",
+    "prompt_co": "Tengo ocho porciones de fríjoles y cuatro recipientes. ¿Cómo las repartiría para que cada recipiente tenga la misma cantidad?",
+    "prompt_mx": "Hay ocho porciones de frijoles para cuatro recipientes. ¿Cuántas pongo en cada uno para que quede parejo?",
+    "prompt_rio": "Te quedaron ocho porciones de porotos y cuatro recipientes. ¿Cómo las repartís en partes iguales?",
+    "prompt_std": "Distribuya ocho porciones de frijoles secos de manera equitativa entre cuatro recipientes.",
+    "answer_key": "Dos porciones por recipiente.",
+    "lexical_feature": "BEAN",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I040",
+    "category": "recomendacion",
+    "task": "evaluacion_textual",
+    "prompt_co": "Necesito conversar diez minutos con una colega y compartimos agenda. ¿Cómo recomienda encontrar un horario que les sirva a ambas?",
+    "prompt_mx": "Tengo que platicar diez minutos con una compañera y usamos agenda compartida. ¿Cómo encuentro un espacio libre para las dos?",
+    "prompt_rio": "Necesitás charlar diez minutos con una colega y comparten calendario. ¿Cómo buscás un horario que les quede bien a ambas?",
+    "prompt_std": "Describa un procedimiento simple para identificar y confirmar un espacio común de diez minutos en una agenda compartida.",
+    "answer_key": "Comparar espacios disponibles, proponer una franja y confirmarla; no suponer acceso a la agenda sin permiso.",
+    "lexical_feature": "CHAT",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I041",
+    "category": "resumen",
+    "task": "evaluacion_textual",
+    "prompt_co": "Resuma en una frase: el taller empieza a las 10:00; el bus A tarda 15 minutos y el B, 25. Para llegar antes, se recomienda salir con tiempo.",
+    "prompt_mx": "¿Me resumes esto en una frase? El taller empieza a las 10; el camión A tarda 15 minutos y el B, 25. Conviene salir con margen.",
+    "prompt_rio": "En una sola frase, contame qué dice esto: el taller arranca a las 10; el colectivo A tarda 15 minutos y el B, 25, así que conviene salir con tiempo.",
+    "prompt_std": "Sintetice en una oración: el taller inicia a las 10:00, una ruta tarda 15 minutos y otra 25; se aconseja prever tiempo adicional.",
+    "answer_key": "El taller inicia a las 10; A tarda menos que B y conviene prever margen para llegar.",
+    "lexical_feature": "BUS",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I042",
+    "category": "resumen",
+    "task": "evaluacion_textual",
+    "prompt_co": "¿Me indica en una frase qué ocurrió? El equipo guardó documentos en el computador, hizo una copia externa y abrió dos archivos para revisarla.",
+    "prompt_mx": "Resúmeme esto en una frase: guardaron los documentos en la compu, hicieron otra copia en un dispositivo externo y abrieron dos archivos para checar que funcionara.",
+    "prompt_rio": "¿Cómo resumís esto en una frase? Guardaron los documentos en la compu, armaron una copia en otro dispositivo y abrieron dos archivos para fijarse si andaba.",
+    "prompt_std": "Resuma en una oración la creación y verificación de una copia externa de documentos.",
+    "answer_key": "Se hizo una copia externa de los documentos y se verificó abriendo archivos.",
+    "lexical_feature": "COMPUTER",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I043",
+    "category": "resumen",
+    "task": "evaluacion_textual",
+    "prompt_co": "¿Podría resumir en una frase el cambio de esta receta? Se requieren 300 g de fríjoles; la receta era para seis y se redujeron todas las cantidades a dos tercios para cuatro personas.",
+    "prompt_mx": "La receta llevaba 300 g de frijoles y ajustaron todo a dos tercios para pasar de seis a cuatro personas. ¿Me lo resumes en una frase?",
+    "prompt_rio": "La receta original era para seis y la bajaron a cuatro, usando 300 g de porotos. ¿Cómo lo contás en una sola frase?",
+    "prompt_std": "Sintetice el ajuste de una receta de seis a cuatro porciones, con todas las cantidades reducidas a dos tercios.",
+    "answer_key": "La receta de seis porciones se redujo proporcionalmente a cuatro, usando 300 g de fríjoles/porotos.",
+    "lexical_feature": "BEAN",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I044",
+    "category": "resumen",
+    "task": "evaluacion_textual",
+    "prompt_co": "¿Cuál es el acuerdo del grupo? Revisarán el borrador el lunes; antes, cada integrante enviará sus observaciones por escrito y luego definirán los cambios.",
+    "prompt_mx": "El equipo va a platicar el lunes sobre el borrador. Antes mandan sus observaciones y luego deciden qué cambiar. ¿Me lo resumes en una oración?",
+    "prompt_rio": "Primero mandan sus observaciones por escrito y después se juntan a charlar el lunes para revisar el borrador. ¿Cómo resumís ese plan?",
+    "prompt_std": "Resuma el plan del equipo para revisar un borrador mediante comentarios previos y una reunión el lunes.",
+    "answer_key": "El equipo hablará el lunes sobre el borrador y usará observaciones previas para acordar cambios.",
+    "lexical_feature": "CHAT",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I045",
+    "category": "resumen",
+    "task": "evaluacion_textual",
+    "prompt_co": "¿Qué indica este registro, según el texto? El carro recorrió 120 km en dos horas; no se anotaron paradas ni consumo de combustible.",
+    "prompt_mx": "En el reporte dice que el coche hizo 120 km en dos horas, pero no aclara si paró ni cuánta gasolina gastó. ¿Me lo resumes en una frase?",
+    "prompt_rio": "El auto hizo 120 km en dos horas, pero no anotaron paradas ni combustible. ¿Cómo lo resumís en una sola frase?",
+    "prompt_std": "Sintetice el trayecto de 120 km en dos horas e indique qué datos no constan en el registro.",
+    "answer_key": "El carro/auto recorrió 120 km en dos horas; el texto no reporta paradas ni consumo.",
+    "lexical_feature": "CAR",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I046",
+    "category": "resumen",
+    "task": "evaluacion_textual",
+    "prompt_co": "Compare estos resultados en una frase: el método X terminó primero, pero el Y tuvo menos errores; aún falta decidir qué criterio priorizar.",
+    "prompt_mx": "¿Me resumes esto? X acabó primero y Y tuvo menos errores; todavía no deciden qué les importa más.",
+    "prompt_rio": "X terminó antes, pero Y se equivocó menos. Todavía tienen que elegir qué priorizar. ¿Cómo lo resumís en una frase?",
+    "prompt_std": "Resuma la diferencia entre rapidez y cantidad de errores, señalando que aún no se ha definido el criterio prioritario.",
+    "answer_key": "X fue más rápido y Y cometió menos errores; falta elegir qué criterio importa más.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I047",
+    "category": "resumen",
+    "task": "evaluacion_textual",
+    "prompt_co": "Resuma la información disponible: una planta de fríjol recibió 200 ml de agua el lunes y el jueves, estuvo junto a una ventana y no se midió la luz ni el crecimiento.",
+    "prompt_mx": "La planta de frijoles recibió 200 ml el lunes y el jueves y estuvo cerca de una ventana. No checaron la luz ni cuánto creció. ¿Me lo resumes?",
+    "prompt_rio": "La planta de porotos recibió 200 ml dos veces y quedó junto a una ventana, pero nadie midió la luz ni el crecimiento. ¿Cómo lo resumís?",
+    "prompt_std": "Sintetice los riegos registrados y la ubicación de la planta, sin inferir resultados de crecimiento o exposición lumínica.",
+    "answer_key": "La planta se regó dos veces con 200 ml y estuvo junto a una ventana, sin datos de luz o crecimiento.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I048",
+    "category": "resumen",
+    "task": "evaluacion_textual",
+    "prompt_co": "En una frase, ¿qué pasó en esta reunión del equipo de buses? Empezó a las 14:00, duró 45 minutos y dejó tres tareas asignadas.",
+    "prompt_mx": "A las 2 arrancó la reunión; en 45 minutos asignaron tres tareas. ¿Me resumes lo más importante en una frase?",
+    "prompt_rio": "La reunión arrancó a las 14:00 y duró tres cuartos de hora. Después repartieron tres tareas. ¿Cómo la resumís?",
+    "prompt_std": "Resuma la hora de inicio, la duración y el resultado de la reunión del equipo de transporte.",
+    "answer_key": "La reunión de las 14:00 duró 45 minutos y dejó tres tareas asignadas.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I049",
+    "category": "resumen",
+    "task": "evaluacion_textual",
+    "prompt_co": "El informe se redactó en el computador: presenta la pregunta, describe los datos y compara resultados, pero aún no incluye limitaciones. ¿Cómo lo resumiría en una frase?",
+    "prompt_mx": "El reporte de la compu primero plantea la pregunta, luego muestra datos y resultados, pero le falta la parte de limitaciones. ¿Me lo resumes?",
+    "prompt_rio": "El informe que armaste en la compu presenta la pregunta, los datos y la comparación, pero todavía no tiene limitaciones. ¿Cómo lo resumís en una frase?",
+    "prompt_std": "Sintetice la estructura actual del informe y mencione la sección que permanece pendiente.",
+    "answer_key": "El informe ordena pregunta, datos y resultados, pero aún falta redactar las limitaciones.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I050",
+    "category": "resumen",
+    "task": "evaluacion_textual",
+    "prompt_co": "Dos personas revisaron en la compu la misma tabla por separado; hallaron cuatro diferencias y las resolvieron consultando los registros originales. ¿Cuál es el resumen en una frase?",
+    "prompt_mx": "En la compu, dos personas revisaron la tabla por su cuenta. Vieron cuatro diferencias y las resolvieron con los registros originales. ¿Me lo resumes?",
+    "prompt_rio": "Dos personas cotejaron por separado una tabla en la compu. Hallaron cuatro discrepancias y consultaron los registros fuente para resolverlas. ¿Cómo resumís esa revisión?",
+    "prompt_std": "Resuma la revisión independiente de una tabla y la resolución de cuatro discrepancias mediante consulta de los registros fuente.",
+    "answer_key": "Dos revisores compararon la tabla, detectaron cuatro discrepancias y las resolvieron con los originales.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I051",
+    "category": "razonamiento",
+    "task": "evaluacion_textual",
+    "prompt_co": "El bus sale cada 20 minutos desde las 8:00. Si llego a la parada a las 8:07 y se respeta el horario, ¿a qué hora pasa el siguiente?",
+    "prompt_mx": "El camión sale cada 20 minutos a partir de las 8. Si llego a las 8:07, ¿cuál es la próxima salida?",
+    "prompt_rio": "El colectivo pasa cada 20 minutos desde las 8:00; si llegás a la parada a las 8:07, ¿a qué hora viene el próximo?",
+    "prompt_std": "Determine la siguiente hora de salida de un servicio con frecuencia de 20 minutos desde las 8:00, considerando una llegada a las 8:07.",
+    "answer_key": "A las 8:20; explicar que la salida de 8:00 ya pasó.",
+    "lexical_feature": "BUS",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I052",
+    "category": "razonamiento",
+    "task": "evaluacion_textual",
+    "prompt_co": "Después de comprar dos cuadernos de 35 unidades y un lápiz de 12, ¿cuánto dinero me queda de los 120 que tenía?",
+    "prompt_mx": "Tenía 120 pesos. Compré dos cuadernos de 35 y un lápiz de 12. ¿Cuánto me sobró?",
+    "prompt_rio": "Vos tenés 120 unidades; gastás 35 en cada uno de dos cuadernos y 12 en un lápiz. ¿Cuánto te queda?",
+    "prompt_std": "Calcule el saldo restante de 120 unidades tras adquirir dos cuadernos de 35 y un lápiz de 12.",
+    "answer_key": "38 unidades.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I053",
+    "category": "razonamiento",
+    "task": "evaluacion_textual",
+    "prompt_co": "Un recipiente tiene 18 fríjoles. Se usa un tercio y luego se agregan cuatro más. ¿Cuántos quedan en total?",
+    "prompt_mx": "Hay 18 frijoles en una bolsa; usas la tercera parte y luego echas cuatro más. ¿Cuántos quedan?",
+    "prompt_rio": "Tenés 18 porotos, usás un tercio y después agregás cuatro. ¿Cuántos te quedan?",
+    "prompt_std": "Calcule la cantidad final si se retira un tercio de 18 frijoles secos y luego se incorporan cuatro unidades.",
+    "answer_key": "16 piezas: se usan 6, quedan 12 y se agregan 4.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I054",
+    "category": "razonamiento",
+    "task": "evaluacion_textual",
+    "prompt_co": "En el computador, todos los archivos de la carpeta A son copias. El archivo X está en esa carpeta. ¿Qué puede concluirse sobre X?",
+    "prompt_mx": "En la compu todos los archivos de la carpeta A son copias. El archivo X está ahí. ¿Qué podemos decir de X y qué no sabemos?",
+    "prompt_rio": "En la compu, todos los archivos de la carpeta A son copias y X está ahí. ¿Qué podés concluir sobre ese archivo?",
+    "prompt_std": "Aplique las premisas: todos los archivos de la carpeta A son copias y X pertenece a ella. Indique la conclusión válida y el dato que no puede inferirse.",
+    "answer_key": "X es una copia, según las premisas; no se sabe de qué archivo es copia.",
+    "lexical_feature": "COMPUTER",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I055",
+    "category": "razonamiento",
+    "task": "evaluacion_textual",
+    "prompt_co": "Un argumento sobre los recorridos en bus dice: todos los grupos que llegaron temprano tenían cuatro integrantes; nuestro grupo tiene cuatro. ¿Se sigue que llegará temprano? Explique.",
+    "prompt_mx": "En la ruta del camión, todos los grupos que llegaron temprano eran de cuatro. El nuestro también tiene cuatro. ¿Eso prueba que llegará temprano?",
+    "prompt_rio": "Todos los grupos que llegaron temprano en el colectivo tenían cuatro integrantes. El tuyo tiene cuatro. ¿Podés asegurar que llegará temprano?",
+    "prompt_std": "Evalúe si la conclusión se deduce necesariamente de las premisas; identifique el error de afirmar el consecuente.",
+    "answer_key": "No; afirmar que terminar temprano implica cuatro integrantes no permite inferir la inversa.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I056",
+    "category": "razonamiento",
+    "task": "evaluacion_textual",
+    "prompt_co": "En una lista, Ana aparece antes que Bruno y Bruno antes que Carla. ¿Qué relación de orden hay entre Ana y Carla?",
+    "prompt_mx": "Ana va antes que Bruno, y Bruno antes que Carla. Entonces, ¿quién aparece primero entre Ana y Carla?",
+    "prompt_rio": "Mirá este orden en la lista: Ana, Bruno, Carla. ¿Quién aparece antes, Ana o Carla?",
+    "prompt_std": "A partir del orden Ana–Bruno–Carla, determine la relación de precedencia entre Ana y Carla.",
+    "answer_key": "Ana aparece antes que Carla, por transitividad.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I057",
+    "category": "razonamiento",
+    "task": "evaluacion_textual",
+    "prompt_co": "En el tanque de un carro había 50 litros. Se retiraron 12 por la mañana y 9 por la tarde; después se agregaron 15. ¿Cuánto queda?",
+    "prompt_mx": "El coche tenía 50 litros en el tanque. Sacaron 12 en la mañana, 9 más en la tarde y luego echaron 15. ¿Cuántos hay ahora?",
+    "prompt_rio": "Tenés un depósito con 50 litros. Sacás 12 por la mañana y 9 por la tarde, y después agregás 15. ¿Cuántos litros te quedan?",
+    "prompt_std": "Calcule el volumen final de un depósito que inicia con 50 litros, pierde 12 y 9 litros, y recibe posteriormente 15 litros.",
+    "answer_key": "44 litros.",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I058",
+    "category": "razonamiento",
+    "task": "evaluacion_textual",
+    "prompt_co": "El carro A tarda 30 minutos y sale a las 9:10; el B tarda 45 y sale a las 9:00. ¿Cuál llega primero si no hay retrasos?",
+    "prompt_mx": "El coche A sale a las 9:10 y tarda media hora. El B sale a las 9 y se hace 45 minutos. ¿Cuál llega antes?",
+    "prompt_rio": "El auto A sale a las 9:10 y demora 30 minutos; el B sale a las 9:00 y tarda 45. Calculá las horas de llegada y decime cuál llega primero.",
+    "prompt_std": "Compare las horas de llegada de dos vehículos: A parte a las 9:10 y demora 30 minutos; B parte a las 9:00 y demora 45 minutos.",
+    "answer_key": "A llega a 9:40; B llega a 9:45; llega primero A.",
+    "lexical_feature": "CAR",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I059",
+    "category": "razonamiento",
+    "task": "evaluacion_textual",
+    "prompt_co": "Hoy es jueves: debo enviar un archivo hoy, revisar otro mañana y conversar con el equipo el viernes. ¿Qué pendiente atiendo primero por fecha?",
+    "prompt_mx": "Es jueves y traigo tres pendientes: mandar un archivo hoy, revisar otro mañana y platicar con el equipo el viernes. ¿Cuál saco primero?",
+    "prompt_rio": "Tenés que resolver tres cosas: hoy mandar un archivo, mañana revisar otro y el viernes charlar con el equipo. Como hoy es jueves, ¿por cuál arrancás?",
+    "prompt_std": "Ordene los pendientes según su fecha: enviar un archivo el jueves, revisar otro el viernes y reunirse con el equipo el viernes.",
+    "answer_key": "Enviar el archivo hoy; después revisar el de mañana y reunirse el viernes.",
+    "lexical_feature": "CHAT",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  },
+  {
+    "item_id": "I060",
+    "category": "razonamiento",
+    "task": "evaluacion_textual",
+    "prompt_co": "Una mesa admite seis personas. Llegan grupos que no se pueden dividir: dos, tres y dos personas. ¿Cuántas deben esperar como mínimo?",
+    "prompt_mx": "En una mesa caben seis personas, pero llegan grupos completos de 2, 3 y 2. ¿Cuántas se quedan esperando como mínimo?",
+    "prompt_rio": "La mesa tiene lugar para seis y llegan grupos indivisibles de dos, tres y dos. ¿Cuántos dejás esperando como mínimo?",
+    "prompt_std": "Determine el mínimo de personas que espera si una mesa con capacidad para seis recibe grupos indivisibles de 2, 3 y 2.",
+    "answer_key": "Dos personas: se sientan juntos los grupos de 2 y 3 (5 personas). No es posible sentar a los tres grupos (7 personas).",
+    "lexical_feature": "NONE",
+    "register": "urbano_conversacional_no_estereotipado",
+    "anchor": {
+      "co": "Bogota",
+      "mx": "Ciudad de Mexico",
+      "rio": "Buenos Aires",
+      "std": "espanol_panhispanico_neutro"
+    },
+    "review_status": "borrador_revision_documental; revision_hablante_nativo_pendiente",
+    "review_note": "Equivalencia propuesta por anclajes semanticos y sustitucion controlada; validar naturalidad y comprension con hablantes antes del piloto."
+  }
+]
